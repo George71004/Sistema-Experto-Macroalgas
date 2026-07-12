@@ -53,6 +53,33 @@ interface DiagnosisState {
   candidates?: Candidate[]
 }
 
+const formatScientificName = (name?: string) => {
+  if (!name) {
+    return null
+  }
+
+  const trimmed = name.trim()
+  if (!trimmed || trimmed === 'N/A' || trimmed === 'Desconocida') {
+    return <span>{trimmed || 'N/A'}</span>
+  }
+
+  const match = trimmed.match(/^([A-ZÁÉÍÓÚÄËÏÖÜÑ][a-záéíóúäëïöüñçß-]+)\s+([a-záéíóúäëïöüñçß-]+(?:\s+(?:subsp\.|var\.|f\.|forma|cf\.|aff\.|sp\.|spp\.))?)/u)
+
+  if (!match) {
+    return <span>{trimmed}</span>
+  }
+
+  const scientificPart = `${match[1]} ${match[2]}`
+  const remainder = trimmed.slice(scientificPart.length).trim()
+
+  return (
+    <span>
+      <em>{scientificPart}</em>
+      {remainder ? ` ${remainder}` : ''}
+    </span>
+  )
+}
+
 const getApiBaseUrl = () => {
   if (typeof window !== 'undefined') {
     const fromWindow = (window as Window & { __API_BASE_URL__?: string }).__API_BASE_URL__
@@ -113,11 +140,18 @@ export function DiagnosisInterface() {
 
   const mapApiResponseToState = (data: DiagnosisResponse): DiagnosisState => {
     const { state } = data
+    const hasCandidates = Boolean(state.candidates && state.candidates.length > 0)
 
-    // Check if it's a final diagnosis (either final_diagnosis is set OR no current_question and candidates exist)
-    const isFinal = state.final_diagnosis || (!state.current_question && state.candidates && state.candidates.length > 0)
+    // Consider the diagnosis final when the backend reports completion,
+    // when a final diagnosis was explicitly returned, or when candidates are already available.
+    const isFinal = Boolean(
+      state.final_diagnosis ||
+      state.status === 'completed' ||
+      (!state.current_question && hasCandidates) ||
+      (hasCandidates && (state.status === 'completed' || state.current_question === null || state.current_question === undefined))
+    )
 
-    if (isFinal && state.candidates && state.candidates.length > 0) {
+    if (isFinal && hasCandidates) {
       // Use the first candidate as the result
       const primaryCandidate = state.candidates[0]
       return {
@@ -246,7 +280,7 @@ export function DiagnosisInterface() {
           {/* Header */}
           <div className="text-center mb-8">
             <h1 className="text-4xl font-light mb-2 text-foreground">¡Especie Identificada!</h1>
-            <p className="text-primary text-lg font-medium">{state.result.species}</p>
+            <p className="text-primary text-lg font-medium">{formatScientificName(state.result.species)}</p>
           </div>
 
           {/* Primary candidate details */}
@@ -328,7 +362,7 @@ export function DiagnosisInterface() {
                   <div key={idx} className="bg-background/50 rounded p-4 border border-border/50">
                     <div className="flex justify-between items-start gap-4">
                       <div className="flex-1">
-                        <p className="text-sm font-medium text-foreground mb-1">{candidate.species_name}</p>
+                        <p className="text-sm font-medium text-foreground mb-1">{formatScientificName(candidate.species_name)}</p>
                         <p className="text-xs text-muted-foreground">{candidate.family}</p>
                       </div>
                       <div className="text-right">
