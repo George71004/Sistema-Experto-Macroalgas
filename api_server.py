@@ -25,7 +25,7 @@ class StartRequest(BaseModel):
 class AnswerRequest(BaseModel):
     session_id: str
     character_name: str
-    answer: str  # S, N, NS
+    answer: str  # S, N, D
 
 
 class FiltersRequest(BaseModel):
@@ -58,11 +58,12 @@ def submit_answer(payload: AnswerRequest):
     if not engine:
         raise HTTPException(status_code=404, detail="Sesión no encontrada")
 
-    if payload.answer not in {"S", "N", "NS"}:
-        raise HTTPException(status_code=400, detail="answer debe ser S, N o NS")
+    if payload.answer not in {"S", "N", "D", "NS"}:
+        raise HTTPException(status_code=400, detail="answer debe ser S, N, D o NS")
 
     try:
-        engine.submit_answer(payload.character_name, payload.answer)
+        normalized_answer = "D" if payload.answer == "NS" else payload.answer
+        engine.submit_answer(payload.character_name, normalized_answer)
         return {"session_id": payload.session_id, "state": engine.get_state()}
     except Exception as exc:
         raise HTTPException(status_code=500, detail=str(exc))

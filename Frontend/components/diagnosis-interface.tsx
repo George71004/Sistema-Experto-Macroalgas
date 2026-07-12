@@ -146,7 +146,7 @@ export function DiagnosisInterface() {
     }
   }
 
-  const handleAnswer = async (answer: 'S' | 'N' | 'NS') => {
+  const handleAnswer = async (answer: 'S' | 'N' | 'D') => {
     if (!state?.character_name) {
       return
     }
@@ -389,7 +389,7 @@ export function DiagnosisInterface() {
             </Button>
 
             <Button
-              onClick={() => handleAnswer('NS')}
+              onClick={() => handleAnswer('D')}
               disabled={loading}
               className="flex-1 bg-muted hover:bg-muted/80 text-muted-foreground font-light border border-border transition-all duration-300 hover:shadow-md"
             >

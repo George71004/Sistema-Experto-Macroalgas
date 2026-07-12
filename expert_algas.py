@@ -326,7 +326,7 @@ class AlgaeExpertSystem:
                             elif answer == 'N':
                                 path.assumptions[char_name] = False
                                 next_paths.append(path)
-                            elif answer == 'NS':
+                            elif answer in {'D', 'NS'}:
                                 p1 = path.clone()
                                 p1.assumptions[char_name] = True
                                 p1.ns_count += 1
