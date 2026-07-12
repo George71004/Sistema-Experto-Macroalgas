@@ -49,6 +49,19 @@ Para ejecutar la calibración automatizada del motor sobre las 30 muestras físi
 python3 expert_algas.py --calibration
 ```
 
+### 4. Ejecutar la API HTTP
+Para exponer la lógica del sistema experto por endpoints JSON:
+```bash
+python3 api_server.py
+```
+Luego puedes probar:
+```bash
+curl http://127.0.0.1:8000/health
+curl -X POST http://127.0.0.1:8000/api/diagnosis/start -H "Content-Type: application/json" -d '{"session_id":"demo"}'
+curl -X POST http://127.0.0.1:8000/api/diagnosis/answer -H "Content-Type: application/json" -d '{"session_id":"demo","character_name":"color_verde_no_calc","answer":"S"}'
+curl "http://127.0.0.1:8000/api/diagnosis/state?session_id=demo"
+```
+
 ---
 
 ## 🗺️ Próximos Pasos (Lo que falta para terminar el sistema)

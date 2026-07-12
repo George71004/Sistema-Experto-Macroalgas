@@ -102,6 +102,8 @@ class KnowledgeBaseManager:
     """Gestiona la carga y validación de la ontología taxonómica en formato JSON."""
     def __init__(self, filepath="algae_knowledge.json"):
         self.filepath = filepath
+        if not os.path.isabs(self.filepath):
+            self.filepath = os.path.join(os.path.dirname(__file__), self.filepath)
         self.base = self._load_json()
         self.validate()
 
