@@ -2417,10 +2417,17 @@
     },
     "node_heterokonto_filamentous": {
         "question": "¿Los filamentos presentan una célula apical grande, negra e individual muy llamativa (Sphacelariales)?",
-        "yes_branch": "species_sphacelaria_tribuloides",
+        "yes_branch": "node_sphacelaria_species",
         "no_branch": "node_ectocarpales_filamentous",
         "is_leaf": false,
         "character_name": "celula_apical_negra"
+    },
+    "node_sphacelaria_species": {
+        "question": "¿Los propágulos del talo son delgados, cilíndricos y de brazos alargados?",
+        "yes_branch": "species_sphacelaria_rigidula",
+        "no_branch": "species_sphacelaria_tribuloides",
+        "is_leaf": false,
+        "character_name": "propagulos_delgados_cilindricos"
     },
     "node_ectocarpales_filamentous": {
         "question": "¿Los filamentos se ramifican marcadamente en ángulos rectos y poseen esporangios pluriloculares alargados?",
@@ -2430,11 +2437,25 @@
         "character_name": "ramificacion_angulo_recto"
     },
     "node_rhodophyta_start": {
-        "question": "¿El espécimen posee un revestimiento rígido de carbonato de calcio que endurece notablemente su talo?",
-        "yes_branch": "species_jania_adhaerens",
+        "question": "¿El espécimen posee calcificación (ya sea rígida y articulada, o blanda, harinosa y viscosa) en su talo?",
+        "yes_branch": "node_rhodo_calcified",
         "no_branch": "node_rhodo_texture",
         "is_leaf": false,
         "character_name": "talo_calcificado"
+    },
+    "node_rhodo_calcified": {
+        "question": "¿El talo calcificado es rígido, articulado y ramificado dicotómicamente?",
+        "yes_branch": "species_jania_adhaerens",
+        "no_branch": "node_liagora_species",
+        "is_leaf": false,
+        "character_name": "talo_articulado_rigido"
+    },
+    "node_liagora_species": {
+        "question": "¿Las ramificaciones tienen un aspecto fuertemente corimboso (aplanado en el ápice) y nudos pubescentes?",
+        "yes_branch": "species_liagora_ceranoides",
+        "no_branch": "species_liagora_sp",
+        "is_leaf": false,
+        "character_name": "aspecto_corimboso_nudos_pubescentes"
     },
     "node_rhodo_texture": {
         "question": "¿El talo tiene una textura predominantemente carnosa/cartilaginosa con ejes gruesos (cilíndricos o aplanados)?",
@@ -2571,10 +2592,17 @@
     },
     "node_chondria_or_others": {
         "question": "¿Los rámulos tienen constricciones muy marcadas en la base y ápice redondeado, de aspecto hinchado?",
-        "yes_branch": "species_chondria_capillaris",
+        "yes_branch": "node_chondria_species",
         "no_branch": "node_laminar_rhodo",
         "is_leaf": false,
         "character_name": "ramulos_constriccion_basal"
+    },
+    "node_chondria_species": {
+        "question": "¿El talo es de consistencia blanda gelatinosa y ramificación piramidal (en lugar de talo corto y firme con ramillas agrupadas en racimos)?",
+        "yes_branch": "species_chondria_capillaris",
+        "no_branch": "species_chondria_sedifolia",
+        "is_leaf": false,
+        "character_name": "consistencia_gelatinosa_ramificacion_piramidal"
     },
     "node_laminar_rhodo": {
         "question": "¿El talo es marcadamente plano, en forma de lámina ancha, membranosa o carnosa?",

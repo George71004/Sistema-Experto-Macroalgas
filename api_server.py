@@ -1,8 +1,9 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from typing import Optional, Dict
+from typing import Optional, Dict, Any
 
+from a2wsgi import ASGIMiddleware
 from expert_algas import KnowledgeBaseManager, AlgaeExpertSystem
 
 app = FastAPI(title="Sistema Experto Macroalgas API", version="1.0.0")
@@ -13,6 +14,8 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+wsgi_app = ASGIMiddleware(app)
 
 # Mantener sesiones sencillas en memoria
 sessions: Dict[str, AlgaeExpertSystem] = {}
@@ -32,8 +35,13 @@ class FiltersRequest(BaseModel):
     session_id: str
     temp: Optional[float] = None
     salinity: Optional[float] = None
-    station: Optional[str] = None
-    month: Optional[int] = None
+    station: Optional[Any] = None
+    month: Optional[Any] = None
+
+
+class RetractRequest(BaseModel):
+    session_id: str
+    character_name: str
 
 
 @app.get("/health")
@@ -84,6 +92,19 @@ def set_filters(payload: FiltersRequest):
 
     try:
         engine.set_pre_filters(payload.temp, payload.salinity, payload.station, payload.month)
+        return {"session_id": payload.session_id, "state": engine.get_state()}
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=str(exc))
+
+
+@app.post("/api/diagnosis/retract")
+def retract_answer(payload: RetractRequest):
+    engine = sessions.get(payload.session_id)
+    if not engine:
+        raise HTTPException(status_code=404, detail="Sesión no encontrada")
+
+    try:
+        engine.retract_choice(payload.character_name)
         return {"session_id": payload.session_id, "state": engine.get_state()}
     except Exception as exc:
         raise HTTPException(status_code=500, detail=str(exc))

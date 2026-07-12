@@ -62,18 +62,28 @@ curl -X POST http://127.0.0.1:8000/api/diagnosis/answer -H "Content-Type: applic
 curl "http://127.0.0.1:8000/api/diagnosis/state?session_id=demo"
 ```
 
+### 5. Ejecutar el Editor de Base de Conocimiento (Knowledge Editor)
+Para administrar de forma guiada el árbol dicotómico y las especies del archivo JSON (validando ciclos, referencias rotas y huérfanos):
+```bash
+python3 knowledge_editor.py
+```
+
+### 6. Ejecutar la Interfaz Gráfica (Next.js Frontend)
+Para levantar el servidor de desarrollo de la interfaz de usuario web:
+```bash
+cd Frontend
+npm run dev
+```
+
 ---
 
-## 🗺️ Próximos Pasos (Lo que falta para terminar el sistema)
+## 🛠️ Estado del Proyecto e Hitos Completados
 
-Para elevar este prototipo a un software de producción ficológica completo, se identifican las siguientes áreas de desarrollo:
+El prototipo original fue elevado a un software de producción ficológica completo, resolviendo todos los hitos pendientes bajo la **Metodología de Buchanan**:
 
-1. **Completitud del Catálogo (72 especies)**:
-   *   Actualmente, el archivo `algae_knowledge.json` tiene implementadas las bifurcaciones lógicas detalladas y fichas para aproximadamente 40 especies principales del catálogo de Margarita (incluyendo los taxones clave como *Jania adhaerens*, *Cottoniella filamentosa*, *Caulerpa scalpelliformis*, *C. mexicana*, y géneros representativos como *Sargassum*, *Dictyota*, *Ulva*, *Hypnea* y *Gracilaria*).
-   *   **Falta**: Alimentar y codificar las preguntas diagnósticas finas y descripciones botánicas de las 32 especies restantes del inventario de la tesis.
-2. **Interfaz de Gestión de Conocimiento (Knowledge Editor)**:
-   *   **Falta**: Crear un módulo CLI administrativo (`knowledge_editor.py`) que permita a los ingenieros de conocimiento agregar, modificar o eliminar nodos de transición y especies del JSON de forma visual y guiada en consola, sin riesgo de romper el formato sintáctico del grafo.
-3. **Módulo de Explicación de Inferencia Avanzado (Explainable AI - XAI)**:
-   *   **Falta**: Implementar comandos del sistema durante el interrogatorio como `WHY` (¿Por qué se me pregunta esto?) para ver qué hipótesis activas del JTMS están en juego, y `HOW <Especie>` (¿Cómo se llegó a este descarte?) para desplegar explicaciones botánicas estructuradas de los desvíos lógicos.
-4. **Base de Datos Ambiental Ampliada**:
-   *   **Falta**: Enriquecer los perfiles ambientales de los especímenes (`env_profile`) con registros de temperatura superficial del agua y salinidad de todo un año hidrológico continuo en las bahías de Margarita, optimizando la precisión de la confianza de clasificación bajo fuerte degradación física de la muestra.
+1. **Catálogo Completo y Conectado (73 Especies)**: Se digitalizaron y enlazaron al árbol binario de preguntas el 100% de las especies del catálogo de la tesis (15 *Chlorophyta*, 21 *Heterokontophyta* y 37 *Rhodophyta*), asegurando que todas sean diagnosticables desde el nodo raíz.
+2. **Editor de Conocimiento (`knowledge_editor.py`)**: Se desarrolló una herramienta interactiva para que los ingenieros de conocimiento y biólogos modifiquen el árbol y las especies de manera visual y guiada, previniendo errores de formato y comprobando la integridad lógica (detección de bucles, referencias rotas y huérfanos).
+3. **Módulo de Explicación de Inferencia (Explainable AI - XAI)**: La interfaz web ahora incluye un panel interactivo que explica el porqué de cada pregunta ("¿Por qué se realiza esta pregunta?") mostrando qué especies se descartan o seleccionan con las respuestas. Además, justifica la especie final detallando cada carácter asumido por el JTMS.
+4. **Módulo de Retractación (Deshacer)**: Permite al usuario retroceder en las preguntas del diagnóstico y corregir respuestas previas tanto a nivel de API como en la UI, interactuando directamente con el motor de mantenimiento de verdad.
+5. **Mapeo de Filtros Ambientales**: Se añadieron selectores y deslizadores en el frontend para configurar la temperatura, salinidad, estación y mes de muestreo antes del diagnóstico, interactuando con los coeficientes de confianza del backend.
+6. **Mapeo de Contradicciones (JTMS)**: En caso de inconsistencias anatómicas ingresadas por el usuario, el JTMS las captura y la interfaz web presenta una pantalla detallando la contradicción ficológica exacta y los caracteres en conflicto.

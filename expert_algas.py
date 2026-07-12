@@ -254,6 +254,45 @@ class AlgaeExpertSystem:
         self.evaluate_state()
 
     def set_pre_filters(self, temp, salinity, station, month):
+        # Convert temp to float if possible
+        if temp is not None and temp != "":
+            try:
+                temp = float(temp)
+            except (ValueError, TypeError):
+                pass
+        else:
+            temp = None
+        
+        # Convert salinity to float if possible
+        if salinity is not None and salinity != "":
+            try:
+                salinity = float(salinity)
+            except (ValueError, TypeError):
+                pass
+        else:
+            salinity = None
+            
+        # Convert station to int if possible
+        if station is not None and station != "":
+            try:
+                station = int(station)
+            except (ValueError, TypeError):
+                pass
+        else:
+            station = None
+            
+        # Convert month to string "M<num>" if it's passed as an integer or string digit
+        if month is not None and month != "":
+            try:
+                if isinstance(month, str) and month.startswith("M"):
+                    pass
+                else:
+                    month = f"M{int(month)}"
+            except (ValueError, TypeError):
+                month = str(month)
+        else:
+            month = None
+
         self.pre_filters["temp"] = temp
         self.pre_filters["salinity"] = salinity
         self.pre_filters["station"] = station
@@ -412,6 +451,24 @@ class AlgaeExpertSystem:
         self.jtms.retract(char_name)
         self.evaluate_state()
 
+    def _get_reachable_species_names(self, node_id):
+        visited = set()
+        result = []
+        def recurse(nid):
+            if nid in visited:
+                return
+            visited.add(nid)
+            node = self.kb.get(nid)
+            if not node:
+                return
+            if node.get("is_leaf", False):
+                result.append(node.get("species_name", nid))
+                return
+            recurse(node.get("yes_branch"))
+            recurse(node.get("no_branch"))
+        recurse(node_id)
+        return result
+
     def get_state(self):
         pending_questions = {}
         for path in self.active_paths:
@@ -437,7 +494,9 @@ class AlgaeExpertSystem:
                 curr_q = {
                     "node_id": blocked_id,
                     "question": node["question"],
-                    "character_name": node.get("character_name")
+                    "character_name": node.get("character_name"),
+                    "reachable_yes": self._get_reachable_species_names(node.get("yes_branch")),
+                    "reachable_no": self._get_reachable_species_names(node.get("no_branch"))
                 }
 
         candidates = []
@@ -497,7 +556,8 @@ class AlgaeExpertSystem:
             "active_paths_count": len(self.active_paths),
             "user_choices": choices_ui,
             "contradiction": conflict,
-            "candidates": candidates
+            "candidates": candidates,
+            "pre_filters": self.pre_filters
         }
 
     def run_diagnose(self, current_node_id="root", history=None):

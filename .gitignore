@@ -1,0 +1,25 @@
+# Entorno virtual
+venv/
+.venv/
+env/
+
+# Archivos de python compilados
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Documentos grandes de la tesis (PDF, Word, Powerpoint)
+*.pdf
+*.docx
+*.pptx
+*.doc
+*.ppt
+
+# IDEs
+.vscode/
+.idea/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
