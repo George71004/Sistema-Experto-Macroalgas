@@ -112,7 +112,7 @@ const getApiBaseUrl = () => {
     if (fromEnv) return fromEnv
 
     if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-      return 'http://127.0.0.1:8000'
+      return 'https://sistema-experto-macroalgas.onrender.com'
     }
   }
 
@@ -532,7 +532,7 @@ export function DiagnosisInterface() {
       <header className="relative z-10 flex flex-col md:flex-row justify-between items-center gap-4 mb-8 pb-4 border-b border-border/50">
         <div className="flex items-center gap-3">
           <div className="p-2.5 bg-primary/10 rounded-lg text-primary">
-            <Compass className="w-6 h-6 animate-pulse-soft" />
+            <img src="/algaico.png" alt="Alga Icon" className="w-6 h-6" />
           </div>
           <div>
             <h1 className="text-lg md:text-xl font-bold tracking-tight text-foreground">
