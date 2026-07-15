@@ -16,7 +16,9 @@ import {
   Info,
   Calendar,
   Thermometer,
-  Droplet
+  Droplet,
+  Moon,
+  Sun,
 } from 'lucide-react'
 
 interface AssumedCharacter {
@@ -103,6 +105,11 @@ interface DiagnosisState {
   reachable_no?: string[]
 }
 
+interface DiagnosisInterfaceProps {
+  theme: 'light' | 'dark'
+  onThemeToggle: () => void
+}
+
 const getApiBaseUrl = () => {
   if (typeof window !== 'undefined') {
     const fromWindow = (window as Window & { __API_BASE_URL__?: string }).__API_BASE_URL__
@@ -119,7 +126,7 @@ const getApiBaseUrl = () => {
   return 'https://sistema-experto-macroalgas.onrender.com'
 }
 
-export function DiagnosisInterface() {
+export function DiagnosisInterface({ theme, onThemeToggle }: DiagnosisInterfaceProps) {
   const [state, setStateData] = useState<DiagnosisState | null>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -561,6 +568,18 @@ export function DiagnosisInterface() {
           >
             <RefreshCw className="w-3 h-3 mr-1.5" />
             Reiniciar
+          </Button>
+          <Button
+            onClick={onThemeToggle}
+            variant="outline"
+            className="text-xs border-border hover:bg-secondary hover:text-secondary-foreground"
+          >
+            {theme === 'dark' ? (
+              <Sun className="w-3 h-3 mr-1.5" />
+            ) : (
+              <Moon className="w-3 h-3 mr-1.5" />
+            )}
+            {theme === 'dark' ? 'Modo Claro' : 'Modo Oscuro'}
           </Button>
         </div>
       </header>
@@ -1006,16 +1025,44 @@ export function DiagnosisInterface() {
       )}
 
       {/* Footer / Copyright / Metadata */}
-      <footer className="relative z-10 flex flex-col md:flex-row justify-between items-center text-[10px] text-muted-foreground pt-4 border-t border-border/30 gap-2 w-full">
-        <p className="font-sans font-light text-center md:text-left">
-          Realizado por: Jorge Garcia. Jesús Jiménez.
-        </p>
-        <p className="font-sans font-light text-center hidden lg:block opacity-60">
-          Metodología de Buchanan &bull; Tesis Ficológica Isla de Margarita &bull; UDO Nueva Esparta
-        </p>
-        <p className="font-sans font-light text-center md:text-right">
-          Prof. José Murillo.
-        </p>
+      <footer className="relative z-10 flex flex-col items-center text-[10px] text-muted-foreground pt-4 border-t border-border/30 gap-2 w-full">
+        <div className="w-full flex flex-col md:flex-row justify-between items-center gap-2">
+          <p className="font-sans font-light text-center md:text-left">
+            Realizado por:{' '}
+            <a
+              href="https://jorge-coder.vercel.app"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="underline text-primary hover:text-primary/80"
+            >
+              Jorge Garcia
+            </a>
+            {', '}
+            <a
+              href="https://project-ysj91.vercel.app"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="underline text-primary hover:text-primary/80"
+            >
+              Jesús Jiménez
+            </a>
+            .
+          </p>
+          <p className="font-sans font-light text-center hidden lg:block opacity-60">
+            Metodología de Buchanan &bull; Tesis Ficológica Isla de Margarita &bull; UDO Nueva Esparta
+          </p>
+          <p className="font-sans font-light text-center md:text-right">
+            Prof. José Murillo. {' '}
+            <a
+            href="https://github.com/Bioinformatico-udo/Sistemas-Experto-I2026/tree/Grupo6"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="underline text-primary hover:text-primary/80 break-all"
+            >
+            Repositorio de la clase en Github.
+           </a>
+          </p>
+        </div>
       </footer>
     </div>
   )

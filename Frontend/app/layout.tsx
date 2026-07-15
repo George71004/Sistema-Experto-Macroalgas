@@ -41,6 +41,11 @@ export default function RootLayout({
   return (
     <html lang="es" className="bg-background">
       <body className="antialiased bg-background text-foreground">
+        <script
+          dangerouslySetInnerHTML={{
+            __html: "(function(){try{var t=localStorage.getItem('theme'); if(t==='dark'||t==='light'){document.documentElement.classList.add(t);} }catch(e){}})();",
+          }}
+        />
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>

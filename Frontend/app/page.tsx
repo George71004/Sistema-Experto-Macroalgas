@@ -8,9 +8,15 @@ export default function Page() {
   const [apiReady, setApiReady] = useState(false)
   const [showTimeout, setShowTimeout] = useState(false)
   const [isHydrated, setIsHydrated] = useState(false)
+  const [theme, setTheme] = useState<'light' | 'dark'>('light')
 
   useEffect(() => {
     setIsHydrated(true)
+
+    const savedTheme = window.localStorage.getItem('theme')
+    if (savedTheme === 'dark' || savedTheme === 'light') {
+      setTheme(savedTheme)
+    }
 
     // Check API health with 8 second timeout
     const timeoutId = setTimeout(() => {
@@ -49,6 +55,12 @@ export default function Page() {
     return () => clearTimeout(timeoutId)
   }, [apiReady])
 
+  useEffect(() => {
+    document.documentElement.classList.remove('light', 'dark')
+    document.documentElement.classList.add(theme)
+    window.localStorage.setItem('theme', theme)
+  }, [theme])
+
   if (!isHydrated) {
     return <LoadingScreen />
   }
@@ -59,7 +71,7 @@ export default function Page() {
 
   return (
     <main className="relative min-h-screen bg-background">
-      <DiagnosisInterface />
+      <DiagnosisInterface theme={theme} onThemeToggle={() => setTheme(theme === 'dark' ? 'light' : 'dark')} />
     </main>
   )
 }
