@@ -3,16 +3,16 @@
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { AlgaeAnimation } from './algae-animation'
-import { 
-  Compass, 
-  Settings, 
-  HelpCircle, 
-  AlertTriangle, 
-  RefreshCw, 
-  Undo2, 
-  ChevronRight, 
-  Sliders, 
-  BookOpen, 
+import {
+  Compass,
+  Settings,
+  HelpCircle,
+  AlertTriangle,
+  RefreshCw,
+  Undo2,
+  ChevronRight,
+  Sliders,
+  BookOpen,
   Info,
   Calendar,
   Thermometer,
@@ -119,7 +119,7 @@ const getApiBaseUrl = () => {
     if (fromEnv) return fromEnv
 
     if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-      return 'https://sistema-experto-macroalgas.onrender.com'
+      return 'http://localhost:8000'
     }
   }
 
@@ -139,13 +139,229 @@ export function DiagnosisInterface({ theme, onThemeToggle }: DiagnosisInterfaceP
   const [stationInput, setStationInput] = useState<string>('')
   const [monthInput, setMonthInput] = useState<string>('')
   const [showFiltersMobile, setShowFiltersMobile] = useState(false)
+  const [showAdminModal, setShowAdminModal] = useState(false)
+  const [adminTab, setAdminTab] = useState<'species' | 'question'>('species')
+  const [adminNodeIds, setAdminNodeIds] = useState<string[]>([])
+  const [adminAuthToken, setAdminAuthToken] = useState('')
+  const [adminAuthError, setAdminAuthError] = useState<string | null>(null)
+  const [isAdminAuthenticated, setIsAdminAuthenticated] = useState(false)
 
   // XAI Panels Toggles
   const [showWhyPanel, setShowWhyPanel] = useState(true)
 
+  // Admin node creation
+  const [adminLoading, setAdminLoading] = useState(false)
+  const [speciesFeedback, setSpeciesFeedback] = useState<string | null>(null)
+  const [questionFeedback, setQuestionFeedback] = useState<string | null>(null)
+
+  const [newSpeciesNodeId, setNewSpeciesNodeId] = useState('')
+  const [newSpeciesName, setNewSpeciesName] = useState('')
+  const [newSpeciesPhylum, setNewSpeciesPhylum] = useState('Chlorophyta')
+  const [newSpeciesOrder, setNewSpeciesOrder] = useState('')
+  const [newSpeciesFamily, setNewSpeciesFamily] = useState('')
+  const [newSpeciesDescription, setNewSpeciesDescription] = useState('')
+  const [newSpeciesHabitatNote, setNewSpeciesHabitatNote] = useState('')
+  const [newSpeciesStations, setNewSpeciesStations] = useState('1,2')
+  const [newSpeciesMonths, setNewSpeciesMonths] = useState('M1,M2')
+  const [newSpeciesTempMin, setNewSpeciesTempMin] = useState('25')
+  const [newSpeciesTempMax, setNewSpeciesTempMax] = useState('32')
+  const [newSpeciesSalMin, setNewSpeciesSalMin] = useState('30')
+  const [newSpeciesSalMax, setNewSpeciesSalMax] = useState('42')
+
+  const [newQuestionNodeId, setNewQuestionNodeId] = useState('')
+  const [newQuestionText, setNewQuestionText] = useState('')
+  const [newQuestionCharacterName, setNewQuestionCharacterName] = useState('')
+  const [newQuestionYesBranch, setNewQuestionYesBranch] = useState('')
+  const [newQuestionNoBranch, setNewQuestionNoBranch] = useState('')
+
   useEffect(() => {
     initializeDiagnosis()
   }, [])
+
+  // Fetch available node IDs whenever admin modal opens and is authenticated
+  useEffect(() => {
+    if (!showAdminModal || !isAdminAuthenticated) return
+    const fetchNodes = async () => {
+      try {
+        const apiBaseUrl = getApiBaseUrl()
+        const res = await fetch(`${apiBaseUrl}/api/admin/nodes`, {
+          headers: { 'X-Admin-Password': adminAuthToken },
+          signal: AbortSignal.timeout(8000)
+        })
+        if (res.ok) {
+          const data = await res.json()
+          setAdminNodeIds(data.nodes ?? [])
+        } else if (res.status === 401) {
+          setIsAdminAuthenticated(false)
+          setAdminAuthError('Sesión expirada o contraseña inválida')
+        }
+      } catch {
+        // non-critical: autocomplete won't work but form still submits
+      }
+    }
+    fetchNodes()
+  }, [showAdminModal, isAdminAuthenticated, adminAuthToken])
+
+  const handleAdminAuthSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setAdminAuthError(null)
+    setAdminLoading(true)
+    try {
+      const apiBaseUrl = getApiBaseUrl()
+      const res = await fetch(`${apiBaseUrl}/api/admin/nodes`, {
+        headers: { 'X-Admin-Password': adminAuthToken },
+        signal: AbortSignal.timeout(8000),
+      })
+      if (res.ok) {
+        setIsAdminAuthenticated(true)
+        const data = await res.json()
+        setAdminNodeIds(data.nodes ?? [])
+      } else {
+        setAdminAuthError('Contraseña incorrecta')
+      }
+    } catch {
+      setAdminAuthError('Error de red. Verifica la conexión con el servidor.')
+    } finally {
+      setAdminLoading(false)
+    }
+  }
+
+  const validMonthOptions = ['M1', 'M2', 'M3', 'M4', 'M5', 'M6']
+  const validPhylumOptions = ['Chlorophyta', 'Phaeophyceae', 'Rhodophyta', 'Cyanobacteria', 'Ochrophyta']
+  const parseMonthList = (raw: string) => raw
+    .split(',')
+    .map((value) => value.trim().toUpperCase())
+    .filter((value) => value)
+
+  // ── Field-level validators (return error string or null) ──────────────────
+  const fNodeId = (val: string) => {
+    if (!val.trim()) return 'Requerido'
+    if (/\s/.test(val)) return 'Sin espacios'
+    if (!/^[A-Za-z0-9_\-]+$/.test(val.trim())) return 'Solo letras, números, _ y -'
+    return null
+  }
+  const fRequired = (val: string) => val.trim() ? null : 'Requerido'
+  const fStations = (val: string) => {
+    const parts = val.split(',').map((v) => parseInt(v.trim(), 10))
+    return parts.length > 0 && parts.every((v) => !Number.isNaN(v) && v > 0)
+      ? null : 'Enteros positivos separados por coma (ej. 1,2)'
+  }
+  const fMonths = (val: string) => {
+    const parts = parseMonthList(val)
+    return parts.length > 0 && parts.every((m) => validMonthOptions.includes(m))
+      ? null : 'Valores M1–M6 separados por coma'
+  }
+  const fNumber = (val: string, label = 'Número') => {
+    const n = parseFloat(val)
+    return val === '' ? 'Requerido' : (Number.isNaN(n) || n < 0) ? `${label} inválido` : null
+  }
+  const fRangeMin = (minVal: string, maxVal: string) => {
+    const mn = parseFloat(minVal); const mx = parseFloat(maxVal)
+    if (minVal === '') return 'Requerido'
+    if (Number.isNaN(mn) || mn < 0) return 'Número inválido'
+    if (!Number.isNaN(mx) && mn > mx) return 'Debe ser ≤ máximo'
+    return null
+  }
+  const fRangeMax = (minVal: string, maxVal: string) => {
+    const mn = parseFloat(minVal); const mx = parseFloat(maxVal)
+    if (maxVal === '') return 'Requerido'
+    if (Number.isNaN(mx) || mx < 0) return 'Número inválido'
+    if (!Number.isNaN(mn) && mx < mn) return 'Debe ser ≥ mínimo'
+    return null
+  }
+  // Helper to get border + ring class from a validator result
+  const fCls = (val: string, err: string | null) =>
+    val === '' ? 'border-border' : err ? 'border-destructive/60 ring-1 ring-destructive/30' : 'border-primary/60 ring-1 ring-primary/30'
+
+  const validateSpeciesForm = () => {
+    const nodeId = newSpeciesNodeId.trim()
+    const speciesName = newSpeciesName.trim()
+    if (!nodeId) {
+      setSpeciesFeedback('El ID del nodo es obligatorio.')
+      return false
+    }
+    if (!speciesName) {
+      setSpeciesFeedback('El nombre científico es obligatorio.')
+      return false
+    }
+
+    const stations = newSpeciesStations
+      .split(',')
+      .map((value) => parseInt(value.trim(), 10))
+      .filter((value) => !Number.isNaN(value))
+    if (stations.length === 0 || stations.some((value) => value <= 0)) {
+      setSpeciesFeedback('Las estaciones deben ser números enteros válidos separados por comas.')
+      return false
+    }
+
+    const months = parseMonthList(newSpeciesMonths)
+    if (months.length === 0 || months.some((month) => !validMonthOptions.includes(month))) {
+      setSpeciesFeedback('Los meses deben ser M1..M6 separados por comas.')
+      return false
+    }
+
+    const tempMin = parseFloat(newSpeciesTempMin)
+    const tempMax = parseFloat(newSpeciesTempMax)
+    if (Number.isNaN(tempMin) || Number.isNaN(tempMax) || tempMin < 0 || tempMax < 0 || tempMin > tempMax) {
+      setSpeciesFeedback('El rango de temperatura es inválido.')
+      return false
+    }
+
+    const salMin = parseFloat(newSpeciesSalMin)
+    const salMax = parseFloat(newSpeciesSalMax)
+    if (Number.isNaN(salMin) || Number.isNaN(salMax) || salMin < 0 || salMax < 0 || salMin > salMax) {
+      setSpeciesFeedback('El rango de salinidad es inválido.')
+      return false
+    }
+
+    if (!newSpeciesPhylum.trim()) {
+      setSpeciesFeedback('El phylum es obligatorio.')
+      return false
+    }
+
+    return true
+  }
+
+  const validateQuestionForm = () => {
+    const nodeId = newQuestionNodeId.trim()
+    const question = newQuestionText.trim()
+    const characterName = newQuestionCharacterName.trim()
+    const yesBranch = newQuestionYesBranch.trim()
+    const noBranch = newQuestionNoBranch.trim()
+
+    if (!nodeId) {
+      setQuestionFeedback('El ID del nodo es obligatorio.')
+      return false
+    }
+    if (!question) {
+      setQuestionFeedback('La pregunta es obligatoria.')
+      return false
+    }
+    if (!characterName) {
+      setQuestionFeedback('El nombre del carácter es obligatorio.')
+      return false
+    }
+    if (!yesBranch) {
+      setQuestionFeedback('El nodo de destino para SÍ es obligatorio.')
+      return false
+    }
+    if (!noBranch) {
+      setQuestionFeedback('El nodo de destino para NO es obligatorio.')
+      return false
+    }
+    // Validate that branch nodes exist in the knowledge base
+    if (adminNodeIds.length > 0) {
+      if (!adminNodeIds.includes(yesBranch)) {
+        setQuestionFeedback(`El nodo "${yesBranch}" no existe en la base de conocimiento. Verifica el ID exacto.`)
+        return false
+      }
+      if (!adminNodeIds.includes(noBranch)) {
+        setQuestionFeedback(`El nodo "${noBranch}" no existe en la base de conocimiento. Verifica el ID exacto.`)
+        return false
+      }
+    }
+    return true
+  }
 
   // Sync environmental local inputs when state's pre_filters are returned
   useEffect(() => {
@@ -153,7 +369,7 @@ export function DiagnosisInterface({ theme, onThemeToggle }: DiagnosisInterfaceP
       setTempInput(state.pre_filters.temp !== null ? state.pre_filters.temp.toString() : '')
       setSalinityInput(state.pre_filters.salinity !== null ? state.pre_filters.salinity.toString() : '')
       setStationInput(state.pre_filters.station !== null ? state.pre_filters.station.toString() : '')
-      
+
       // month usually arrives as "M1", "M2"... extract the number or keep it
       const m = state.pre_filters.month
       if (m && m.startsWith('M')) {
@@ -357,6 +573,124 @@ export function DiagnosisInterface({ theme, onThemeToggle }: DiagnosisInterfaceP
     }
   }
 
+  const handleCreateSpecies = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setSpeciesFeedback(null)
+    setQuestionFeedback(null)
+    setAdminLoading(true)
+
+    try {
+      const apiBaseUrl = getApiBaseUrl()
+      if (!validateSpeciesForm()) {
+        setAdminLoading(false)
+        return
+      }
+
+      const response = await fetch(`${apiBaseUrl}/api/admin/node`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Admin-Password': adminAuthToken
+        },
+        body: JSON.stringify({
+          node_id: newSpeciesNodeId.trim(),
+          is_leaf: true,
+          species_name: newSpeciesName.trim(),
+          phylum: newSpeciesPhylum.trim(),
+          order: newSpeciesOrder.trim(),
+          family: newSpeciesFamily.trim(),
+          description: newSpeciesDescription.trim(),
+          habitat_note: newSpeciesHabitatNote.trim(),
+          env_profile: {
+            preferred_stations: newSpeciesStations
+              .split(',')
+              .map((value) => parseInt(value.trim(), 10))
+              .filter((value) => !Number.isNaN(value)),
+            preferred_months: parseMonthList(newSpeciesMonths),
+            temp_range: [parseFloat(newSpeciesTempMin), parseFloat(newSpeciesTempMax)],
+            salinity_range: [parseFloat(newSpeciesSalMin), parseFloat(newSpeciesSalMax)],
+          },
+        }),
+        signal: AbortSignal.timeout(10000),
+      })
+
+      if (!response.ok) {
+        const body = await response.json().catch(() => null)
+        const message = body?.detail || `Error al crear especie: ${response.status}`
+        throw new Error(message)
+      }
+
+      setSpeciesFeedback('Especie creada/actualizada correctamente.')
+      setNewSpeciesNodeId('')
+      setNewSpeciesName('')
+      setNewSpeciesOrder('')
+      setNewSpeciesFamily('')
+      setNewSpeciesDescription('')
+      setNewSpeciesHabitatNote('')
+      setNewSpeciesStations('1,2')
+      setNewSpeciesMonths('M1,M2')
+      setNewSpeciesTempMin('25')
+      setNewSpeciesTempMax('32')
+      setNewSpeciesSalMin('30')
+      setNewSpeciesSalMax('42')
+    } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : 'Error al crear especie'
+      setSpeciesFeedback(errorMessage)
+    } finally {
+      setAdminLoading(false)
+    }
+  }
+
+  const handleCreateQuestion = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setQuestionFeedback(null)
+    setSpeciesFeedback(null)
+    setAdminLoading(true)
+
+    try {
+      const apiBaseUrl = getApiBaseUrl()
+      if (!validateQuestionForm()) {
+        setAdminLoading(false)
+        return
+      }
+
+      const response = await fetch(`${apiBaseUrl}/api/admin/node`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Admin-Password': adminAuthToken
+        },
+        body: JSON.stringify({
+          node_id: newQuestionNodeId.trim(),
+          is_leaf: false,
+          question: newQuestionText.trim(),
+          character_name: newQuestionCharacterName.trim(),
+          yes_branch: newQuestionYesBranch.trim(),
+          no_branch: newQuestionNoBranch.trim(),
+        }),
+        signal: AbortSignal.timeout(10000),
+      })
+
+      if (!response.ok) {
+        const body = await response.json().catch(() => null)
+        const message = body?.detail || `Error al crear pregunta: ${response.status}`
+        throw new Error(message)
+      }
+
+      setQuestionFeedback('Pregunta creada/actualizada correctamente.')
+      setNewQuestionNodeId('')
+      setNewQuestionText('')
+      setNewQuestionCharacterName('')
+      setNewQuestionYesBranch('')
+      setNewQuestionNoBranch('')
+    } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : 'Error al crear pregunta'
+      setQuestionFeedback(errorMessage)
+    } finally {
+      setAdminLoading(false)
+    }
+  }
+
   const handleRestart = async () => {
     try {
       const apiBaseUrl = getApiBaseUrl()
@@ -551,7 +885,7 @@ export function DiagnosisInterface({ theme, onThemeToggle }: DiagnosisInterfaceP
           </div>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap justify-center items-center gap-2">
           {/* Mobile Filters Toggle */}
           <Button
             onClick={() => setShowFiltersMobile(!showFiltersMobile)}
@@ -559,6 +893,14 @@ export function DiagnosisInterface({ theme, onThemeToggle }: DiagnosisInterfaceP
           >
             <Sliders className="w-3.5 h-3.5 mr-1.5" />
             Filtros Ambientales
+          </Button>
+
+          <Button
+            onClick={() => setShowAdminModal(true)}
+            className="bg-secondary text-secondary-foreground text-xs border border-border"
+          >
+            <Settings className="w-3.5 h-3.5 mr-1.5" />
+            Admin nodos
           </Button>
 
           <Button
@@ -586,10 +928,10 @@ export function DiagnosisInterface({ theme, onThemeToggle }: DiagnosisInterfaceP
 
       {/* Main Grid Layout */}
       <div className="relative z-10 grid grid-cols-1 lg:grid-cols-3 gap-8 items-start mb-8 flex-1">
-        
+
         {/* LEFT / CENTER PANEL: Diagnosis Interactive Screens */}
         <div className="lg:col-span-2 space-y-6">
-          
+
           {/* Contradiction / Conflict screen */}
           {state.status === 'contradiction' && state.contradiction && (
             <div className="bg-destructive/10 border border-destructive/20 rounded-xl p-8 shadow-sm space-y-6 animate-fade-in-up">
@@ -597,7 +939,7 @@ export function DiagnosisInterface({ theme, onThemeToggle }: DiagnosisInterfaceP
                 <AlertTriangle className="w-8 h-8" />
                 <h2 className="text-2xl font-light">Incompatibilidad de Caracteres</h2>
               </div>
-              
+
               <div className="bg-card rounded-lg p-5 border border-destructive/20 space-y-3">
                 <p className="text-sm font-medium text-foreground leading-relaxed">
                   El Sistema de Mantenimiento de Verdad (JTMS) detectó un conflicto lógico:
@@ -647,7 +989,7 @@ export function DiagnosisInterface({ theme, onThemeToggle }: DiagnosisInterfaceP
           {state.is_final_node && state.result && (
             <div className="space-y-6 animate-fade-in-up">
               <div className="bg-secondary/40 backdrop-blur rounded-xl border border-border p-6 md:p-8 space-y-6">
-                
+
                 {/* Header */}
                 <div className="text-center pb-4 border-b border-border/50">
                   <span className="text-[11px] bg-primary/10 text-primary uppercase font-bold tracking-widest px-3 py-1 rounded-full">
@@ -724,11 +1066,10 @@ export function DiagnosisInterface({ theme, onThemeToggle }: DiagnosisInterfaceP
                           {state.candidates[0].assumed_chars.map((char, index) => (
                             <div key={index} className="bg-background/50 border border-border/50 rounded p-2.5 text-xs flex justify-between items-center">
                               <span className="text-muted-foreground font-sans pr-2 leading-tight">{char.question}</span>
-                              <span className={`font-semibold shrink-0 text-[10px] px-2 py-0.5 rounded ${
-                                char.value === 'Verdadero' 
-                                  ? 'bg-primary/10 text-primary border border-primary/20' 
+                              <span className={`font-semibold shrink-0 text-[10px] px-2 py-0.5 rounded ${char.value === 'Verdadero'
+                                  ? 'bg-primary/10 text-primary border border-primary/20'
                                   : 'bg-muted text-muted-foreground border border-border'
-                              }`}>
+                                }`}>
                                 {char.value}
                               </span>
                             </div>
@@ -785,16 +1126,16 @@ export function DiagnosisInterface({ theme, onThemeToggle }: DiagnosisInterfaceP
           {/* Active Question interrogation screen */}
           {!state.is_final_node && state.status !== 'contradiction' && (
             <div className="space-y-6">
-              
+
               {/* Main Question Card */}
               <div className="bg-card rounded-xl border border-border p-6 md:p-8 shadow-sm relative overflow-hidden animate-fade-in-up">
-                
+
                 {/* Question Info Bar */}
                 <div className="flex justify-between items-center mb-6">
                   <span className="text-[10px] bg-secondary text-secondary-foreground font-semibold px-2.5 py-1 rounded border border-border">
                     Pregunta {questionCount + 1}
                   </span>
-                  
+
                   {state.user_choices && state.user_choices.length > 0 && (
                     <Button
                       onClick={handleUndo}
@@ -927,7 +1268,7 @@ export function DiagnosisInterface({ theme, onThemeToggle }: DiagnosisInterfaceP
 
         {/* RIGHT PANEL (Desktop): Environmental Calibration & Traceability */}
         <div className="space-y-6 lg:col-span-1">
-          
+
           {/* Desktop Environmental Calibration Card */}
           <div className="hidden md:block bg-card border border-border rounded-xl p-5 shadow-sm space-y-4">
             <h3 className="text-xs text-muted-foreground uppercase font-bold tracking-wider border-b border-border/50 pb-2 flex items-center gap-1.5">
@@ -972,20 +1313,19 @@ export function DiagnosisInterface({ theme, onThemeToggle }: DiagnosisInterfaceP
               <BookOpen className="w-4 h-4 text-primary" />
               Trazabilidad del Razonamiento
             </h3>
-            
+
             {state.user_choices && state.user_choices.length > 0 ? (
               <div className="space-y-2.5 max-h-80 overflow-y-auto pr-1">
                 {state.user_choices.map((choice, index) => (
                   <div key={index} className="bg-secondary/25 border border-border/40 rounded p-2.5 text-xs flex flex-col gap-1.5">
                     <div className="flex justify-between items-start gap-2">
                       <span className="font-semibold text-primary text-[10px]">C{index + 1}: {choice.character_name}</span>
-                      <span className={`text-[10px] px-1.5 py-0.2 rounded font-bold ${
-                        choice.answer === 'Sí' 
-                          ? 'text-primary bg-primary/10' 
+                      <span className={`text-[10px] px-1.5 py-0.2 rounded font-bold ${choice.answer === 'Sí'
+                          ? 'text-primary bg-primary/10'
                           : choice.answer === 'No'
                             ? 'text-destructive bg-destructive/10'
                             : 'text-muted-foreground bg-muted'
-                      }`}>
+                        }`}>
                         {choice.answer}
                       </span>
                     </div>
@@ -999,8 +1339,380 @@ export function DiagnosisInterface({ theme, onThemeToggle }: DiagnosisInterfaceP
               </div>
             )}
           </div>
+
         </div>
       </div>
+
+      {showAdminModal && (
+        <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-background/70 backdrop-blur-sm sm:px-4 sm:py-6">
+          <div className="w-full sm:max-w-3xl flex flex-col max-h-screen sm:max-h-[90vh] rounded-t-3xl sm:rounded-3xl border border-border bg-card shadow-2xl overflow-hidden">
+            <div className="flex-shrink-0 flex items-center justify-between gap-4 border-b border-border/50 bg-background/95 px-6 py-4">
+              <div>
+                <p className="text-sm font-semibold text-foreground">Administración de nodos</p>
+                <p className="text-[11px] text-muted-foreground">
+                  {isAdminAuthenticated ? 'Selecciona crear una especie o una pregunta dicotómica.' : 'Ingresa la contraseña para acceder.'}
+                </p>
+              </div>
+              <div className="flex items-center gap-2">
+                {isAdminAuthenticated && (
+                  <>
+                    <button
+                      onClick={() => setAdminTab('species')}
+                      className={`rounded-full px-3 py-1 text-xs font-semibold transition ${adminTab === 'species' ? 'bg-primary text-primary-foreground' : 'bg-background border border-border text-muted-foreground'}`}
+                    >
+                      Especie
+                    </button>
+                    <button
+                      onClick={() => setAdminTab('question')}
+                      className={`rounded-full px-3 py-1 text-xs font-semibold transition ${adminTab === 'question' ? 'bg-primary text-primary-foreground' : 'bg-background border border-border text-muted-foreground'}`}
+                    >
+                      Pregunta
+                    </button>
+                  </>
+                )}
+                <Button
+                  onClick={() => {
+                    setShowAdminModal(false)
+                    setIsAdminAuthenticated(false)
+                    setAdminAuthToken('')
+                    setAdminAuthError(null)
+                  }}
+                  variant="ghost"
+                  className="text-xs text-muted-foreground hover:text-foreground"
+                >
+                  Cerrar
+                </Button>
+              </div>
+            </div>
+
+            <div className="flex-1 overflow-y-auto p-6 space-y-5">
+              {!isAdminAuthenticated ? (
+                <form onSubmit={handleAdminAuthSubmit} className="space-y-4 max-w-sm mx-auto my-8">
+                  <div className="space-y-2">
+                    <label className="text-xs font-semibold text-foreground">Contraseña de Administrador</label>
+                    <input
+                      type="password"
+                      value={adminAuthToken}
+                      onChange={(e) => setAdminAuthToken(e.target.value)}
+                      placeholder="Ingresa la contraseña"
+                      className="w-full rounded-lg border border-border bg-background px-3 py-2 text-sm focus:ring-2 focus:ring-primary/50 outline-none"
+                      required
+                    />
+                    {adminAuthError && (
+                      <p className="text-xs text-destructive">{adminAuthError}</p>
+                    )}
+                  </div>
+                  <Button type="submit" disabled={adminLoading} className="w-full bg-primary text-primary-foreground text-sm hover:bg-primary/95 transition-all">
+                    {adminLoading ? 'Verificando...' : 'Acceder'}
+                  </Button>
+                </form>
+              ) : adminTab === 'species' ? (
+                <form onSubmit={handleCreateSpecies} className="space-y-4">
+
+                  {/* ── ID + Nombre científico ─────────────────── */}
+                  <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+                    <div className="space-y-1">
+                      <label className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">ID del nodo *</label>
+                      <input
+                        value={newSpeciesNodeId}
+                        onChange={(e) => setNewSpeciesNodeId(e.target.value)}
+                        placeholder="ej. Ulva_lactuca"
+                        className={`w-full rounded-lg border px-3 py-2 text-sm bg-background ${fCls(newSpeciesNodeId, fNodeId(newSpeciesNodeId))}`}
+                        required
+                      />
+                      {newSpeciesNodeId && fNodeId(newSpeciesNodeId) && (
+                        <p className="text-[10px] text-destructive">{fNodeId(newSpeciesNodeId)}</p>
+                      )}
+                    </div>
+                    <div className="space-y-1">
+                      <label className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">Nombre científico *</label>
+                      <input
+                        value={newSpeciesName}
+                        onChange={(e) => setNewSpeciesName(e.target.value)}
+                        placeholder="ej. Ulva lactuca Linnaeus 1753"
+                        className={`w-full rounded-lg border px-3 py-2 text-sm bg-background ${fCls(newSpeciesName, fRequired(newSpeciesName))}`}
+                        required
+                      />
+                      {newSpeciesName && fRequired(newSpeciesName) && (
+                        <p className="text-[10px] text-destructive">{fRequired(newSpeciesName)}</p>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* ── Phylum + Orden ────────────────────────── */}
+                  <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+                    <div className="space-y-1">
+                      <label className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">Phylum *</label>
+                      <datalist id="phylum-list">
+                        {validPhylumOptions.map((p) => <option key={p} value={p} />)}
+                      </datalist>
+                      <input
+                        value={newSpeciesPhylum}
+                        onChange={(e) => setNewSpeciesPhylum(e.target.value)}
+                        placeholder="ej. Chlorophyta"
+                        list="phylum-list"
+                        className={`w-full rounded-lg border px-3 py-2 text-sm bg-background ${fCls(newSpeciesPhylum, fRequired(newSpeciesPhylum))}`}
+                        required
+                      />
+                      {newSpeciesPhylum && fRequired(newSpeciesPhylum) && (
+                        <p className="text-[10px] text-destructive">{fRequired(newSpeciesPhylum)}</p>
+                      )}
+                    </div>
+                    <div className="space-y-1">
+                      <label className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">Orden</label>
+                      <input
+                        value={newSpeciesOrder}
+                        onChange={(e) => setNewSpeciesOrder(e.target.value)}
+                        placeholder="ej. Ulvales"
+                        className="w-full rounded-lg border border-border bg-background px-3 py-2 text-sm"
+                      />
+                    </div>
+                  </div>
+
+                  {/* ── Familia + Hábitat ─────────────────────── */}
+                  <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+                    <div className="space-y-1">
+                      <label className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">Familia</label>
+                      <input
+                        value={newSpeciesFamily}
+                        onChange={(e) => setNewSpeciesFamily(e.target.value)}
+                        placeholder="ej. Ulvaceae"
+                        className="w-full rounded-lg border border-border bg-background px-3 py-2 text-sm"
+                      />
+                    </div>
+                    <div className="space-y-1">
+                      <label className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">Nota de hábitat</label>
+                      <input
+                        value={newSpeciesHabitatNote}
+                        onChange={(e) => setNewSpeciesHabitatNote(e.target.value)}
+                        placeholder="ej. Intermareal rocoso"
+                        className="w-full rounded-lg border border-border bg-background px-3 py-2 text-sm"
+                      />
+                    </div>
+                  </div>
+
+                  {/* ── Descripción ───────────────────────────── */}
+                  <div className="space-y-1">
+                    <label className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">Descripción botánica</label>
+                    <textarea
+                      value={newSpeciesDescription}
+                      onChange={(e) => setNewSpeciesDescription(e.target.value)}
+                      placeholder="Características morfológicas de la especie…"
+                      className="w-full rounded-lg border border-border bg-background px-3 py-2 text-sm min-h-[80px]"
+                    />
+                  </div>
+
+                  {/* ── Estaciones + Meses ────────────────────── */}
+                  <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+                    <div className="space-y-1">
+                      <label className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">Estaciones *</label>
+                      <input
+                        value={newSpeciesStations}
+                        onChange={(e) => setNewSpeciesStations(e.target.value)}
+                        placeholder="ej. 1,2"
+                        className={`w-full rounded-lg border px-3 py-2 text-sm bg-background ${fCls(newSpeciesStations, fStations(newSpeciesStations))}`}
+                      />
+                      {newSpeciesStations && fStations(newSpeciesStations) && (
+                        <p className="text-[10px] text-destructive">{fStations(newSpeciesStations)}</p>
+                      )}
+                    </div>
+                    <div className="space-y-1">
+                      <label className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">Meses * (M1–M6)</label>
+                      <input
+                        value={newSpeciesMonths}
+                        onChange={(e) => setNewSpeciesMonths(e.target.value)}
+                        placeholder="ej. M1,M2,M3"
+                        className={`w-full rounded-lg border px-3 py-2 text-sm bg-background ${fCls(newSpeciesMonths, fMonths(newSpeciesMonths))}`}
+                      />
+                      {newSpeciesMonths && fMonths(newSpeciesMonths) && (
+                        <p className="text-[10px] text-destructive">{fMonths(newSpeciesMonths)}</p>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* ── Temperatura ───────────────────────────── */}
+                  <div className="space-y-1">
+                    <label className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">Rango de temperatura (°C) *</label>
+                    <div className="grid grid-cols-2 gap-3">
+                      <div className="space-y-1">
+                        <input
+                          value={newSpeciesTempMin}
+                          onChange={(e) => setNewSpeciesTempMin(e.target.value)}
+                          placeholder="Mín"
+                          type="number"
+                          step="0.1"
+                          className={`w-full rounded-lg border px-3 py-2 text-sm bg-background ${fCls(newSpeciesTempMin, fRangeMin(newSpeciesTempMin, newSpeciesTempMax))}`}
+                        />
+                        {newSpeciesTempMin && fRangeMin(newSpeciesTempMin, newSpeciesTempMax) && (
+                          <p className="text-[10px] text-destructive">{fRangeMin(newSpeciesTempMin, newSpeciesTempMax)}</p>
+                        )}
+                      </div>
+                      <div className="space-y-1">
+                        <input
+                          value={newSpeciesTempMax}
+                          onChange={(e) => setNewSpeciesTempMax(e.target.value)}
+                          placeholder="Máx"
+                          type="number"
+                          step="0.1"
+                          className={`w-full rounded-lg border px-3 py-2 text-sm bg-background ${fCls(newSpeciesTempMax, fRangeMax(newSpeciesTempMin, newSpeciesTempMax))}`}
+                        />
+                        {newSpeciesTempMax && fRangeMax(newSpeciesTempMin, newSpeciesTempMax) && (
+                          <p className="text-[10px] text-destructive">{fRangeMax(newSpeciesTempMin, newSpeciesTempMax)}</p>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* ── Salinidad ─────────────────────────────── */}
+                  <div className="space-y-1">
+                    <label className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">Rango de salinidad (ups) *</label>
+                    <div className="grid grid-cols-2 gap-3">
+                      <div className="space-y-1">
+                        <input
+                          value={newSpeciesSalMin}
+                          onChange={(e) => setNewSpeciesSalMin(e.target.value)}
+                          placeholder="Mín"
+                          type="number"
+                          step="0.1"
+                          className={`w-full rounded-lg border px-3 py-2 text-sm bg-background ${fCls(newSpeciesSalMin, fRangeMin(newSpeciesSalMin, newSpeciesSalMax))}`}
+                        />
+                        {newSpeciesSalMin && fRangeMin(newSpeciesSalMin, newSpeciesSalMax) && (
+                          <p className="text-[10px] text-destructive">{fRangeMin(newSpeciesSalMin, newSpeciesSalMax)}</p>
+                        )}
+                      </div>
+                      <div className="space-y-1">
+                        <input
+                          value={newSpeciesSalMax}
+                          onChange={(e) => setNewSpeciesSalMax(e.target.value)}
+                          placeholder="Máx"
+                          type="number"
+                          step="0.1"
+                          className={`w-full rounded-lg border px-3 py-2 text-sm bg-background ${fCls(newSpeciesSalMax, fRangeMax(newSpeciesSalMin, newSpeciesSalMax))}`}
+                        />
+                        {newSpeciesSalMax && fRangeMax(newSpeciesSalMin, newSpeciesSalMax) && (
+                          <p className="text-[10px] text-destructive">{fRangeMax(newSpeciesSalMin, newSpeciesSalMax)}</p>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex justify-end pt-1">
+                    <Button type="submit" disabled={adminLoading} className="bg-primary text-primary-foreground text-xs hover:bg-primary/95 transition-all">
+                      {adminLoading ? 'Guardando...' : 'Guardar especie'}
+                    </Button>
+                  </div>
+                </form>
+              ) : (
+                <form onSubmit={handleCreateQuestion} className="space-y-4">
+
+                  {/* ── ID + Carácter ─────────────────────────── */}
+                  <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+                    <div className="space-y-1">
+                      <label className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">ID del nodo *</label>
+                      <input
+                        value={newQuestionNodeId}
+                        onChange={(e) => setNewQuestionNodeId(e.target.value)}
+                        placeholder="ej. Q_talo_ramificado"
+                        className={`w-full rounded-lg border px-3 py-2 text-sm bg-background ${fCls(newQuestionNodeId, fNodeId(newQuestionNodeId))}`}
+                        required
+                      />
+                      {newQuestionNodeId && fNodeId(newQuestionNodeId) && (
+                        <p className="text-[10px] text-destructive">{fNodeId(newQuestionNodeId)}</p>
+                      )}
+                    </div>
+                    <div className="space-y-1">
+                      <label className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">Nombre del carácter *</label>
+                      <input
+                        value={newQuestionCharacterName}
+                        onChange={(e) => setNewQuestionCharacterName(e.target.value)}
+                        placeholder="ej. talo_ramificado"
+                        className={`w-full rounded-lg border px-3 py-2 text-sm bg-background ${fCls(newQuestionCharacterName, fRequired(newQuestionCharacterName))}`}
+                        required
+                      />
+                      {newQuestionCharacterName && fRequired(newQuestionCharacterName) && (
+                        <p className="text-[10px] text-destructive">{fRequired(newQuestionCharacterName)}</p>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* ── Texto de la pregunta ──────────────────── */}
+                  <div className="space-y-1">
+                    <label className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">Texto de la pregunta *</label>
+                    <input
+                      value={newQuestionText}
+                      onChange={(e) => setNewQuestionText(e.target.value)}
+                      placeholder="ej. ¿El talo es ramificado?"
+                      className={`w-full rounded-lg border px-3 py-2 text-sm bg-background ${fCls(newQuestionText, fRequired(newQuestionText))}`}
+                      required
+                    />
+                    {newQuestionText && fRequired(newQuestionText) && (
+                      <p className="text-[10px] text-destructive">{fRequired(newQuestionText)}</p>
+                    )}
+                  </div>
+
+                  {/* Branch node inputs with datalist autocomplete */}
+                  <datalist id="admin-node-ids-list">
+                    {adminNodeIds.map((nid) => <option key={nid} value={nid} />)}
+                  </datalist>
+
+                  <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+                    <div className="space-y-1">
+                      <label className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">Rama SÍ</label>
+                      <input
+                        value={newQuestionYesBranch}
+                        onChange={(e) => setNewQuestionYesBranch(e.target.value)}
+                        placeholder="ID nodo destino si SÍ"
+                        list="admin-node-ids-list"
+                        className={`w-full rounded-lg border px-3 py-2 text-sm bg-background ${newQuestionYesBranch && adminNodeIds.length > 0
+                            ? adminNodeIds.includes(newQuestionYesBranch.trim())
+                              ? 'border-primary/60 ring-1 ring-primary/30'
+                              : 'border-destructive/60 ring-1 ring-destructive/30'
+                            : 'border-border'
+                          }`}
+                        required
+                      />
+                      {newQuestionYesBranch && adminNodeIds.length > 0 && !adminNodeIds.includes(newQuestionYesBranch.trim()) && (
+                        <p className="text-[10px] text-destructive">Nodo no encontrado</p>
+                      )}
+                    </div>
+                    <div className="space-y-1">
+                      <label className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">Rama NO</label>
+                      <input
+                        value={newQuestionNoBranch}
+                        onChange={(e) => setNewQuestionNoBranch(e.target.value)}
+                        placeholder="ID nodo destino si NO"
+                        list="admin-node-ids-list"
+                        className={`w-full rounded-lg border px-3 py-2 text-sm bg-background ${newQuestionNoBranch && adminNodeIds.length > 0
+                            ? adminNodeIds.includes(newQuestionNoBranch.trim())
+                              ? 'border-primary/60 ring-1 ring-primary/30'
+                              : 'border-destructive/60 ring-1 ring-destructive/30'
+                            : 'border-border'
+                          }`}
+                        required
+                      />
+                      {newQuestionNoBranch && adminNodeIds.length > 0 && !adminNodeIds.includes(newQuestionNoBranch.trim()) && (
+                        <p className="text-[10px] text-destructive">Nodo no encontrado</p>
+                      )}
+                    </div>
+                  </div>
+
+                  <div className="flex justify-end">
+                    <Button type="submit" disabled={adminLoading} className="bg-primary text-primary-foreground text-xs hover:bg-primary/95 transition-all">
+                      {adminLoading ? 'Guardando...' : 'Guardar pregunta'}
+                    </Button>
+                  </div>
+                </form>
+              )}
+
+              {(adminTab === 'species' && speciesFeedback) || (adminTab === 'question' && questionFeedback) ? (
+                <p className="text-xs text-muted-foreground font-medium">
+                  {adminTab === 'species' ? speciesFeedback : questionFeedback}
+                </p>
+              ) : null}
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Mobile Environmental Filters Overlay (Drawer) */}
       {showFiltersMobile && (
@@ -1054,13 +1766,13 @@ export function DiagnosisInterface({ theme, onThemeToggle }: DiagnosisInterfaceP
           <p className="font-sans font-light text-center md:text-right">
             Prof. José Murillo. {' '}
             <a
-            href="https://github.com/Bioinformatico-udo/Sistemas-Experto-I2026/tree/Grupo6"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="underline text-primary hover:text-primary/80 break-all"
+              href="https://github.com/Bioinformatico-udo/Sistemas-Experto-I2026/tree/Grupo6"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="underline text-primary hover:text-primary/80 break-all"
             >
-            Repositorio de la clase en Github.
-           </a>
+              Repositorio de la clase en Github.
+            </a>
           </p>
         </div>
       </footer>

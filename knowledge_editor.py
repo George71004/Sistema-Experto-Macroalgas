@@ -1,6 +1,7 @@
 import json
 import os
 import sys
+from typing import Any, Dict, List, Optional
 
 class KnowledgeBaseEditor:
     def __init__(self, filepath="algae_knowledge.json"):
@@ -26,6 +27,88 @@ class KnowledgeBaseEditor:
         with open(self.filepath, 'w', encoding='utf-8') as f:
             json.dump(self.kb, f, indent=4, ensure_ascii=False)
         print(f"[✓] Cambios guardados con éxito en {self.filepath}")
+
+    def get_node(self, node_id: str) -> Optional[Dict[str, Any]]:
+        return self.kb.get(node_id)
+
+    def node_exists(self, node_id: str) -> bool:
+        return node_id in self.kb
+
+    def upsert_node(self, node_id: str, is_leaf: bool, **kwargs) -> Dict[str, Any]:
+        if not node_id or not isinstance(node_id, str):
+            raise ValueError("node_id inválido")
+
+        if is_leaf:
+            node = {
+                "is_leaf": True,
+                "species_name": (kwargs.get("species_name") or "").strip(),
+                "phylum": (kwargs.get("phylum") or "Rhodophyta").strip(),
+                "order": (kwargs.get("order") or "N/A").strip(),
+                "family": (kwargs.get("family") or "N/A").strip(),
+                "description": (kwargs.get("description") or "").strip(),
+                "habitat_note": (kwargs.get("habitat_note") or "").strip(),
+                "env_profile": self.normalize_env_profile(kwargs.get("env_profile", {}))
+            }
+            if not node["species_name"]:
+                raise ValueError("species_name es obligatorio para nodos terminales.")
+        else:
+            question = (kwargs.get("question") or "").strip()
+            character_name = (kwargs.get("character_name") or "").strip()
+            yes_branch = (kwargs.get("yes_branch") or "").strip()
+            no_branch = (kwargs.get("no_branch") or "").strip()
+
+            if not question:
+                raise ValueError("question es obligatorio para nodos de decisión.")
+            if not character_name:
+                raise ValueError("character_name es obligatorio para nodos de decisión.")
+
+            node = {
+                "is_leaf": False,
+                "question": question,
+                "character_name": character_name,
+                "yes_branch": yes_branch,
+                "no_branch": no_branch
+            }
+
+        self.kb[node_id] = node
+        return node
+
+    def normalize_env_profile(self, env_profile: Any) -> Dict[str, Any]:
+        if not isinstance(env_profile, dict):
+            env_profile = {}
+
+        return {
+            "preferred_stations": [int(x) for x in env_profile.get("preferred_stations", []) if isinstance(x, (int, str)) and str(x).isdigit()] or [1, 2, 3, 4],
+            "preferred_months": [str(x).strip() for x in env_profile.get("preferred_months", []) if str(x).strip()] or ["M1", "M2", "M3", "M4", "M5", "M6"],
+            "temp_range": self._normalize_range(env_profile.get("temp_range"), [25.0, 32.0]),
+            "salinity_range": self._normalize_range(env_profile.get("salinity_range"), [30.0, 42.0])
+        }
+
+    def _normalize_range(self, value: Any, default: List[float]) -> List[float]:
+        if isinstance(value, list) and len(value) == 2:
+            try:
+                return [float(value[0]), float(value[1])]
+            except (TypeError, ValueError):
+                return default
+        return default
+
+    def delete_node_by_id(self, node_id: str, force: bool = False) -> List[Dict[str, str]]:
+        if node_id not in self.kb:
+            raise KeyError(f"El nodo '{node_id}' no existe.")
+
+        referencing = []
+        for k, v in self.kb.items():
+            if not v.get("is_leaf", False):
+                if v.get("yes_branch") == node_id:
+                    referencing.append({"parent": k, "branch": "yes_branch"})
+                if v.get("no_branch") == node_id:
+                    referencing.append({"parent": k, "branch": "no_branch"})
+
+        if referencing and not force:
+            raise ValueError({"mensaje": "Nodo referenciado por otros nodos.", "referencias": referencing})
+
+        del self.kb[node_id]
+        return referencing
 
     def validate_integrity(self):
         print("\n" + "="*50)
@@ -231,32 +314,35 @@ class KnowledgeBaseEditor:
         self.kb[node_id] = node
         print(f"[✓] Nodo '{node_id}' actualizado en memoria.")
 
-    def delete_node(self):
-        node_id = input("\n[?] Ingrese el ID del nodo a eliminar: ").strip()
-        if node_id not in self.kb:
-            print("[!] El nodo no existe.")
-            return
-
-        # Rastrear dependencias (nodos que apuntan a este)
-        referencing = []
-        for k, v in self.kb.items():
-            if not v.get("is_leaf", False):
-                if v.get("yes_branch") == node_id:
-                    referencing.append((k, "yes_branch"))
-                if v.get("no_branch") == node_id:
-                    referencing.append((k, "no_branch"))
-
-        if referencing:
-            print(f"[!] ADVERTENCIA: El nodo '{node_id}' está referenciado por los siguientes nodos:")
-            for parent, branch in referencing:
-                print(f"  - '{parent}' a través de su rama '{branch}'")
-            confirm = input("[?] Si eliminas este nodo, crearás referencias rotas. ¿Deseas continuar? (s/n): ").strip().lower()
-            if confirm != 's':
-                print("[!] Operación cancelada.")
+    def delete_node(self, node_id: Optional[str] = None, force: bool = False):
+        if node_id is None:
+            node_id = input("\n[?] Ingrese el ID del nodo a eliminar: ").strip()
+            if node_id not in self.kb:
+                print("[!] El nodo no existe.")
                 return
 
-        del self.kb[node_id]
-        print(f"[✓] Nodo '{node_id}' eliminado en memoria.")
+            # Rastrear dependencias (nodos que apuntan a este)
+            referencing = []
+            for k, v in self.kb.items():
+                if not v.get("is_leaf", False):
+                    if v.get("yes_branch") == node_id:
+                        referencing.append((k, "yes_branch"))
+                    if v.get("no_branch") == node_id:
+                        referencing.append((k, "no_branch"))
+
+            if referencing:
+                print(f"[!] ADVERTENCIA: El nodo '{node_id}' está referenciado por los siguientes nodos:")
+                for parent, branch in referencing:
+                    print(f"  - '{parent}' a través de su rama '{branch}'")
+                confirm = input("[?] Si eliminas este nodo, crearás referencias rotas. ¿Deseas continuar? (s/n): ").strip().lower()
+                if confirm != 's':
+                    print("[!] Operación cancelada.")
+                    return
+
+            del self.kb[node_id]
+            print(f"[✓] Nodo '{node_id}' eliminado en memoria.")
+        else:
+            self.delete_node_by_id(node_id, force=force)
 
     def view_node_details(self):
         node_id = input("\n[?] Ingrese el ID del nodo a consultar: ").strip()

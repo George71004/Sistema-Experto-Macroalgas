@@ -1,2711 +1,2711 @@
 {
-    "species_bryopsis_ramulosa": {
-        "is_leaf": true,
-        "species_name": "Bryopsis ramulosa Montagne 1842",
-        "phylum": "Chlorophyta",
-        "order": "Bryopsidales",
-        "family": "Bryopsidaceae",
-        "description": "Talo filamentoso erecto de color verde oscuro, ramificado pinnadamente, cenocítico. Las ramificaciones secundarias son cilíndricas y se estrechan en la base.",
-        "habitat_note": "Registrada en el intermareal rocoso de Playa La Caracola y Valdez, adherida a sustrato rocoso sumergido.",
-        "env_profile": {
-            "preferred_stations": [
-                1,
-                2,
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_caulerpa_microphysa": {
-        "is_leaf": true,
-        "species_name": "Caulerpa microphysa (Weber Bosse) Feldmann 1955",
-        "phylum": "Chlorophyta",
-        "order": "Bryopsidales",
-        "family": "Caulerpaceae",
-        "description": "Alga cenocítica con estolón rastrero y ramillas erectas cortas que sostienen racimos de pequeñas vesículas esféricas (1-2 mm de diámetro) apiñadas.",
-        "habitat_note": "Bahía somera de Playa Valdez en sustrato rocoso protegido de baja energía.",
-        "env_profile": {
-            "preferred_stations": [
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M2",
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_caulerpa_prolifera": {
-        "is_leaf": true,
-        "species_name": "Caulerpa prolifera (Forsskål) J.V.Lamouroux 1809",
-        "phylum": "Chlorophyta",
-        "order": "Bryopsidales",
-        "family": "Caulerpaceae",
-        "description": "Talo con estolón rastrero y filoides erectos de color verde brillante, planos, enteros, laminares, con forma de hojas lisas y base peciolada.",
-        "habitat_note": "Común en sedimentos arenosos y rocas protegidas en la bahía de Valdez.",
-        "env_profile": {
-            "preferred_stations": [
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_caulerpa_racemosa": {
-        "is_leaf": true,
-        "species_name": "Caulerpa racemosa (Forsskål) J.Agardh 1873",
-        "phylum": "Chlorophyta",
-        "order": "Bryopsidales",
-        "family": "Caulerpaceae",
-        "description": "Talo cenocítico con estolón grueso y ramas erectas con rámulos globosos, esféricos o claviformes en forma de racimos de uvas medianas a grandes.",
-        "habitat_note": "Ampliamente distribuida en zonas intermareales de La Caracola y Valdez, muy resistant.",
-        "env_profile": {
-            "preferred_stations": [
-                1,
-                2,
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_caulerpa_chemnitzia": {
-        "is_leaf": true,
-        "species_name": "Caulerpa chemnitzia (Esper) J.V.Lamouroux 1809",
-        "phylum": "Chlorophyta",
-        "order": "Bryopsidales",
-        "family": "Caulerpaceae",
-        "description": "Talo cenocítico caracterizado por ramillas erectas con rámulos en forma de copa o turbinados, aplanados apicalmente, de disposición alterna o espiralada.",
-        "habitat_note": "Plataforma rocosa de La Caracola y zonas de corriente moderada en Valdez.",
-        "env_profile": {
-            "preferred_stations": [
-                2,
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_caulerpa_scalpelliformis": {
-        "is_leaf": true,
-        "species_name": "Caulerpa scalpelliformis (R.Brown ex Turner) C.Agardh 1817",
-        "phylum": "Chlorophyta",
-        "order": "Bryopsidales",
-        "family": "Caulerpaceae",
-        "description": "Talo cenocítico verde con estolón ramificado y filoides erectos (hasta 11.8 cm). Pínnulas bilaterales opuestas, aplanadas, con ápices redondeados u obtusos y márgenes fuertemente denticulados hacia la porción distal.",
-        "habitat_note": "Nuevo registro para el estado Nueva Esparta. Recolectada en plataformas rocosas estables de alta energía en La Caracola y en Valdez.",
-        "env_profile": {
-            "preferred_stations": [
-                1,
-                2,
-                3
-            ],
-            "preferred_months": [
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_caulerpa_sertularioides": {
-        "is_leaf": true,
-        "species_name": "Caulerpa sertularioides (S.G.Gmelin) M.Howe 1905",
-        "phylum": "Chlorophyta",
-        "order": "Bryopsidales",
-        "family": "Caulerpaceae",
-        "description": "Talo cenocítico con estolón largo y filoides erectos con rámulos cilíndricos, finos, curvados apicalmente, dispuestos en dos filas densas en forma de pluma de ave.",
-        "habitat_note": "Habita en lagunas costeras y zonas someras arenoso-rocosas de Valdez y La Caracola.",
-        "env_profile": {
-            "preferred_stations": [
-                1,
-                2,
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_caulerpa_mexicana": {
-        "is_leaf": true,
-        "species_name": "Caulerpa mexicana Sonder ex Kützing 1849",
-        "phylum": "Chlorophyta",
-        "order": "Bryopsidales",
-        "family": "Caulerpaceae",
-        "description": "Talo con estolón y filoides erigidos planos con rámulos pinnados, opuestos, con ápices agudos no dentados y base estrecha.",
-        "habitat_note": "Alga común caracterizada por rámulos pinnados con ápices agudos no dentados. Suele confundirse con C. scalpelliformis.",
-        "env_profile": {
-            "preferred_stations": [
-                2,
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_phyllodictyon_anastomosans": {
-        "is_leaf": true,
-        "species_name": "Phyllodictyon anastomosans (Harvey) Kraft & M.J.Wynne 1996",
-        "phylum": "Chlorophyta",
-        "order": "Cladophorales",
-        "family": "Boodleaceae",
-        "description": "Talo verde en forma de red o malla tridimensional delicada, formada por filamentos celulares que se fusionan lateralmente mediante tenáculos.",
-        "habitat_note": "Adherida a rocas en grietas de la zona intermareal rocosa expuesta (La Caracola).",
-        "env_profile": {
-            "preferred_stations": [
-                1,
-                2
-            ],
-            "preferred_months": [
-                "M3",
-                "M4"
-            ],
-            "temp_range": [
-                26.0,
-                28.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_chaetomorpha_antennina": {
-        "is_leaf": true,
-        "species_name": "Chaetomorpha antennina (Bory) Kützing 1847",
-        "phylum": "Chlorophyta",
-        "order": "Cladophorales",
-        "family": "Cladophoraceae",
-        "description": "Talo filamentoso verde brillante formado por densos mechones erectos no ramificados, con células cilíndricas muy largas visibles a simple vista y disco de fijación basal fuerte.",
-        "habitat_note": "Abundante en zonas de rompiente y alta energía hidrodinámica en la Estación 1 (La Caracola).",
-        "env_profile": {
-            "preferred_stations": [
-                1
-            ],
-            "preferred_months": [
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_cladophora_vagabunda": {
-        "is_leaf": true,
-        "species_name": "Cladophora vagabunda (Linnaeus) C.Hoek 1963",
-        "phylum": "Chlorophyta",
-        "order": "Cladophorales",
-        "family": "Cladophoraceae",
-        "description": "Talo filamentoso celular de color verde claro, profusamente ramificado de forma pseudodicotómica, formando filamentos delicados que terminan en fascículos unilaterales.",
-        "habitat_note": "Habita charcas intermareales y sobre rocas metamórficas en La Caracola y Valdez.",
-        "env_profile": {
-            "preferred_stations": [
-                1,
-                2,
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_ernodesmis_verticillata": {
-        "is_leaf": true,
-        "species_name": "Ernodesmis verticillata (Kützing) Børgesen 1912",
-        "phylum": "Chlorophyta",
-        "order": "Cladophorales",
-        "family": "Siphonocladaceae",
-        "description": "Talo formado por ramas globosas translúcidas que nacen en verticilos o ramificaciones concéntricas (en forma de sombrilla o dedos) a partir de una gran célula basal.",
-        "habitat_note": "Zonas protegidas bajo salientes rocosas y charcas de mareas en La Caracola.",
-        "env_profile": {
-            "preferred_stations": [
-                2
-            ],
-            "preferred_months": [
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_ulva_flexuosa": {
-        "is_leaf": true,
-        "species_name": "Ulva flexuosa Wulfen 1803",
-        "phylum": "Chlorophyta",
-        "order": "Ulvales",
-        "family": "Ulvaceae",
-        "description": "Talo verde claro, tubular hueco, estrecho y alaragado, ramificado principalmente en la porción basal con filamentos cilíndricos.",
-        "habitat_note": "Intermareal rocoso con influencia de escorrentía o nutrientes en Valdez.",
-        "env_profile": {
-            "preferred_stations": [
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_ulva_lactuca": {
-        "is_leaf": true,
-        "species_name": "Ulva lactuca Linnaeus 1753",
-        "phylum": "Chlorophyta",
-        "order": "Ulvales",
-        "family": "Ulvaceae",
-        "description": "Talo laminar verde brillante de consistencia membranosa, distromático (dos capas celulares), con forma lobulada o de hoja de lechuga.",
-        "habitat_note": "Muy común sobre sustrato rocoso intermareal en La Caracola y Valdez, bioindicadora de nutrientes.",
-        "env_profile": {
-            "preferred_stations": [
-                1,
-                2,
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_ulva_rigida": {
-        "is_leaf": true,
-        "species_name": "Ulva rigida C.Agardh 1823",
-        "phylum": "Chlorophyta",
-        "order": "Ulvales",
-        "family": "Ulvaceae",
-        "description": "Talo laminar verde oscuro, rígido y firme, con la base engrosada y márgenes típicamente provistos de pequeñas espinulas o dientes microscópicos.",
-        "habitat_note": "Frecuente en rocas de moderada a alta energía de oleaje en La Caracola.",
-        "env_profile": {
-            "preferred_stations": [
-                1,
-                2
-            ],
-            "preferred_months": [
-                "M2",
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_canistrocarpus_cervicornis": {
-        "is_leaf": true,
-        "species_name": "Canistrocarpus cervicornis (Kützing) De Paula & De Clerck 2006",
-        "phylum": "Heterokontophyta",
-        "order": "Dictyotales",
-        "family": "Dictyotaceae",
-        "description": "Talo laminar pardo-amarillento ramificado dicotómicamente, con giros helicoidales espiralados y ramificaciones de aspecto astado (cuerno de ciervo).",
-        "habitat_note": "Habita charcas tranquilas y el submareal somero de Playa Valdez.",
-        "env_profile": {
-            "preferred_stations": [
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_dictyota_ciliolata": {
-        "is_leaf": true,
-        "species_name": "Dictyota ciliolata Sonder ex Kützing 1859",
-        "phylum": "Heterokontophyta",
-        "order": "Dictyotales",
-        "family": "Dictyotaceae",
-        "description": "Talo laminar plano ramificado dicotómicamente con los márgenes provistos de pequeños dientes finos espaciados en forma de pestañas (cilios).",
-        "habitat_note": "Plataforma rocosa de baja energía en Valdez y charcas protegidas de La Caracola.",
-        "env_profile": {
-            "preferred_stations": [
-                2,
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M2",
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_dictyota_crenulata": {
-        "is_leaf": true,
-        "species_name": "Dictyota crenulata J. Agardh 1847",
-        "phylum": "Heterokontophyta",
-        "order": "Dictyotales",
-        "family": "Dictyotaceae",
-        "description": "Talo laminar de color pardo con márgenes densamente crenulados o provistos de dientes pequeños y regulares a lo largo de toda la lámina.",
-        "habitat_note": "Sustrato rocoso sumergido de Valdez, asociada con otras Dictyotaceae.",
-        "env_profile": {
-            "preferred_stations": [
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_dictyota_menstrualis": {
-        "is_leaf": true,
-        "species_name": "Dictyota menstrualis (Hoyt) Schnetter, Hörnig & Weber-Peukert 1987",
-        "phylum": "Heterokontophyta",
-        "order": "Dictyotales",
-        "family": "Dictyotaceae",
-        "description": "Talo laminar dicotómico de cintas anchas, con márgenes lisos y ápices obtusos. Muestra un color azul iridiscente característico bajo el agua.",
-        "habitat_note": "Frecuente en plataformas sumergidas y calas tranquilas en Valdez.",
-        "env_profile": {
-            "preferred_stations": [
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_dictyota_pulchella": {
-        "is_leaf": true,
-        "species_name": "Dictyota pulchella Hörnig & Schnetter 1988",
-        "phylum": "Heterokontophyta",
-        "order": "Dictyotales",
-        "family": "Dictyotaceae",
-        "description": "Talo laminar muy estrecho y delicado de cintas delgadas, con ramificaciones dicotómicas anguladas y color pardo-verdoso.",
-        "habitat_note": "Habita grietas y charcas protegidas de Playa La Caracola y bahía somera de Valdez.",
-        "env_profile": {
-            "preferred_stations": [
-                2,
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_dictyopteris_delicatula": {
-        "is_leaf": true,
-        "species_name": "Dictyopteris delicatula J.V.Lamouroux 1809",
-        "phylum": "Heterokontophyta",
-        "order": "Dictyotales",
-        "family": "Dictyotaceae",
-        "description": "Talo laminar delgado dicotómico, caracterizado por poseer una costilla central (nervadura media longitudinal) bien diferenciada y márgenes lisos.",
-        "habitat_note": "Sobre rocas metamórficas medianas en zonas de fuerte energía de La Caracola.",
-        "env_profile": {
-            "preferred_stations": [
-                1,
-                2
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_padina_gymnospora": {
-        "is_leaf": true,
-        "species_name": "Padina gymnospora (Kützing) Sonder 1871",
-        "phylum": "Heterokontophyta",
-        "order": "Dictyotales",
-        "family": "Dictyotaceae",
-        "description": "Talo en forma de abanico aplanado de color pardo-amarillento, levemente calcificado con líneas concéntricas de pelos y margen apical enrollado hacia adentro.",
-        "habitat_note": "Abundante en plataformas rocosas sumergidas de Valdez y La Caracola, prefiere aguas templadas.",
-        "env_profile": {
-            "preferred_stations": [
-                2,
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_spatoglossum_schroederi": {
-        "is_leaf": true,
-        "species_name": "Spatoglossum schroederi (C.Agardh) Kützing 1859",
-        "phylum": "Heterokontophyta",
-        "order": "Dictyotales",
-        "family": "Dictyotaceae",
-        "description": "Talo laminar de gran tamaño con ramificación irregular palmeada, consistencia coriácea, de color pardo-verdoso, con márgenes ondulados o dentados de manera irregular.",
-        "habitat_note": "Sustrato rocoso sumergido de baja energía en Valdez.",
-        "env_profile": {
-            "preferred_stations": [
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_feldmannia_mitchelliae": {
-        "is_leaf": true,
-        "species_name": "Feldmannia mitchelliae (Harvey) H.-S.Kim 2010",
-        "phylum": "Heterokontophyta",
-        "order": "Ectocarpales",
-        "family": "Acinetosporaceae",
-        "description": "Talo filamentoso fino de color marrón-amarillento en mechones algodonosos. Presenta ramificaciones en ángulo recto y esporangios pluriloculares alargados sésiles.",
-        "habitat_note": "Epífita sobre otras macroalgas o rocas metamórficas en La Caracola.",
-        "env_profile": {
-            "preferred_stations": [
-                1,
-                2
-            ],
-            "preferred_months": [
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_colpomenia_sinuosa": {
-        "is_leaf": true,
-        "species_name": "Colpomenia sinuosa (Mertens ex Roth) Derbès & Solier 1851",
-        "phylum": "Heterokontophyta",
-        "order": "Ectocarpales",
-        "family": "Scytosiphonaceae",
-        "description": "Talo globoso hueco, globuloso o cerebriforme, de color marrón a oliva-pardo, con consistencia delgada y frágil, cubierto de pequeños pelos superficiales.",
-        "habitat_note": "Frecuente en plataformas rocosas tranquilas de Valdez, flotando o adherida débilmente.",
-        "env_profile": {
-            "preferred_stations": [
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_chnoospora_minima": {
-        "is_leaf": true,
-        "species_name": "Chnoospora minima (Hering) Papenfuss 1956",
-        "phylum": "Heterokontophyta",
-        "order": "Ectocarpales",
-        "family": "Scytosiphonaceae",
-        "description": "Talo cilíndrico o subcilíndrico ramificado dicotómicamente, cartilaginoso, firme, formando densos arbustos de color oliva-marrón adheridos por disco basal.",
-        "habitat_note": "Zonas expuestas de fuerte oleaje adherida fuertemente a rocas metamórficas disgregadas en La Caracola.",
-        "env_profile": {
-            "preferred_stations": [
-                1
-            ],
-            "preferred_months": [
-                "M2",
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_sargassum_cymosum": {
-        "is_leaf": true,
-        "species_name": "Sargassum cymosum C.Agardh 1820",
-        "phylum": "Heterokontophyta",
-        "order": "Fucales",
-        "family": "Sargassaceae",
-        "description": "Talo bentónico con estipe y filoides en forma de hojas lanceoladas aserradas, con ramificaciones dicotómicas densas y vesículas de aire redondas y abundantes en las axilas.",
-        "habitat_note": "Habita el sustrato rocoso sumergido estable de Valdez y La Caracola.",
-        "env_profile": {
-            "preferred_stations": [
-                2,
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_sargassum_filipendula": {
-        "is_leaf": true,
-        "species_name": "Sargassum filipendula C.Agardh 1824",
-        "phylum": "Heterokontophyta",
-        "order": "Fucales",
-        "family": "Sargassaceae",
-        "description": "Talo bentónico con filoides muy delgados, alargados, lineares u oblongo-lanceolados, y aerocistos esféricos pequeños provistos de pedicelos finos.",
-        "habitat_note": "Zonas tranquilas de Valdez, formando densas formaciones de pradera bentónica.",
-        "env_profile": {
-            "preferred_stations": [
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_sargassum_fluitans": {
-        "is_leaf": true,
-        "species_name": "Sargassum fluitans (Børgesen) Børgesen 1914",
-        "phylum": "Heterokontophyta",
-        "order": "Fucales",
-        "family": "Sargassaceae",
-        "description": "Talo estrictamente pelágico (flotante, sin disco de fijación o sustrato físico). Vesículas de aire lisas, esféricas, sin espinas ni apéndices. Filoides anchos y aserrados.",
-        "habitat_note": "Origen pelágico. Forma arribazones masivos (sargazadas) en la orilla de La Caracola y Valdez durante vientos alisios.",
-        "env_profile": {
-            "preferred_stations": [
-                1,
-                3
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_sargassum_hystrix": {
-        "is_leaf": true,
-        "species_name": "Sargassum hystrix J.Agardh 1847",
-        "phylum": "Heterokontophyta",
-        "order": "Fucales",
-        "family": "Sargassaceae",
-        "description": "Talo bentónico con filoides densamente cubiertos de pequeñas proyecciones espinosas o verrugas en la superficie del limbo, dándoles un aspecto rugoso.",
-        "habitat_note": "Plataforma sumergida de La Caracola en microhábitats de oleaje moderado.",
-        "env_profile": {
-            "preferred_stations": [
-                2
-            ],
-            "preferred_months": [
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_sargassum_natans": {
-        "is_leaf": true,
-        "species_name": "Sargassum natans (Linnaeus) Gaillon 1828",
-        "phylum": "Heterokontophyta",
-        "order": "Fucales",
-        "family": "Sargassaceae",
-        "description": "Talo pelágico libre. Se caracteriza porque la mayoría de las vesículas de aire poseen un pequeño filamento, espina o apéndice en el ápice.",
-        "habitat_note": "Arribazones en la orilla (sargazadas), colectado principalmente de marzo a mayo.",
-        "env_profile": {
-            "preferred_stations": [
-                1,
-                3
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_sargassum_polyceratium": {
-        "is_leaf": true,
-        "species_name": "Sargassum polyceratium Montagne 1837",
-        "phylum": "Heterokontophyta",
-        "order": "Fucales",
-        "family": "Sargassaceae",
-        "description": "Talo con ramificaciones muy densas, filoides cortos y ovoides, fuertemente aserrados u ondulados, agrupados densamente sobre el eje basal.",
-        "habitat_note": "Muy frecuente en Valdez adherido a rocas medianas sumergidas de baja energía.",
-        "env_profile": {
-            "preferred_stations": [
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_sargassum_vulgare": {
-        "is_leaf": true,
-        "species_name": "Sargassum vulgare C.Agardh, nom. illeg. 1820",
-        "phylum": "Heterokontophyta",
-        "order": "Fucales",
-        "family": "Sargassaceae",
-        "description": "Talo bentónico con filoides típicamente lanceolados, con márgenes marcadamente dentados y ondulados, y aerocistos esféricos sobre pedicelos lisos.",
-        "habitat_note": "Especie abundante en el fitobentos intermareal de Valdez y La Caracola.",
-        "env_profile": {
-            "preferred_stations": [
-                2,
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_asteronema_breviarticulatum": {
-        "is_leaf": true,
-        "species_name": "Asteronema breviarticulatum (J.Agardh) Ouriques & Bouzon 2000",
-        "phylum": "Heterokontophyta",
-        "order": "Scytothamnales",
-        "family": "Asteronemataceae",
-        "description": "Talo filamentoso pardo formado por filamentos finos entrelazados en mechones o cordones replegados, con células cortas cilíndricas.",
-        "habitat_note": "Colectada en la zona intermareal alta de la Estación 1 (La Caracola).",
-        "env_profile": {
-            "preferred_stations": [
-                1
-            ],
-            "preferred_months": [
-                "M3",
-                "M4"
-            ],
-            "temp_range": [
-                26.0,
-                28.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_sphacelaria_rigidula": {
-        "is_leaf": true,
-        "species_name": "Sphacelaria rigidula Kützing 1843",
-        "phylum": "Heterokontophyta",
-        "order": "Sphacellariales",
-        "family": "Sphacelariaceae",
-        "description": "Talo filamentoso marrón diminuto (1-2 cm) con célula apical negra conspicua. Propágulos ramificados delgados y cilíndricos, de brazos alargados.",
-        "habitat_note": "Adherido a rocas o epífita en Valdez y La Caracola.",
-        "env_profile": {
-            "preferred_stations": [
-                2,
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_sphacelaria_tribuloides": {
-        "is_leaf": true,
-        "species_name": "Sphacelaria tribuloides Meneghini 1840",
-        "phylum": "Heterokontophyta",
-        "order": "Sphacellariales",
-        "family": "Sphacelariaceae",
-        "description": "Talo filamentoso con célula apical negra. Se diferencia por tener propágulos trirradiados con forma triangular u ovada, de brazos cortos y anchos.",
-        "habitat_note": "Zonas someras rocosas de Valdez y La Caracola.",
-        "env_profile": {
-            "preferred_stations": [
-                2,
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M2",
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_spyridia_filamentosa": {
-        "is_leaf": true,
-        "species_name": "Spyridia filamentosa (Wulfen) Harvey 1833",
-        "phylum": "Rhodophyta",
-        "order": "Ceramiales",
-        "family": "Callithamniaceae",
-        "description": "Talo filamentoso muy fino, color rosado, con eje principal rodeado de bandas corticantes en los nudos y ramillas cortas que carecen de espinas en los ápices.",
-        "habitat_note": "Abundante en charcas protegidas de Valdez y plataformas estables sumergidas en La Caracola.",
-        "env_profile": {
-            "preferred_stations": [
-                2,
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_spyridia_hypnoides": {
-        "is_leaf": true,
-        "species_name": "Spyridia hypnoides (Bory) Papenfuss 1968",
-        "phylum": "Rhodophyta",
-        "order": "Ceramiales",
-        "family": "Callithamniaceae",
-        "description": "Talo filamentoso fino con ramificaciones laterales arqueadas y densamente agrupadas, caracterizado por poseer pequeñas espinas apicales ganchudas en las ramitas.",
-        "habitat_note": "Intermareal rocoso de Valdez y La Caracola en zonas someras.",
-        "env_profile": {
-            "preferred_stations": [
-                2,
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_centroceras_gasparinii": {
-        "is_leaf": true,
-        "species_name": "Centroceras gasparinii (Meneghini) Kützing 1849",
-        "phylum": "Rhodophyta",
-        "order": "Ceramiales",
-        "family": "Ceramiaceae",
-        "description": "Talo filamentoso segmentado con nudos provistos de pequeñas espinas. Los ápices de los filamentos son típicamente pinzados o en forma de gancho de cangrejo.",
-        "habitat_note": "Intermareal rocoso expuesto de La Caracola, formando céspedes cortos.",
-        "env_profile": {
-            "preferred_stations": [
-                1,
-                2
-            ],
-            "preferred_months": [
-                "M2",
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_dasya_ocellata": {
-        "is_leaf": true,
-        "species_name": "Dasya ocellata (Grateloup) Harvey 1833",
-        "phylum": "Rhodophyta",
-        "order": "Ceramiales",
-        "family": "Delesseriaceae",
-        "description": "Talo filamentoso de color rojo-púrpura oscuro, erecto, con ramificación densa apical que da un aspecto plumoso o penicilado característico.",
-        "habitat_note": "Recogido en la zona intermareal protegida de Valdez.",
-        "env_profile": {
-            "preferred_stations": [
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M3",
-                "M4"
-            ],
-            "temp_range": [
-                26.0,
-                28.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_cottoniella_filamentosa": {
-        "is_leaf": true,
-        "species_name": "Cottoniella filamentosa (M.Howe) Børgesen 1920",
-        "phylum": "Rhodophyta",
-        "order": "Ceramiales",
-        "family": "Delesseriaceae",
-        "description": "Talo filamentoso rosa-rojizo delicado (4-6.7 cm). Ejes erectos corticados con ramificación alterna curvada. La característica diagnóstica es la presencia de un único filamento monosifónico por segmento que surge de una célula pericentral adaxial.",
-        "habitat_note": "Nuevo registro para Venezuela. Talo erecto corticado.",
-        "env_profile": {
-            "preferred_stations": [
-                1,
-                2
-            ],
-            "preferred_months": [
-                "M3",
-                "M4"
-            ],
-            "temp_range": [
-                26.0,
-                28.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_heterosiphonia_gibbesii": {
-        "is_leaf": true,
-        "species_name": "Heterosiphonia gibbesii (Harvey) Falkenberg 1901",
-        "phylum": "Rhodophyta",
-        "order": "Ceramiales",
-        "family": "Delesseriaceae",
-        "description": "Talo filamentoso blando con ramificación dorsiventral alterna pinnada y células pericentrales evidentes a nivel microscópico, de color rojo brillante.",
-        "habitat_note": "Intermareal sumergido en Valdez.",
-        "env_profile": {
-            "preferred_stations": [
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_acanthophora_muscoides": {
-        "is_leaf": true,
-        "species_name": "Acanthophora muscoides (Linnaeus) Bory 1828",
-        "phylum": "Rhodophyta",
-        "order": "Ceramiales",
-        "family": "Rhodomelaceae",
-        "description": "Talo erecto cilíndrico de color marrón-purpúreo con abundantes ramas laterales cortas cubiertas densamente de pequeñas espinas agudas tanto en los ejes principales como secundarios.",
-        "habitat_note": "Común en charcas intermareales de Playa Valdez y rocas metamórficas estables de La Caracola.",
-        "env_profile": {
-            "preferred_stations": [
-                2,
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_acanthophora_spicifera": {
-        "is_leaf": true,
-        "species_name": "Acanthophora spicifera (M.Vahl) Børgesen 1910",
-        "phylum": "Rhodophyta",
-        "order": "Ceramiales",
-        "family": "Rhodomelaceae",
-        "description": "Talo cilíndrico rígido ramificado con ramillas cortas que tienen espinas dispuestas en espiral solo en los ápices, dejando los ejes principales desnudos de espinas.",
-        "habitat_note": "Especie sumamente abundante en la zona costera rocosa de ambas playas, tolera cierta turbidez.",
-        "env_profile": {
-            "preferred_stations": [
-                1,
-                2,
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_bryocladia_thyrsigera": {
-        "is_leaf": true,
-        "species_name": "Bryocladia thyrsigera (J.Agardh) F.Schmitz 1901",
-        "phylum": "Rhodophyta",
-        "order": "Ceramiales",
-        "family": "Rhodomelaceae",
-        "description": "Talo filamentoso rígido que forma mechones densos de color marrón-negruzco. Ejes erectos con abundantes ramificaciones secundarias muy cortas y densas en forma de escobilla.",
-        "habitat_note": "Intermareal expuesto sobre rocas metamórficas erosionadas de La Caracola.",
-        "env_profile": {
-            "preferred_stations": [
-                1
-            ],
-            "preferred_months": [
-                "M2",
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_bryocladia_atlantica": {
-        "is_leaf": true,
-        "species_name": "Bryocladia atlantica (Kapraun & J.N.Norris) Díaz-Tapia 2024",
-        "phylum": "Rhodophyta",
-        "order": "Ceramiales",
-        "family": "Rhodomelaceae",
-        "description": "Talo filamentoso erecto que se diferencia por ejes menos densamente ramificados, ramas delgadas y alargadas, de color púrpura oscuro.",
-        "habitat_note": "Zonas intermareales rocosas de La Caracola.",
-        "env_profile": {
-            "preferred_stations": [
-                1,
-                2
-            ],
-            "preferred_months": [
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_bryothamnion_triquetrum": {
-        "is_leaf": true,
-        "species_name": "Bryothamnion triquetrum (S.G.Gmelin) M.Howe 1915",
-        "phylum": "Rhodophyta",
-        "order": "Ceramiales",
-        "family": "Rhodomelaceae",
-        "description": "Talo cilíndrico angulado con consistencia coriácea dura, caracterizado por ramillas cortas dispuestas en tres filas a lo largo de las ramas, de color marrón rojizo.",
-        "habitat_note": "Submareal somero rocoso de Valdez expuesto a surgencias activas.",
-        "env_profile": {
-            "preferred_stations": [
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_chondria_capillaris": {
-        "is_leaf": true,
-        "species_name": "Chondria capillaris (Hudson) M.J.Wynne 1991",
-        "phylum": "Rhodophyta",
-        "order": "Ceramiales",
-        "family": "Rhodomelaceae",
-        "description": "Talo cilíndrico de consistencia gelatinosa con ramificación piramidal alterna. Las ramas se estrechan en la base y poseen pequeños ápices redondeados con hoyuelo.",
-        "habitat_note": "Charcas intermareales tranquilas y someras de Playa Valdez.",
-        "env_profile": {
-            "preferred_stations": [
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_chondria_sedifolia": {
-        "is_leaf": true,
-        "species_name": "Chondria sedifolia Harvey 1853",
-        "phylum": "Rhodophyta",
-        "order": "Ceramiales",
-        "family": "Rhodomelaceae",
-        "description": "Talo cilíndrico más corto y grueso, de consistencia algo firme, con ramillas laterales cilíndricas muy cortas agrupadas en racimos, con constricciones basales muy marcadas.",
-        "habitat_note": "Sobre sustrato rocoso sumergido de Valdez.",
-        "env_profile": {
-            "preferred_stations": [
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_herposiphonia_secunda": {
-        "is_leaf": true,
-        "species_name": "Herposiphonia secunda (C.Agardh) Ambronn 1880",
-        "phylum": "Rhodophyta",
-        "order": "Ceramiales",
-        "family": "Rhodomelaceae",
-        "description": "Talo postrado postrado-erecto, caracterizado por poseer ramillas erectas dispuestas en crestas o peines unilaterales a lo largo de los ejes principales postrados.",
-        "habitat_note": "Epífita común sobre algas de mayor tamaño y sobre rocas metamórficas en La Caracola.",
-        "env_profile": {
-            "preferred_stations": [
-                2
-            ],
-            "preferred_months": [
-                "M2",
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_laurencia_dendroidea": {
-        "is_leaf": true,
-        "species_name": "Laurencia dendroidea J.Agardh 1852",
-        "phylum": "Rhodophyta",
-        "order": "Ceramiales",
-        "family": "Rhodomelaceae",
-        "description": "Talo cilíndrico y carnoso de coloración rojizo-amarillenta, con ramificación dendroide alterna. Ramillas cortas verrugosas con una depresión apical y un mechón de pelos.",
-        "habitat_note": "Intermareal rocoso y charcas tranquilas en ambas playas.",
-        "env_profile": {
-            "preferred_stations": [
-                1,
-                2,
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_lophosiphonia_sp1": {
-        "is_leaf": true,
-        "species_name": "Lophosiphonia sp.1 Falkenberg, 1897",
-        "phylum": "Rhodophyta",
-        "order": "Ceramiales",
-        "family": "Rhodomelaceae",
-        "description": "Talo postrado y erecto de color marrón oscuro con filamentos polysifónicos y ápices marcadamente curvados, con pocas células pericentrales (4-6) y escasos tricoblastos.",
-        "habitat_note": "Sustrato rocoso en charcas intermareales de La Caracola.",
-        "env_profile": {
-            "preferred_stations": [
-                1,
-                2
-            ],
-            "preferred_months": [
-                "M3",
-                "M4"
-            ],
-            "temp_range": [
-                26.0,
-                28.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_lophosiphonia_sp2": {
-        "is_leaf": true,
-        "species_name": "Lophosiphonia sp.2 Falkenberg 1897",
-        "phylum": "Rhodophyta",
-        "order": "Ceramiales",
-        "family": "Rhodomelaceae",
-        "description": "Talo filamentoso postrado, diferenciado por ramificaciones erectas más largas y espaciadas, con 8 a 10 células pericentrales en secciones transversales.",
-        "habitat_note": "Zonas protegidas del intermareal de Valdez.",
-        "env_profile": {
-            "preferred_stations": [
-                3
-            ],
-            "preferred_months": [
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_palisada_papillosa": {
-        "is_leaf": true,
-        "species_name": "Palisada papillosa (C.Agardh) K.W.Nam 2007",
-        "phylum": "Rhodophyta",
-        "order": "Ceramiales",
-        "family": "Rhodomelaceae",
-        "description": "Talo comprimido o cilíndrico de coloración pardo-verdosa oscura, consistencia muy firme y cartilaginosa, cubierto densamente de pequeñas papilas o tubérculos cortos.",
-        "habitat_note": "Forma un cinturón denso en la zona intermareal expuesta de La Caracola y sobre rocas de Valdez.",
-        "env_profile": {
-            "preferred_stations": [
-                1,
-                2,
-                3
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_polysiphonia_havanensis": {
-        "is_leaf": true,
-        "species_name": "Polysiphonia havanensis Montagne 1837",
-        "phylum": "Rhodophyta",
-        "order": "Ceramiales",
-        "family": "Rhodomelaceae",
-        "description": "Talo filamentoso de color marrón-rojizo con ejes principales ramificados alternamente, con 4 células pericentrales ecorticadas en corte transversal.",
-        "habitat_note": "Zonas someras rocosas y charcas de mareas de Valdez y La Caracola.",
-        "env_profile": {
-            "preferred_stations": [
-                2,
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_jania_adhaerens": {
-        "is_leaf": true,
-        "species_name": "Jania adhaerens J.V.Lamouroux 1816",
-        "phylum": "Rhodophyta",
-        "order": "Corallinales",
-        "family": "Corallinaceae",
-        "description": "Talo rígido revestido de carbonato de calcio, con ramificación marcadamente dicotómica y articulada muy fina. De coloración rosado-blanquecina.",
-        "habitat_note": "Frecuente en el intermareal adherida a sustrato rocoso sumergido.",
-        "env_profile": {
-            "preferred_stations": [
-                2,
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_gelidium_floridanum": {
-        "is_leaf": true,
-        "species_name": "Gelidium floridanum W.R.Taylor 1943",
-        "phylum": "Rhodophyta",
-        "order": "Gelidiales",
-        "family": "Gelidiaceae",
-        "description": "Talo ramificado pinnadamente de color rojo rojo-purpúreo oscuro, consistencia elástica y cartilaginosa, de hasta 15 cm de alto, con ejes aplanados estrechos.",
-        "habitat_note": "Habita zonas de fuerte oleaje en La Caracola y Valdez en grietas de rocas metamórficas.",
-        "env_profile": {
-            "preferred_stations": [
-                1,
-                2,
-                3
-            ],
-            "preferred_months": [
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_gelidium_pusillum": {
-        "is_leaf": true,
-        "species_name": "Gelidium pusillum (Stackhouse) Le Jolis 1863",
-        "phylum": "Rhodophyta",
-        "order": "Gelidiales",
-        "family": "Gelidiaceae",
-        "description": "Talo diminuto (menos de 2 cm) de consistencia cartilaginosa dura que forma céspedes de ejes postrados y erectos cilíndrico-aplanados entrelazados.",
-        "habitat_note": "Zonas intermareales altas rocosas secas de La Caracola, muy tolerante a desecación.",
-        "env_profile": {
-            "preferred_stations": [
-                1,
-                2
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_hypnea_musciformis": {
-        "is_leaf": true,
-        "species_name": "Hypnea musciformis (Wulfen) J.V.Lamouroux 1813",
-        "phylum": "Rhodophyta",
-        "order": "Gigartinales",
-        "family": "Cystocloniaceae",
-        "description": "Talo cilíndrico ramificado de color rojo-pardo, con los ápices de las ramas principales modificados típicamente en forma de gancho o zarcillo engrosado.",
-        "habitat_note": "Especie muy común en Valdez y La Caracola, a menudo epífita o entrelazada con Sargassum.",
-        "env_profile": {
-            "preferred_stations": [
-                1,
-                2,
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_hypnea_valentiae": {
-        "is_leaf": true,
-        "species_name": "Hypnea valentiae (Turner) Montagne 1841",
-        "phylum": "Rhodophyta",
-        "order": "Gigartinales",
-        "family": "Cystocloniaceae",
-        "description": "Talo cilíndrico con ejes principales patentes provistos de abundantes ramillas espinosas simples y ramificadas (bifurcadas) largas de disposición irregular.",
-        "habitat_note": "Frecuente en bahías someras y tranquilas de Playa Valdez.",
-        "env_profile": {
-            "preferred_stations": [
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M2",
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_hypnea_spinella": {
-        "is_leaf": true,
-        "species_name": "Hypnea spinella (C. Agardh) Kützing 1847",
-        "phylum": "Rhodophyta",
-        "order": "Gigartinales",
-        "family": "Cystocloniaceae",
-        "description": "Talo en forma de cojines o céspedes muy densos e intrincados de ejes delgados e interconectados con pequeñas espinas simples cortas.",
-        "habitat_note": "Adherido fuertemente a rocas metamórficas intermareales en La Caracola.",
-        "env_profile": {
-            "preferred_stations": [
-                1,
-                2
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_agardhiella_subulata": {
-        "is_leaf": true,
-        "species_name": "Agardhiella subulata (C.Agardh) Kraft & M.J.Wynne 1979",
-        "phylum": "Rhodophyta",
-        "order": "Gigartinales",
-        "family": "Solieriaceae",
-        "description": "Talo cilíndrico carnoso y firme, color rojo-pálido a rojizo, de ramificación alterna irregular. Estructura interna celular con filamentos de soporte medulares finos.",
-        "habitat_note": "Habita el submareal somero de Valdez, protegida del oleaje.",
-        "env_profile": {
-            "preferred_stations": [
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_gracilaria_bursa_pastoris": {
-        "is_leaf": true,
-        "species_name": "Gracilaria bursa-pastoris (SGmelin) PCsilva 1952",
-        "phylum": "Rhodophyta",
-        "order": "Gracilariales",
-        "family": "Gracilariaceae",
-        "description": "Talo cilíndrico de consistencia carnosa y quebradiza, ramificado de forma subdística o alterna, con ejes gruesos (2-3 mm) de color rojo pálido.",
-        "habitat_note": "Común en sedimentos de fondo y rocas de Playa Valdez.",
-        "env_profile": {
-            "preferred_stations": [
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_gracilaria_blodgettii": {
-        "is_leaf": true,
-        "species_name": "Gracilaria blodgettii Harvey 1853",
-        "phylum": "Rhodophyta",
-        "order": "Gracilariales",
-        "family": "Gracilariaceae",
-        "description": "Talo cilíndrico carnoso caracterizado por ramificaciones cilíndricas que se estrechan fuertemente en su punto de inserción (base de la rama) con el eje.",
-        "habitat_note": "Sustrato rocoso protegido de Valdez.",
-        "env_profile": {
-            "preferred_stations": [
-                3
-            ],
-            "preferred_months": [
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_gracilaria_caudata": {
-        "is_leaf": true,
-        "species_name": "Gracilaria caudata J.Agardh 1852",
-        "phylum": "Rhodophyta",
-        "order": "Gracilariales",
-        "family": "Gracilariaceae",
-        "description": "Talo cilíndrico alargado ramificado irregularmente, de consistencia cartilaginosa flexible, con ejes de color verde-amarillento o rojizo.",
-        "habitat_note": "Habita praderas someras y sustrato rocoso sumergido de Valdez y La Caracola.",
-        "env_profile": {
-            "preferred_stations": [
-                2,
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_gracilaria_domingensis": {
-        "is_leaf": true,
-        "species_name": "Gracilaria domingensis (Kützing) Sonder ex Dickie 1874",
-        "phylum": "Rhodophyta",
-        "order": "Gracilariales",
-        "family": "Gracilariaceae",
-        "description": "Talo plano fuertemente comprimido y aplanado, con ramificación pinnada a subdística conspicua. De color rojo-violáceo oscuro a verdoso.",
-        "habitat_note": "Taxón de persistencia ecológica absoluta, registrado en el 100% de los muestreos de La Caracola y Valdez.",
-        "env_profile": {
-            "preferred_stations": [
-                1,
-                2,
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_gracilaria_flabelliformis": {
-        "is_leaf": true,
-        "species_name": "Gracilaria flabelliformis (Sonder) Womersley 1996",
-        "phylum": "Rhodophyta",
-        "order": "Gracilariales",
-        "family": "Gracilariaceae",
-        "description": "Talo plano comprimido grueso con ramificación flabelada (en abanico) y consistencia cartilaginosa rígida de color rojo oscuro.",
-        "habitat_note": "Sustrato rocoso sumergido de Valdez y La Caracola.",
-        "env_profile": {
-            "preferred_stations": [
-                2,
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M2",
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_gracilaria_mammillaris": {
-        "is_leaf": true,
-        "species_name": "Gracilaria mammillaris (Montagne) M.Howe 1918",
-        "phylum": "Rhodophyta",
-        "order": "Gracilariales",
-        "family": "Gracilariaceae",
-        "description": "Talo plano aplanado ramificado dicotómicamente en un solo plano, con márgenes enteros y consistencia coriácea dura, color rojo purpúreo.",
-        "habitat_note": "Intermareal rocoso y charcas someras en ambas playas.",
-        "env_profile": {
-            "preferred_stations": [
-                1,
-                2,
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M1",
-                "M2",
-                "M3",
-                "M4",
-                "M5",
-                "M6"
-            ],
-            "temp_range": [
-                26.0,
-                30.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_grateloupia_filicina": {
-        "is_leaf": true,
-        "species_name": "Grateloupia filicina (J.V.Lamouroux) C.Agardh 1822",
-        "phylum": "Rhodophyta",
-        "order": "Halymeniales",
-        "family": "Grateloupiaceae",
-        "description": "Talo aplanado de color rojo-púrpura oscuro, dividido pinnadamente de forma muy regular a lo largo de un eje central en forma de pluma.",
-        "habitat_note": "Zonas expuestas de oleaje moderado en La Caracola y Valdez.",
-        "env_profile": {
-            "preferred_stations": [
-                2,
-                3
-            ],
-            "preferred_months": [
-                "M2",
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_grateloupia_turuturu": {
-        "is_leaf": true,
-        "species_name": "Grateloupia turuturu Y. Yamada 1941",
-        "phylum": "Rhodophyta",
-        "order": "Halymeniales",
-        "family": "Grateloupiaceae",
-        "description": "Talo laminar ancho, grande, de consistencia gelatinosa-carnosa y tacto suave, color rojo-rosado, de márgenes lisos u ondulados.",
-        "habitat_note": "Sobre rocas sumergidas o epífita en Valdez, exótica introducida.",
-        "env_profile": {
-            "preferred_stations": [
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_liagora_sp": {
-        "is_leaf": true,
-        "species_name": "Liagora sp. J.V. Lamouroux 1812",
-        "phylum": "Rhodophyta",
-        "order": "Nemaliales",
-        "family": "Liagoraceae",
-        "description": "Talo cilíndrico blando, harinoso, gelatinoso y levemente calcificado en la corteza, de color blanquecino-rosado, ramificado dicotómicamente.",
-        "habitat_note": "Recogido en el intermareal de Valdez sumergida en charcas.",
-        "env_profile": {
-            "preferred_stations": [
-                3
-            ],
-            "preferred_months": [
-                "M3",
-                "M4"
-            ],
-            "temp_range": [
-                26.0,
-                28.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_liagora_ceranoides": {
-        "is_leaf": true,
-        "species_name": "Liagora ceranoides J.V.Lamouroux 1816",
-        "phylum": "Rhodophyta",
-        "order": "Nemaliales",
-        "family": "Liagoraceae",
-        "description": "Talo cilíndrico calcificado blando con ramificaciones que tienen un aspecto fuertemente corimboso (aplanado en el ápice) y nudos pubescentes.",
-        "habitat_note": "Zonas tranquilas de Valdez adherida a rocas metamórficas medianas.",
-        "env_profile": {
-            "preferred_stations": [
-                3,
-                4
-            ],
-            "preferred_months": [
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "species_sebdenia_flabellata": {
-        "is_leaf": true,
-        "species_name": "Sebdenia flabellata (J.Agardh) P.G.Parkinson 1980",
-        "phylum": "Rhodophyta",
-        "order": "Sebdeniales",
-        "family": "Sebdeniaceae",
-        "description": "Talo laminar plano en forma de abanico, bifurcado o dividido de forma irregular, de consistencia algo firme y color rojo-rosado.",
-        "habitat_note": "Colectada en the submareal rocoso profundo de la Estación 4 de Valdez.",
-        "env_profile": {
-            "preferred_stations": [
-                4
-            ],
-            "preferred_months": [
-                "M3",
-                "M4",
-                "M5"
-            ],
-            "temp_range": [
-                26.0,
-                29.0
-            ],
-            "salinity_range": [
-                35.0,
-                38.0
-            ]
-        }
-    },
-    "root": {
-        "question": "¿El espécimen colectado posee coloración verde (brillante a oscura) y un talo no calcificado?",
-        "yes_branch": "node_chlorophyta_start",
-        "no_branch": "node_non_chlorophyta",
-        "is_leaf": false,
-        "character_name": "color_verde_no_calc"
-    },
-    "node_non_chlorophyta": {
-        "question": "¿El ejemplar muestra coloración parda, pardo-olivácea o amarillenta (típica de algas pardas)?",
-        "yes_branch": "node_heterokonto_start",
-        "no_branch": "node_rhodophyta_start",
-        "is_leaf": false,
-        "character_name": "color_pardo"
-    },
-    "node_chlorophyta_start": {
-        "question": "¿El talo posee una estructura cenocítica (filamentos o tubos multinucleados sin tabiques transversales visibles)?",
-        "yes_branch": "node_cenocytic_green",
-        "no_branch": "node_cellular_green",
-        "is_leaf": false,
-        "character_name": "estructura_cenocitica"
-    },
-    "node_cenocytic_green": {
-        "question": "¿El talo está diferenciado en estolones rastreros, rizoides y filoides erectos (típico de Caulerpaceae)?",
-        "yes_branch": "node_caulerpa_start",
-        "no_branch": "species_bryopsis_ramulosa",
-        "is_leaf": false,
-        "character_name": "estolones_rizoides_filoides"
-    },
-    "node_caulerpa_start": {
-        "question": "¿Los filoides erectos poseen rámulos dispuestos en dos filas densas en forma de pluma de ave (pectinados)?",
-        "yes_branch": "species_caulerpa_sertularioides",
-        "no_branch": "node_caulerpa_flat_or_glob",
-        "is_leaf": false,
-        "character_name": "filoides_pectinados"
-    },
-    "node_caulerpa_flat_or_glob": {
-        "question": "¿Los filoides erectos son planos, lisos y enteros con forma de hojas pecioladas?",
-        "yes_branch": "species_caulerpa_prolifera",
-        "no_branch": "node_caulerpa_vesicular",
-        "is_leaf": false,
-        "character_name": "filoides_planos_enteros"
-    },
-    "node_caulerpa_vesicular": {
-        "question": "¿Los rámulos de los filoides tienen forma de pequeñas vesículas esféricas como racimos de uvas?",
-        "yes_branch": "node_caulerpa_grapes_size",
-        "no_branch": "node_caulerpa_cup_or_pinn",
-        "is_leaf": false,
-        "character_name": "ramulos_vesiculosos"
-    },
-    "node_caulerpa_grapes_size": {
-        "question": "¿Las vesículas esféricas son de tamaño diminuto (1-2 mm de diámetro) y densamente apiñadas en racimos cortos?",
-        "yes_branch": "species_caulerpa_microphysa",
-        "no_branch": "species_caulerpa_racemosa",
-        "is_leaf": false,
-        "character_name": "vesiculas_diminutas"
-    },
-    "node_caulerpa_cup_or_pinn": {
-        "question": "¿Los rámulos tienen forma de copas o turbinados (aplanados en el ápice)?",
-        "yes_branch": "species_caulerpa_chemnitzia",
-        "no_branch": "node_caulerpa_pinnate_teeth",
-        "is_leaf": false,
-        "character_name": "ramulos_turbinados"
-    },
-    "node_caulerpa_pinnate_teeth": {
-        "question": "¿Los filoides poseen pínnulas bilaterales con ápices redondeados u obtusos y márgenes fuertemente denticulados hacia la porción distal (sección superior)?",
-        "yes_branch": "species_caulerpa_scalpelliformis",
-        "no_branch": "species_caulerpa_mexicana",
-        "is_leaf": false,
-        "character_name": "pinnulas_apice_obtuso_denticuladas"
-    },
-    "node_cellular_green": {
-        "question": "¿El talo es laminar plano (distromático) o tubular hueco (típico de Ulvales)?",
-        "yes_branch": "node_ulvales_start",
-        "no_branch": "node_cladophorales_start",
-        "is_leaf": false,
-        "character_name": "talo_laminar_o_tubular_hueco"
-    },
-    "node_ulvales_start": {
-        "question": "¿El talo es tubular hueco y ramificado principalmente en la base?",
-        "yes_branch": "species_ulva_flexuosa",
-        "no_branch": "node_ulva_laminar",
-        "is_leaf": false,
-        "character_name": "talo_tubular"
-    },
-    "node_ulva_laminar": {
-        "question": "¿La lámina del talo es rígida, firme, de base engrosada y con dientes microscópicos en el margen?",
-        "yes_branch": "species_ulva_rigida",
-        "no_branch": "species_ulva_lactuca",
-        "is_leaf": false,
-        "character_name": "lamina_rigida_dientes_margen"
-    },
-    "node_cladophorales_start": {
-        "question": "¿Los filamentos son simples, gruesos, rígidos y no ramificados, formando mechones erectos?",
-        "yes_branch": "species_chaetomorpha_antennina",
-        "no_branch": "node_cladophorales_branched",
-        "is_leaf": false,
-        "character_name": "filamentos_simples_no_ramificados"
-    },
-    "node_cladophorales_branched": {
-        "question": "¿El talo está formado por ramas globosas translúcidas que nacen en verticilos en forma de sombrilla?",
-        "yes_branch": "species_ernodesmis_verticillata",
-        "no_branch": "node_cladophorales_mesh",
-        "is_leaf": false,
-        "character_name": "ramas_verticiladas_sombrilla"
-    },
-    "node_cladophorales_mesh": {
-        "question": "¿El talo forma una red o malla reticulada fina y tridimensional?",
-        "yes_branch": "species_phyllodictyon_anastomosans",
-        "no_branch": "species_cladophora_vagabunda",
-        "is_leaf": false,
-        "character_name": "malla_reticulada"
-    },
-    "node_heterokonto_start": {
-        "question": "¿El talo está altamente diferenciado en estipes, filoides en forma de hojas aserradas y vesículas de aire redondas (aerocistos)?",
-        "yes_branch": "node_sargassum_start",
-        "no_branch": "node_heterokonto_simple",
-        "is_leaf": false,
-        "character_name": "presencia_vesiculas_filoides_estipe"
-    },
-    "node_sargassum_start": {
-        "question": "¿El talo es pelágico (flotante, sin disco de fijación o sustrato físico)?",
-        "yes_branch": "node_sargassum_pelagic",
-        "no_branch": "node_sargassum_benthic",
-        "is_leaf": false,
-        "character_name": "habito_pelagico"
-    },
-    "node_sargassum_pelagic": {
-        "question": "¿Las vesículas de aire (aerocistos) poseen un pequeño filamento, espina o apéndice en su ápice?",
-        "yes_branch": "species_sargassum_natans",
-        "no_branch": "species_sargassum_fluitans",
-        "is_leaf": false,
-        "character_name": "aerocistos_apiculados"
-    },
-    "node_sargassum_benthic": {
-        "question": "¿Los filoides presentan abundantes proyecciones espinosas y dentadas en la superficie de su limbo (talo muy rugoso)?",
-        "yes_branch": "species_sargassum_hystrix",
-        "no_branch": "node_sargassum_benthic_non_rugose",
-        "is_leaf": false,
-        "character_name": "filoides_espinosos_limbo"
-    },
-    "node_sargassum_benthic_non_rugose": {
-        "question": "¿Los filoides son muy densos, cortos, ovoides y fuertemente aserrados y encrespados?",
-        "yes_branch": "species_sargassum_polyceratium",
-        "no_branch": "node_sargassum_cym_fil_vul",
-        "is_leaf": false,
-        "character_name": "filoides_densos_cortos_aserrados"
-    },
-    "node_sargassum_cym_fil_vul": {
-        "question": "¿Las vesículas de aire son pequeñas y se agrupan en racimos densos en las axilas de filoides aserrados anchos?",
-        "yes_branch": "species_sargassum_cymosum",
-        "no_branch": "node_sargassum_fil_vul",
-        "is_leaf": false,
-        "character_name": "vesiculas_pequenas_racimos_axilares"
-    },
-    "node_sargassum_fil_vul": {
-        "question": "¿Los filoides del ejemplar son muy delgados, estrechos y de forma linear-lanceolada?",
-        "yes_branch": "species_sargassum_filipendula",
-        "no_branch": "species_sargassum_vulgare",
-        "is_leaf": false,
-        "character_name": "filoides_lineares_delgados"
-    },
-    "node_heterokonto_simple": {
-        "question": "¿El talo es globoso, hueco y de consistencia membranosa frágil (como una pequeña bolsa cerebriforme)?",
-        "yes_branch": "species_colpomenia_sinuosa",
-        "no_branch": "node_heterokonto_laminar_or_filamentous",
-        "is_leaf": false,
-        "character_name": "talo_globoso_hueco"
-    },
-    "node_heterokonto_laminar_or_filamentous": {
-        "question": "¿El talo es plano y en forma de abanico, con finas bandas concéntricas calcificadas?",
-        "yes_branch": "species_padina_gymnospora",
-        "no_branch": "node_heterokonto_cords_or_dictyo",
-        "is_leaf": false,
-        "character_name": "talo_abanico_bandas_concentricas"
-    },
-    "node_heterokonto_cords_or_dictyo": {
-        "question": "¿El talo es de consistencia cartilaginosa firme, cilíndrico o subcilíndrico ramificado dicotómicamente?",
-        "yes_branch": "species_chnoospora_minima",
-        "no_branch": "node_heterokonto_flat_blades_or_filaments",
-        "is_leaf": false,
-        "character_name": "talo_cilindrico_cartilaginoso"
-    },
-    "node_heterokonto_flat_blades_or_filaments": {
-        "question": "¿El talo es plano, laminar o cintiforme, de ramificación dicotómica o irregular (Dictyotaceae)?",
-        "yes_branch": "node_dictyotaceae_start",
-        "no_branch": "node_heterokonto_filamentous",
-        "is_leaf": false,
-        "character_name": "talo_plano_laminar_cintiforme"
-    },
-    "node_dictyotaceae_start": {
-        "question": "¿Las frondas laminares poseen una costilla central (nervadura media longitudinal) bien definida?",
-        "yes_branch": "species_dictyopteris_delicatula",
-        "no_branch": "node_dictyotaceae_no_rib",
-        "is_leaf": false,
-        "character_name": "nervadura_media_costilla"
-    },
-    "node_dictyotaceae_no_rib": {
-        "question": "¿El talo es coriáceo, ramificado irregularmente de forma palmeada con márgenes ondulados o dentados?",
-        "yes_branch": "species_spatoglossum_schroederi",
-        "no_branch": "node_dictyotaceae_dicotomic",
-        "is_leaf": false,
-        "character_name": "ramificacion_palmeada_irregular"
-    },
-    "node_dictyotaceae_dicotomic": {
-        "question": "¿Las ramas muestran giros helicoidales (espiralados) y extremos bifurcados semejantes a astas de ciervo?",
-        "yes_branch": "species_canistrocarpus_cervicornis",
-        "no_branch": "node_dictyota_margin_teeth",
-        "is_leaf": false,
-        "character_name": "giros_helicoidales_ramas"
-    },
-    "node_dictyota_margin_teeth": {
-        "question": "¿El margen de la fronda presenta pequeños dientes o cilios espaciados conspicuos?",
-        "yes_branch": "node_dictyota_teeth_type",
-        "no_branch": "node_dictyota_smooth_margin",
-        "is_leaf": false,
-        "character_name": "margen_con_dientes"
-    },
-    "node_dictyota_teeth_type": {
-        "question": "¿Los dientes del margen son muy finos y espaciados en forma de pestañas (cilios)?",
-        "yes_branch": "species_dictyota_ciliolata",
-        "no_branch": "species_dictyota_crenulata",
-        "is_leaf": false,
-        "character_name": "dientes_tipo_pestaña"
-    },
-    "node_dictyota_smooth_margin": {
-        "question": "¿El talo presenta coloración azul iridiscente bajo el agua, con frondas anchas y márgenes lisos?",
-        "yes_branch": "species_dictyota_menstrualis",
-        "no_branch": "species_dictyota_pulchella",
-        "is_leaf": false,
-        "character_name": "iridiscencia_azul"
-    },
-    "node_heterokonto_filamentous": {
-        "question": "¿Los filamentos presentan una célula apical grande, negra e individual muy llamativa (Sphacelariales)?",
-        "yes_branch": "node_sphacelaria_species",
-        "no_branch": "node_ectocarpales_filamentous",
-        "is_leaf": false,
-        "character_name": "celula_apical_negra"
-    },
-    "node_sphacelaria_species": {
-        "question": "¿Los propágulos del talo son delgados, cilíndricos y de brazos alargados?",
-        "yes_branch": "species_sphacelaria_rigidula",
-        "no_branch": "species_sphacelaria_tribuloides",
-        "is_leaf": false,
-        "character_name": "propagulos_delgados_cilindricos"
-    },
-    "node_ectocarpales_filamentous": {
-        "question": "¿Los filamentos se ramifican marcadamente en ángulos rectos y poseen esporangios pluriloculares alargados?",
-        "yes_branch": "species_feldmannia_mitchelliae",
-        "no_branch": "species_asteronema_breviarticulatum",
-        "is_leaf": false,
-        "character_name": "ramificacion_angulo_recto"
-    },
-    "node_rhodophyta_start": {
-        "question": "¿El espécimen posee calcificación (ya sea rígida y articulada, o blanda, harinosa y viscosa) en su talo?",
-        "yes_branch": "node_rhodo_calcified",
-        "no_branch": "node_rhodo_texture",
-        "is_leaf": false,
-        "character_name": "talo_calcificado"
-    },
-    "node_rhodo_calcified": {
-        "question": "¿El talo calcificado es rígido, articulado y ramificado dicotómicamente?",
-        "yes_branch": "species_jania_adhaerens",
-        "no_branch": "node_liagora_species",
-        "is_leaf": false,
-        "character_name": "talo_articulado_rigido"
-    },
-    "node_liagora_species": {
-        "question": "¿Las ramificaciones tienen un aspecto fuertemente corimboso (aplanado en el ápice) y nudos pubescentes?",
-        "yes_branch": "species_liagora_ceranoides",
-        "no_branch": "species_liagora_sp",
-        "is_leaf": false,
-        "character_name": "aspecto_corimboso_nudos_pubescentes"
-    },
-    "node_rhodo_texture": {
-        "question": "¿El talo tiene una textura predominantemente carnosa/cartilaginosa con ejes gruesos (cilíndricos o aplanados)?",
-        "yes_branch": "node_rhodo_fleshy",
-        "no_branch": "node_rhodo_filamentous",
-        "is_leaf": false,
-        "character_name": "talo_carnoso_cartilaginoso"
-    },
-    "node_rhodo_filamentous": {
-        "question": "¿Es un alga de filamentos muy finos, color rosado-rojizo, con ramificación alterna y segmentos corticados?",
-        "yes_branch": "node_cottoniella_check",
-        "no_branch": "node_filamentous_rhodo",
-        "is_leaf": false,
-        "character_name": "filamentos_finos_ramificacion_alterna"
-    },
-    "node_cottoniella_check": {
-        "question": "A nivel microscópico, ¿presenta un único filamento monosifónico por segmento surgiendo de una célula pericentral adaxial?",
-        "yes_branch": "species_cottoniella_filamentosa",
-        "no_branch": "node_dasya_or_hetero",
-        "is_leaf": false,
-        "character_name": "filamento_monosifonico_unico_adaxial"
-    },
-    "node_rhodo_fleshy": {
-        "question": "¿El espécimen presenta ramas con ramificaciones cortas en forma de espina o espolón, a menudo curvadas en los ápices (típico de Hypnea)?",
-        "yes_branch": "node_hypnea_or_others",
-        "no_branch": "node_fleshy_cylindrical_rhodo",
-        "is_leaf": false,
-        "character_name": "ramas_espinas_apices_curvados"
-    },
-    "node_filamentous_rhodo": {
-        "question": "¿Los ápices de los filamentos terminan típicamente en forma de pinzas de cangrejo y poseen espinulas en los nudos?",
-        "yes_branch": "species_centroceras_gasparinii",
-        "no_branch": "node_spyridia_or_deless",
-        "is_leaf": false,
-        "character_name": "apices_pincetas_cangrejo"
-    },
-    "node_spyridia_or_deless": {
-        "question": "¿El eje principal del filamento está provisto de bandas corticales nodales alternando con zonas translúcidas (Spyridia)?",
-        "yes_branch": "node_spyridia_sp",
-        "no_branch": "node_polysiphonous_rhodo",
-        "is_leaf": false,
-        "character_name": "corticacion_nodal_eje"
-    },
-    "node_spyridia_sp": {
-        "question": "¿Las ramillas corticales cortas poseen pequeñas espinas en sus extremos?",
-        "yes_branch": "species_spyridia_hypnoides",
-        "no_branch": "species_spyridia_filamentosa",
-        "is_leaf": false,
-        "character_name": "ramillas_espinosas_apical"
-    },
-    "node_polysiphonous_rhodo": {
-        "question": "¿Las ramillas erectas están dispuestas de manera unilateral en el eje, formando una serie de pequeños peines?",
-        "yes_branch": "species_herposiphonia_secunda",
-        "no_branch": "node_bryocladia_or_loph",
-        "is_leaf": false,
-        "character_name": "ramillas_unilaterales_peine"
-    },
-    "node_bryocladia_or_loph": {
-        "question": "¿Los ejes erectos forman céspedes densos, tiesos y ásperos de color marrón-negruzco a negro (Bryocladia)?",
-        "yes_branch": "node_bryocladia_sp",
-        "no_branch": "node_lophosiphonia_or_poly",
-        "is_leaf": false,
-        "character_name": "cespedes_tiesos_negruzcos"
-    },
-    "node_bryocladia_sp": {
-        "question": "¿Las ramas erectas principales están cubiertas densamente por ramificaciones secundarias muy cortas?",
-        "yes_branch": "species_bryocladia_thyrsigera",
-        "no_branch": "species_bryocladia_atlantica",
-        "is_leaf": false,
-        "character_name": "ramas_erectas_muy_densas"
-    },
-    "node_lophosiphonia_or_poly": {
-        "question": "¿El talo postrado y erecto presenta ápices con curvatura helicoidal bien marcada, con escasos tricoblastos?",
-        "yes_branch": "node_lophosiphonia_sp",
-        "no_branch": "species_polysiphonia_havanensis",
-        "is_leaf": false,
-        "character_name": "apices_curvados_helicoide"
-    },
-    "node_lophosiphonia_sp": {
-        "question": "¿El talo filamentoso presenta de 4 a 6 células pericentrales en sección transversal?",
-        "yes_branch": "species_lophosiphonia_sp1",
-        "no_branch": "species_lophosiphonia_sp2",
-        "is_leaf": false,
-        "character_name": "pericentrales_4_a_6"
-    },
-    "node_dasya_or_hetero": {
-        "question": "¿El talo posee ramificaciones densas, apicalmente espiraladas y plumosas de color rojo oscuro?",
-        "yes_branch": "species_dasya_ocellata",
-        "no_branch": "node_heterosiphonia_check",
-        "is_leaf": false,
-        "character_name": "ramas_apicales_espiraladas_plumosas"
-    },
-    "node_heterosiphonia_check": {
-        "question": "¿El talo blando muestra ramificación dorsiventral alterna pinnada y células pericentrales (Heterosiphonia)?",
-        "yes_branch": "species_heterosiphonia_gibbesii",
-        "no_branch": "node_fleshy_cylindrical_rhodo",
-        "is_leaf": false,
-        "character_name": "ramificacion_dorsiventral_pinnada"
-    },
-    "node_fleshy_cylindrical_rhodo": {
-        "question": "¿El talo presenta ramificaciones laterales provistas de pequeñas espinas agudas distribuidas en todo el talo?",
-        "yes_branch": "node_acanthophora_or_bryo",
-        "no_branch": "node_laurencia_or_others",
-        "is_leaf": false,
-        "character_name": "presencia_espinas_agudas"
-    },
-    "node_acanthophora_or_bryo": {
-        "question": "¿El talo posee ejes marcadamente angulados (sección triangular/trística) con ramillas cortas rígidas en 3 filas (Bryothamnion)?",
-        "yes_branch": "species_bryothamnion_triquetrum",
-        "no_branch": "node_acanthophora_sp",
-        "is_leaf": false,
-        "character_name": "ejes_angulados_tristicos"
-    },
-    "node_acanthophora_sp": {
-        "question": "¿Las espinas agudas cubren densamente tanto los ejes principales como los ejes secundarios de forma desordenada?",
-        "yes_branch": "species_acanthophora_muscoides",
-        "no_branch": "species_acanthophora_spicifera",
-        "is_leaf": false,
-        "character_name": "espinas_en_ejes_principales"
-    },
-    "node_laurencia_or_others": {
-        "question": "¿Las ramas cortas (rámulos) son redondeadas, verrugosas, claviformes con un pequeño hoyuelo apical con pelos?",
-        "yes_branch": "node_laurencia_group",
-        "no_branch": "node_chondria_or_others",
-        "is_leaf": false,
-        "character_name": "ramulos_hoyuelo_apical"
-    },
-    "node_laurencia_group": {
-        "question": "¿El talo es de consistencia blanda, cilíndrico y ramificado alternamente de forma piramidal?",
-        "yes_branch": "species_laurencia_dendroidea",
-        "no_branch": "species_palisada_papillosa",
-        "is_leaf": false,
-        "character_name": "talo_blando_laurencia"
-    },
-    "node_chondria_or_others": {
-        "question": "¿Los rámulos tienen constricciones muy marcadas en la base y ápice redondeado, de aspecto hinchado?",
-        "yes_branch": "node_chondria_species",
-        "no_branch": "node_laminar_rhodo",
-        "is_leaf": false,
-        "character_name": "ramulos_constriccion_basal"
-    },
-    "node_chondria_species": {
-        "question": "¿El talo es de consistencia blanda gelatinosa y ramificación piramidal (en lugar de talo corto y firme con ramillas agrupadas en racimos)?",
-        "yes_branch": "species_chondria_capillaris",
-        "no_branch": "species_chondria_sedifolia",
-        "is_leaf": false,
-        "character_name": "consistencia_gelatinosa_ramificacion_piramidal"
-    },
-    "node_laminar_rhodo": {
-        "question": "¿El talo es marcadamente plano, en forma de lámina ancha, membranosa o carnosa?",
-        "yes_branch": "node_laminar_rhodo_details",
-        "no_branch": "node_gelidiales_or_others",
-        "is_leaf": false,
-        "character_name": "talo_plano_laminar"
-    },
-    "node_laminar_rhodo_details": {
-        "question": "¿La lámina del talo es de gran tamaño, consistencia gelatinosa-carnosa y tacto muy suave?",
-        "yes_branch": "species_grateloupia_turuturu",
-        "no_branch": "node_grateloupia_or_sebdenia",
-        "is_leaf": false,
-        "character_name": "lamina_flesh_gelatinosa"
-    },
-    "node_grateloupia_or_sebdenia": {
-        "question": "¿El talo está dividido de forma pinnada muy regular a lo largo del eje, semejando una pluma?",
-        "yes_branch": "species_grateloupia_filicina",
-        "no_branch": "species_sebdenia_flabellata",
-        "is_leaf": false,
-        "character_name": "lamina_dividida_pinnada"
-    },
-    "node_hypnea_or_others": {
-        "question": "¿Los extremos de las ramas principales terminan en ganchos (zarcillos) engrosados y enroscados?",
-        "yes_branch": "species_hypnea_musciformis",
-        "no_branch": "node_hypnea_cushion_or_others",
-        "is_leaf": false,
-        "character_name": "extremos_en_gancho"
-    },
-    "node_hypnea_cushion_or_others": {
-        "question": "¿El talo forma céspedes densos intrincados con espinulas cortas de consistencia rígida?",
-        "yes_branch": "node_hypnea_sp",
-        "no_branch": "node_gelidiales_or_others",
-        "is_leaf": false,
-        "character_name": "talo_intrincado_cojin"
-    },
-    "node_hypnea_sp": {
-        "question": "¿Las espínulas laterales son abundantes, largas, simples y bifurcadas de disposición irregular?",
-        "yes_branch": "species_hypnea_valentiae",
-        "no_branch": "species_hypnea_spinella",
-        "is_leaf": false,
-        "character_name": "espinas_largas_bifurcadas"
-    },
-    "node_gelidiales_or_others": {
-        "question": "¿El talo posee ramificaciones rígidas, consistencia elástica y cartilaginosa, con ramificación pinnada aplanada?",
-        "yes_branch": "node_gelidium_sp",
-        "no_branch": "node_solieriaceae_or_gracilaria",
-        "is_leaf": false,
-        "character_name": "talo_elastico_cartilaginoso"
-    },
-    "node_gelidium_sp": {
-        "question": "¿El talo es diminuto (menos de 2 cm) y forma alfombras adheridas fuertemente al sustrato rocoso alto?",
-        "yes_branch": "species_gelidium_pusillum",
-        "no_branch": "species_gelidium_floridanum",
-        "is_leaf": false,
-        "character_name": "talo_diminuto_intermareal_alto"
-    },
-    "node_solieriaceae_or_gracilaria": {
-        "question": "¿El talo cilíndrico y carnoso posee en su estructura celular interna filamentos de soporte medulares finos (Agardhiella)?",
-        "yes_branch": "species_agardhiella_subulata",
-        "no_branch": "node_gracilaria_start",
-        "is_leaf": false,
-        "character_name": "filamentos_soporte_medulares"
-    },
-    "node_gracilaria_start": {
-        "question": "¿El talo es notablemente aplanado o comprimido lateralmente?",
-        "yes_branch": "node_gracilaria_flat",
-        "no_branch": "node_gracilaria_cylindrical",
-        "is_leaf": false,
-        "character_name": "talo_plano_comprimido"
-    },
-    "node_gracilaria_flat": {
-        "question": "¿El talo plano posee ramificación pinnada a subdística regular muy conspicua?",
-        "yes_branch": "species_gracilaria_domingensis",
-        "no_branch": "node_gracilaria_flat_dichot",
-        "is_leaf": false,
-        "character_name": "ramificacion_pinnada_gracilaria"
-    },
-    "node_gracilaria_flat_dichot": {
-        "question": "¿El talo plano-comprimido es de consistencia coriácea dura y se ramifica dicotómicamente?",
-        "yes_branch": "species_gracilaria_mammillaris",
-        "no_branch": "species_gracilaria_flabelliformis",
-        "is_leaf": false,
-        "character_name": "talo_coriaceo_dicotomo"
-    },
-    "node_gracilaria_cylindrical": {
-        "question": "¿El talo cilíndrico es carnoso y quebradiza, ramificado alternamente, con ejes gruesos (2-3 mm)?",
-        "yes_branch": "species_gracilaria_bursa_pastoris",
-        "no_branch": "node_gracilaria_blod_caud",
-        "is_leaf": false,
-        "character_name": "talo_carnoso_quebradizo"
-    },
-    "node_gracilaria_blod_caud": {
-        "question": "¿Las ramificaciones cilíndricas se estrechan fuertemente en su base de inserción con el eje?",
-        "yes_branch": "species_gracilaria_blodgettii",
-        "no_branch": "species_gracilaria_caudata",
-        "is_leaf": false,
-        "character_name": "estrechamiento_base_rama"
-    },
-    "unknown": {
-        "is_leaf": true,
-        "species_name": "Desconocida",
-        "phylum": "N/A",
-        "habitat_note": "El espécimen no coincide con los registros actuales del catálogo."
+  "species_bryopsis_ramulosa": {
+    "is_leaf": true,
+    "species_name": "Bryopsis ramulosa Montagne 1842",
+    "phylum": "Chlorophyta",
+    "order": "Bryopsidales",
+    "family": "Bryopsidaceae",
+    "description": "Talo filamentoso erecto de color verde oscuro, ramificado pinnadamente, cenocítico. Las ramificaciones secundarias son cilíndricas y se estrechan en la base.",
+    "habitat_note": "Registrada en el intermareal rocoso de Playa La Caracola y Valdez, adherida a sustrato rocoso sumergido.",
+    "env_profile": {
+      "preferred_stations": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
     }
+  },
+  "species_caulerpa_microphysa": {
+    "is_leaf": true,
+    "species_name": "Caulerpa microphysa (Weber Bosse) Feldmann 1955",
+    "phylum": "Chlorophyta",
+    "order": "Bryopsidales",
+    "family": "Caulerpaceae",
+    "description": "Alga cenocítica con estolón rastrero y ramillas erectas cortas que sostienen racimos de pequeñas vesículas esféricas (1-2 mm de diámetro) apiñadas.",
+    "habitat_note": "Bahía somera de Playa Valdez en sustrato rocoso protegido de baja energía.",
+    "env_profile": {
+      "preferred_stations": [
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_caulerpa_prolifera": {
+    "is_leaf": true,
+    "species_name": "Caulerpa prolifera (Forsskål) J.V.Lamouroux 1809",
+    "phylum": "Chlorophyta",
+    "order": "Bryopsidales",
+    "family": "Caulerpaceae",
+    "description": "Talo con estolón rastrero y filoides erectos de color verde brillante, planos, enteros, laminares, con forma de hojas lisas y base peciolada.",
+    "habitat_note": "Común en sedimentos arenosos y rocas protegidas en la bahía de Valdez.",
+    "env_profile": {
+      "preferred_stations": [
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_caulerpa_racemosa": {
+    "is_leaf": true,
+    "species_name": "Caulerpa racemosa (Forsskål) J.Agardh 1873",
+    "phylum": "Chlorophyta",
+    "order": "Bryopsidales",
+    "family": "Caulerpaceae",
+    "description": "Talo cenocítico con estolón grueso y ramas erectas con rámulos globosos, esféricos o claviformes en forma de racimos de uvas medianas a grandes.",
+    "habitat_note": "Ampliamente distribuida en zonas intermareales de La Caracola y Valdez, muy resistant.",
+    "env_profile": {
+      "preferred_stations": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_caulerpa_chemnitzia": {
+    "is_leaf": true,
+    "species_name": "Caulerpa chemnitzia (Esper) J.V.Lamouroux 1809",
+    "phylum": "Chlorophyta",
+    "order": "Bryopsidales",
+    "family": "Caulerpaceae",
+    "description": "Talo cenocítico caracterizado por ramillas erectas con rámulos en forma de copa o turbinados, aplanados apicalmente, de disposición alterna o espiralada.",
+    "habitat_note": "Plataforma rocosa de La Caracola y zonas de corriente moderada en Valdez.",
+    "env_profile": {
+      "preferred_stations": [
+        2,
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_caulerpa_scalpelliformis": {
+    "is_leaf": true,
+    "species_name": "Caulerpa scalpelliformis (R.Brown ex Turner) C.Agardh 1817",
+    "phylum": "Chlorophyta",
+    "order": "Bryopsidales",
+    "family": "Caulerpaceae",
+    "description": "Talo cenocítico verde con estolón ramificado y filoides erectos (hasta 11.8 cm). Pínnulas bilaterales opuestas, aplanadas, con ápices redondeados u obtusos y márgenes fuertemente denticulados hacia la porción distal.",
+    "habitat_note": "Nuevo registro para el estado Nueva Esparta. Recolectada en plataformas rocosas estables de alta energía en La Caracola y en Valdez.",
+    "env_profile": {
+      "preferred_stations": [
+        1,
+        2,
+        3
+      ],
+      "preferred_months": [
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_caulerpa_sertularioides": {
+    "is_leaf": true,
+    "species_name": "Caulerpa sertularioides (S.G.Gmelin) M.Howe 1905",
+    "phylum": "Chlorophyta",
+    "order": "Bryopsidales",
+    "family": "Caulerpaceae",
+    "description": "Talo cenocítico con estolón largo y filoides erectos con rámulos cilíndricos, finos, curvados apicalmente, dispuestos en dos filas densas en forma de pluma de ave.",
+    "habitat_note": "Habita en lagunas costeras y zonas someras arenoso-rocosas de Valdez y La Caracola.",
+    "env_profile": {
+      "preferred_stations": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_caulerpa_mexicana": {
+    "is_leaf": true,
+    "species_name": "Caulerpa mexicana Sonder ex Kützing 1849",
+    "phylum": "Chlorophyta",
+    "order": "Bryopsidales",
+    "family": "Caulerpaceae",
+    "description": "Talo con estolón y filoides erigidos planos con rámulos pinnados, opuestos, con ápices agudos no dentados y base estrecha.",
+    "habitat_note": "Alga común caracterizada por rámulos pinnados con ápices agudos no dentados. Suele confundirse con C. scalpelliformis.",
+    "env_profile": {
+      "preferred_stations": [
+        2,
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_phyllodictyon_anastomosans": {
+    "is_leaf": true,
+    "species_name": "Phyllodictyon anastomosans (Harvey) Kraft & M.J.Wynne 1996",
+    "phylum": "Chlorophyta",
+    "order": "Cladophorales",
+    "family": "Boodleaceae",
+    "description": "Talo verde en forma de red o malla tridimensional delicada, formada por filamentos celulares que se fusionan lateralmente mediante tenáculos.",
+    "habitat_note": "Adherida a rocas en grietas de la zona intermareal rocosa expuesta (La Caracola).",
+    "env_profile": {
+      "preferred_stations": [
+        1,
+        2
+      ],
+      "preferred_months": [
+        "M3",
+        "M4"
+      ],
+      "temp_range": [
+        26.0,
+        28.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_chaetomorpha_antennina": {
+    "is_leaf": true,
+    "species_name": "Chaetomorpha antennina (Bory) Kützing 1847",
+    "phylum": "Chlorophyta",
+    "order": "Cladophorales",
+    "family": "Cladophoraceae",
+    "description": "Talo filamentoso verde brillante formado por densos mechones erectos no ramificados, con células cilíndricas muy largas visibles a simple vista y disco de fijación basal fuerte.",
+    "habitat_note": "Abundante en zonas de rompiente y alta energía hidrodinámica en la Estación 1 (La Caracola).",
+    "env_profile": {
+      "preferred_stations": [
+        1
+      ],
+      "preferred_months": [
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_cladophora_vagabunda": {
+    "is_leaf": true,
+    "species_name": "Cladophora vagabunda (Linnaeus) C.Hoek 1963",
+    "phylum": "Chlorophyta",
+    "order": "Cladophorales",
+    "family": "Cladophoraceae",
+    "description": "Talo filamentoso celular de color verde claro, profusamente ramificado de forma pseudodicotómica, formando filamentos delicados que terminan en fascículos unilaterales.",
+    "habitat_note": "Habita charcas intermareales y sobre rocas metamórficas en La Caracola y Valdez.",
+    "env_profile": {
+      "preferred_stations": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_ernodesmis_verticillata": {
+    "is_leaf": true,
+    "species_name": "Ernodesmis verticillata (Kützing) Børgesen 1912",
+    "phylum": "Chlorophyta",
+    "order": "Cladophorales",
+    "family": "Siphonocladaceae",
+    "description": "Talo formado por ramas globosas translúcidas que nacen en verticilos o ramificaciones concéntricas (en forma de sombrilla o dedos) a partir de una gran célula basal.",
+    "habitat_note": "Zonas protegidas bajo salientes rocosas y charcas de mareas en La Caracola.",
+    "env_profile": {
+      "preferred_stations": [
+        2
+      ],
+      "preferred_months": [
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_ulva_flexuosa": {
+    "is_leaf": true,
+    "species_name": "Ulva flexuosa Wulfen 1803",
+    "phylum": "Chlorophyta",
+    "order": "Ulvales",
+    "family": "Ulvaceae",
+    "description": "Talo verde claro, tubular hueco, estrecho y alaragado, ramificado principalmente en la porción basal con filamentos cilíndricos.",
+    "habitat_note": "Intermareal rocoso con influencia de escorrentía o nutrientes en Valdez.",
+    "env_profile": {
+      "preferred_stations": [
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_ulva_lactuca": {
+    "is_leaf": true,
+    "species_name": "Ulva lactuca Linnaeus 1753",
+    "phylum": "Chlorophyta",
+    "order": "Ulvales",
+    "family": "Ulvaceae",
+    "description": "Talo laminar verde brillante de consistencia membranosa, distromático (dos capas celulares), con forma lobulada o de hoja de lechuga.",
+    "habitat_note": "Muy común sobre sustrato rocoso intermareal en La Caracola y Valdez, bioindicadora de nutrientes.",
+    "env_profile": {
+      "preferred_stations": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_ulva_rigida": {
+    "is_leaf": true,
+    "species_name": "Ulva rigida C.Agardh 1823",
+    "phylum": "Chlorophyta",
+    "order": "Ulvales",
+    "family": "Ulvaceae",
+    "description": "Talo laminar verde oscuro, rígido y firme, con la base engrosada y márgenes típicamente provistos de pequeñas espinulas o dientes microscópicos.",
+    "habitat_note": "Frecuente en rocas de moderada a alta energía de oleaje en La Caracola.",
+    "env_profile": {
+      "preferred_stations": [
+        1,
+        2
+      ],
+      "preferred_months": [
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_canistrocarpus_cervicornis": {
+    "is_leaf": true,
+    "species_name": "Canistrocarpus cervicornis (Kützing) De Paula & De Clerck 2006",
+    "phylum": "Heterokontophyta",
+    "order": "Dictyotales",
+    "family": "Dictyotaceae",
+    "description": "Talo laminar pardo-amarillento ramificado dicotómicamente, con giros helicoidales espiralados y ramificaciones de aspecto astado (cuerno de ciervo).",
+    "habitat_note": "Habita charcas tranquilas y el submareal somero de Playa Valdez.",
+    "env_profile": {
+      "preferred_stations": [
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_dictyota_ciliolata": {
+    "is_leaf": true,
+    "species_name": "Dictyota ciliolata Sonder ex Kützing 1859",
+    "phylum": "Heterokontophyta",
+    "order": "Dictyotales",
+    "family": "Dictyotaceae",
+    "description": "Talo laminar plano ramificado dicotómicamente con los márgenes provistos de pequeños dientes finos espaciados en forma de pestañas (cilios).",
+    "habitat_note": "Plataforma rocosa de baja energía en Valdez y charcas protegidas de La Caracola.",
+    "env_profile": {
+      "preferred_stations": [
+        2,
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_dictyota_crenulata": {
+    "is_leaf": true,
+    "species_name": "Dictyota crenulata J. Agardh 1847",
+    "phylum": "Heterokontophyta",
+    "order": "Dictyotales",
+    "family": "Dictyotaceae",
+    "description": "Talo laminar de color pardo con márgenes densamente crenulados o provistos de dientes pequeños y regulares a lo largo de toda la lámina.",
+    "habitat_note": "Sustrato rocoso sumergido de Valdez, asociada con otras Dictyotaceae.",
+    "env_profile": {
+      "preferred_stations": [
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_dictyota_menstrualis": {
+    "is_leaf": true,
+    "species_name": "Dictyota menstrualis (Hoyt) Schnetter, Hörnig & Weber-Peukert 1987",
+    "phylum": "Heterokontophyta",
+    "order": "Dictyotales",
+    "family": "Dictyotaceae",
+    "description": "Talo laminar dicotómico de cintas anchas, con márgenes lisos y ápices obtusos. Muestra un color azul iridiscente característico bajo el agua.",
+    "habitat_note": "Frecuente en plataformas sumergidas y calas tranquilas en Valdez.",
+    "env_profile": {
+      "preferred_stations": [
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_dictyota_pulchella": {
+    "is_leaf": true,
+    "species_name": "Dictyota pulchella Hörnig & Schnetter 1988",
+    "phylum": "Heterokontophyta",
+    "order": "Dictyotales",
+    "family": "Dictyotaceae",
+    "description": "Talo laminar muy estrecho y delicado de cintas delgadas, con ramificaciones dicotómicas anguladas y color pardo-verdoso.",
+    "habitat_note": "Habita grietas y charcas protegidas de Playa La Caracola y bahía somera de Valdez.",
+    "env_profile": {
+      "preferred_stations": [
+        2,
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_dictyopteris_delicatula": {
+    "is_leaf": true,
+    "species_name": "Dictyopteris delicatula J.V.Lamouroux 1809",
+    "phylum": "Heterokontophyta",
+    "order": "Dictyotales",
+    "family": "Dictyotaceae",
+    "description": "Talo laminar delgado dicotómico, caracterizado por poseer una costilla central (nervadura media longitudinal) bien diferenciada y márgenes lisos.",
+    "habitat_note": "Sobre rocas metamórficas medianas en zonas de fuerte energía de La Caracola.",
+    "env_profile": {
+      "preferred_stations": [
+        1,
+        2
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_padina_gymnospora": {
+    "is_leaf": true,
+    "species_name": "Padina gymnospora (Kützing) Sonder 1871",
+    "phylum": "Heterokontophyta",
+    "order": "Dictyotales",
+    "family": "Dictyotaceae",
+    "description": "Talo en forma de abanico aplanado de color pardo-amarillento, levemente calcificado con líneas concéntricas de pelos y margen apical enrollado hacia adentro.",
+    "habitat_note": "Abundante en plataformas rocosas sumergidas de Valdez y La Caracola, prefiere aguas templadas.",
+    "env_profile": {
+      "preferred_stations": [
+        2,
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_spatoglossum_schroederi": {
+    "is_leaf": true,
+    "species_name": "Spatoglossum schroederi (C.Agardh) Kützing 1859",
+    "phylum": "Heterokontophyta",
+    "order": "Dictyotales",
+    "family": "Dictyotaceae",
+    "description": "Talo laminar de gran tamaño con ramificación irregular palmeada, consistencia coriácea, de color pardo-verdoso, con márgenes ondulados o dentados de manera irregular.",
+    "habitat_note": "Sustrato rocoso sumergido de baja energía en Valdez.",
+    "env_profile": {
+      "preferred_stations": [
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_feldmannia_mitchelliae": {
+    "is_leaf": true,
+    "species_name": "Feldmannia mitchelliae (Harvey) H.-S.Kim 2010",
+    "phylum": "Heterokontophyta",
+    "order": "Ectocarpales",
+    "family": "Acinetosporaceae",
+    "description": "Talo filamentoso fino de color marrón-amarillento en mechones algodonosos. Presenta ramificaciones en ángulo recto y esporangios pluriloculares alargados sésiles.",
+    "habitat_note": "Epífita sobre otras macroalgas o rocas metamórficas en La Caracola.",
+    "env_profile": {
+      "preferred_stations": [
+        1,
+        2
+      ],
+      "preferred_months": [
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_colpomenia_sinuosa": {
+    "is_leaf": true,
+    "species_name": "Colpomenia sinuosa (Mertens ex Roth) Derbès & Solier 1851",
+    "phylum": "Heterokontophyta",
+    "order": "Ectocarpales",
+    "family": "Scytosiphonaceae",
+    "description": "Talo globoso hueco, globuloso o cerebriforme, de color marrón a oliva-pardo, con consistencia delgada y frágil, cubierto de pequeños pelos superficiales.",
+    "habitat_note": "Frecuente en plataformas rocosas tranquilas de Valdez, flotando o adherida débilmente.",
+    "env_profile": {
+      "preferred_stations": [
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_chnoospora_minima": {
+    "is_leaf": true,
+    "species_name": "Chnoospora minima (Hering) Papenfuss 1956",
+    "phylum": "Heterokontophyta",
+    "order": "Ectocarpales",
+    "family": "Scytosiphonaceae",
+    "description": "Talo cilíndrico o subcilíndrico ramificado dicotómicamente, cartilaginoso, firme, formando densos arbustos de color oliva-marrón adheridos por disco basal.",
+    "habitat_note": "Zonas expuestas de fuerte oleaje adherida fuertemente a rocas metamórficas disgregadas en La Caracola.",
+    "env_profile": {
+      "preferred_stations": [
+        1
+      ],
+      "preferred_months": [
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_sargassum_cymosum": {
+    "is_leaf": true,
+    "species_name": "Sargassum cymosum C.Agardh 1820",
+    "phylum": "Heterokontophyta",
+    "order": "Fucales",
+    "family": "Sargassaceae",
+    "description": "Talo bentónico con estipe y filoides en forma de hojas lanceoladas aserradas, con ramificaciones dicotómicas densas y vesículas de aire redondas y abundantes en las axilas.",
+    "habitat_note": "Habita el sustrato rocoso sumergido estable de Valdez y La Caracola.",
+    "env_profile": {
+      "preferred_stations": [
+        2,
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_sargassum_filipendula": {
+    "is_leaf": true,
+    "species_name": "Sargassum filipendula C.Agardh 1824",
+    "phylum": "Heterokontophyta",
+    "order": "Fucales",
+    "family": "Sargassaceae",
+    "description": "Talo bentónico con filoides muy delgados, alargados, lineares u oblongo-lanceolados, y aerocistos esféricos pequeños provistos de pedicelos finos.",
+    "habitat_note": "Zonas tranquilas de Valdez, formando densas formaciones de pradera bentónica.",
+    "env_profile": {
+      "preferred_stations": [
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_sargassum_fluitans": {
+    "is_leaf": true,
+    "species_name": "Sargassum fluitans (Børgesen) Børgesen 1914",
+    "phylum": "Heterokontophyta",
+    "order": "Fucales",
+    "family": "Sargassaceae",
+    "description": "Talo estrictamente pelágico (flotante, sin disco de fijación o sustrato físico). Vesículas de aire lisas, esféricas, sin espinas ni apéndices. Filoides anchos y aserrados.",
+    "habitat_note": "Origen pelágico. Forma arribazones masivos (sargazadas) en la orilla de La Caracola y Valdez durante vientos alisios.",
+    "env_profile": {
+      "preferred_stations": [
+        1,
+        3
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_sargassum_hystrix": {
+    "is_leaf": true,
+    "species_name": "Sargassum hystrix J.Agardh 1847",
+    "phylum": "Heterokontophyta",
+    "order": "Fucales",
+    "family": "Sargassaceae",
+    "description": "Talo bentónico con filoides densamente cubiertos de pequeñas proyecciones espinosas o verrugas en la superficie del limbo, dándoles un aspecto rugoso.",
+    "habitat_note": "Plataforma sumergida de La Caracola en microhábitats de oleaje moderado.",
+    "env_profile": {
+      "preferred_stations": [
+        2
+      ],
+      "preferred_months": [
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_sargassum_natans": {
+    "is_leaf": true,
+    "species_name": "Sargassum natans (Linnaeus) Gaillon 1828",
+    "phylum": "Heterokontophyta",
+    "order": "Fucales",
+    "family": "Sargassaceae",
+    "description": "Talo pelágico libre. Se caracteriza porque la mayoría de las vesículas de aire poseen un pequeño filamento, espina o apéndice en el ápice.",
+    "habitat_note": "Arribazones en la orilla (sargazadas), colectado principalmente de marzo a mayo.",
+    "env_profile": {
+      "preferred_stations": [
+        1,
+        3
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_sargassum_polyceratium": {
+    "is_leaf": true,
+    "species_name": "Sargassum polyceratium Montagne 1837",
+    "phylum": "Heterokontophyta",
+    "order": "Fucales",
+    "family": "Sargassaceae",
+    "description": "Talo con ramificaciones muy densas, filoides cortos y ovoides, fuertemente aserrados u ondulados, agrupados densamente sobre el eje basal.",
+    "habitat_note": "Muy frecuente en Valdez adherido a rocas medianas sumergidas de baja energía.",
+    "env_profile": {
+      "preferred_stations": [
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_sargassum_vulgare": {
+    "is_leaf": true,
+    "species_name": "Sargassum vulgare C.Agardh, nom. illeg. 1820",
+    "phylum": "Heterokontophyta",
+    "order": "Fucales",
+    "family": "Sargassaceae",
+    "description": "Talo bentónico con filoides típicamente lanceolados, con márgenes marcadamente dentados y ondulados, y aerocistos esféricos sobre pedicelos lisos.",
+    "habitat_note": "Especie abundante en el fitobentos intermareal de Valdez y La Caracola.",
+    "env_profile": {
+      "preferred_stations": [
+        2,
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_asteronema_breviarticulatum": {
+    "is_leaf": true,
+    "species_name": "Asteronema breviarticulatum (J.Agardh) Ouriques & Bouzon 2000",
+    "phylum": "Heterokontophyta",
+    "order": "Scytothamnales",
+    "family": "Asteronemataceae",
+    "description": "Talo filamentoso pardo formado por filamentos finos entrelazados en mechones o cordones replegados, con células cortas cilíndricas.",
+    "habitat_note": "Colectada en la zona intermareal alta de la Estación 1 (La Caracola).",
+    "env_profile": {
+      "preferred_stations": [
+        1
+      ],
+      "preferred_months": [
+        "M3",
+        "M4"
+      ],
+      "temp_range": [
+        26.0,
+        28.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_sphacelaria_rigidula": {
+    "is_leaf": true,
+    "species_name": "Sphacelaria rigidula Kützing 1843",
+    "phylum": "Heterokontophyta",
+    "order": "Sphacellariales",
+    "family": "Sphacelariaceae",
+    "description": "Talo filamentoso marrón diminuto (1-2 cm) con célula apical negra conspicua. Propágulos ramificados delgados y cilíndricos, de brazos alargados.",
+    "habitat_note": "Adherido a rocas o epífita en Valdez y La Caracola.",
+    "env_profile": {
+      "preferred_stations": [
+        2,
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_sphacelaria_tribuloides": {
+    "is_leaf": true,
+    "species_name": "Sphacelaria tribuloides Meneghini 1840",
+    "phylum": "Heterokontophyta",
+    "order": "Sphacellariales",
+    "family": "Sphacelariaceae",
+    "description": "Talo filamentoso con célula apical negra. Se diferencia por tener propágulos trirradiados con forma triangular u ovada, de brazos cortos y anchos.",
+    "habitat_note": "Zonas someras rocosas de Valdez y La Caracola.",
+    "env_profile": {
+      "preferred_stations": [
+        2,
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_spyridia_filamentosa": {
+    "is_leaf": true,
+    "species_name": "Spyridia filamentosa (Wulfen) Harvey 1833",
+    "phylum": "Rhodophyta",
+    "order": "Ceramiales",
+    "family": "Callithamniaceae",
+    "description": "Talo filamentoso muy fino, color rosado, con eje principal rodeado de bandas corticantes en los nudos y ramillas cortas que carecen de espinas en los ápices.",
+    "habitat_note": "Abundante en charcas protegidas de Valdez y plataformas estables sumergidas en La Caracola.",
+    "env_profile": {
+      "preferred_stations": [
+        2,
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_spyridia_hypnoides": {
+    "is_leaf": true,
+    "species_name": "Spyridia hypnoides (Bory) Papenfuss 1968",
+    "phylum": "Rhodophyta",
+    "order": "Ceramiales",
+    "family": "Callithamniaceae",
+    "description": "Talo filamentoso fino con ramificaciones laterales arqueadas y densamente agrupadas, caracterizado por poseer pequeñas espinas apicales ganchudas en las ramitas.",
+    "habitat_note": "Intermareal rocoso de Valdez y La Caracola en zonas someras.",
+    "env_profile": {
+      "preferred_stations": [
+        2,
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_centroceras_gasparinii": {
+    "is_leaf": true,
+    "species_name": "Centroceras gasparinii (Meneghini) Kützing 1849",
+    "phylum": "Rhodophyta",
+    "order": "Ceramiales",
+    "family": "Ceramiaceae",
+    "description": "Talo filamentoso segmentado con nudos provistos de pequeñas espinas. Los ápices de los filamentos son típicamente pinzados o en forma de gancho de cangrejo.",
+    "habitat_note": "Intermareal rocoso expuesto de La Caracola, formando céspedes cortos.",
+    "env_profile": {
+      "preferred_stations": [
+        1,
+        2
+      ],
+      "preferred_months": [
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_dasya_ocellata": {
+    "is_leaf": true,
+    "species_name": "Dasya ocellata (Grateloup) Harvey 1833",
+    "phylum": "Rhodophyta",
+    "order": "Ceramiales",
+    "family": "Delesseriaceae",
+    "description": "Talo filamentoso de color rojo-púrpura oscuro, erecto, con ramificación densa apical que da un aspecto plumoso o penicilado característico.",
+    "habitat_note": "Recogido en la zona intermareal protegida de Valdez.",
+    "env_profile": {
+      "preferred_stations": [
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M3",
+        "M4"
+      ],
+      "temp_range": [
+        26.0,
+        28.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_cottoniella_filamentosa": {
+    "is_leaf": true,
+    "species_name": "Cottoniella filamentosa (M.Howe) Børgesen 1920",
+    "phylum": "Rhodophyta",
+    "order": "Ceramiales",
+    "family": "Delesseriaceae",
+    "description": "Talo filamentoso rosa-rojizo delicado (4-6.7 cm). Ejes erectos corticados con ramificación alterna curvada. La característica diagnóstica es la presencia de un único filamento monosifónico por segmento que surge de una célula pericentral adaxial.",
+    "habitat_note": "Nuevo registro para Venezuela. Talo erecto corticado.",
+    "env_profile": {
+      "preferred_stations": [
+        1,
+        2
+      ],
+      "preferred_months": [
+        "M3",
+        "M4"
+      ],
+      "temp_range": [
+        26.0,
+        28.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_heterosiphonia_gibbesii": {
+    "is_leaf": true,
+    "species_name": "Heterosiphonia gibbesii (Harvey) Falkenberg 1901",
+    "phylum": "Rhodophyta",
+    "order": "Ceramiales",
+    "family": "Delesseriaceae",
+    "description": "Talo filamentoso blando con ramificación dorsiventral alterna pinnada y células pericentrales evidentes a nivel microscópico, de color rojo brillante.",
+    "habitat_note": "Intermareal sumergido en Valdez.",
+    "env_profile": {
+      "preferred_stations": [
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_acanthophora_muscoides": {
+    "is_leaf": true,
+    "species_name": "Acanthophora muscoides (Linnaeus) Bory 1828",
+    "phylum": "Rhodophyta",
+    "order": "Ceramiales",
+    "family": "Rhodomelaceae",
+    "description": "Talo erecto cilíndrico de color marrón-purpúreo con abundantes ramas laterales cortas cubiertas densamente de pequeñas espinas agudas tanto en los ejes principales como secundarios.",
+    "habitat_note": "Común en charcas intermareales de Playa Valdez y rocas metamórficas estables de La Caracola.",
+    "env_profile": {
+      "preferred_stations": [
+        2,
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_acanthophora_spicifera": {
+    "is_leaf": true,
+    "species_name": "Acanthophora spicifera (M.Vahl) Børgesen 1910",
+    "phylum": "Rhodophyta",
+    "order": "Ceramiales",
+    "family": "Rhodomelaceae",
+    "description": "Talo cilíndrico rígido ramificado con ramillas cortas que tienen espinas dispuestas en espiral solo en los ápices, dejando los ejes principales desnudos de espinas.",
+    "habitat_note": "Especie sumamente abundante en la zona costera rocosa de ambas playas, tolera cierta turbidez.",
+    "env_profile": {
+      "preferred_stations": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_bryocladia_thyrsigera": {
+    "is_leaf": true,
+    "species_name": "Bryocladia thyrsigera (J.Agardh) F.Schmitz 1901",
+    "phylum": "Rhodophyta",
+    "order": "Ceramiales",
+    "family": "Rhodomelaceae",
+    "description": "Talo filamentoso rígido que forma mechones densos de color marrón-negruzco. Ejes erectos con abundantes ramificaciones secundarias muy cortas y densas en forma de escobilla.",
+    "habitat_note": "Intermareal expuesto sobre rocas metamórficas erosionadas de La Caracola.",
+    "env_profile": {
+      "preferred_stations": [
+        1
+      ],
+      "preferred_months": [
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_bryocladia_atlantica": {
+    "is_leaf": true,
+    "species_name": "Bryocladia atlantica (Kapraun & J.N.Norris) Díaz-Tapia 2024",
+    "phylum": "Rhodophyta",
+    "order": "Ceramiales",
+    "family": "Rhodomelaceae",
+    "description": "Talo filamentoso erecto que se diferencia por ejes menos densamente ramificados, ramas delgadas y alargadas, de color púrpura oscuro.",
+    "habitat_note": "Zonas intermareales rocosas de La Caracola.",
+    "env_profile": {
+      "preferred_stations": [
+        1,
+        2
+      ],
+      "preferred_months": [
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_bryothamnion_triquetrum": {
+    "is_leaf": true,
+    "species_name": "Bryothamnion triquetrum (S.G.Gmelin) M.Howe 1915",
+    "phylum": "Rhodophyta",
+    "order": "Ceramiales",
+    "family": "Rhodomelaceae",
+    "description": "Talo cilíndrico angulado con consistencia coriácea dura, caracterizado por ramillas cortas dispuestas en tres filas a lo largo de las ramas, de color marrón rojizo.",
+    "habitat_note": "Submareal somero rocoso de Valdez expuesto a surgencias activas.",
+    "env_profile": {
+      "preferred_stations": [
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_chondria_capillaris": {
+    "is_leaf": true,
+    "species_name": "Chondria capillaris (Hudson) M.J.Wynne 1991",
+    "phylum": "Rhodophyta",
+    "order": "Ceramiales",
+    "family": "Rhodomelaceae",
+    "description": "Talo cilíndrico de consistencia gelatinosa con ramificación piramidal alterna. Las ramas se estrechan en la base y poseen pequeños ápices redondeados con hoyuelo.",
+    "habitat_note": "Charcas intermareales tranquilas y someras de Playa Valdez.",
+    "env_profile": {
+      "preferred_stations": [
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_chondria_sedifolia": {
+    "is_leaf": true,
+    "species_name": "Chondria sedifolia Harvey 1853",
+    "phylum": "Rhodophyta",
+    "order": "Ceramiales",
+    "family": "Rhodomelaceae",
+    "description": "Talo cilíndrico más corto y grueso, de consistencia algo firme, con ramillas laterales cilíndricas muy cortas agrupadas en racimos, con constricciones basales muy marcadas.",
+    "habitat_note": "Sobre sustrato rocoso sumergido de Valdez.",
+    "env_profile": {
+      "preferred_stations": [
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_herposiphonia_secunda": {
+    "is_leaf": true,
+    "species_name": "Herposiphonia secunda (C.Agardh) Ambronn 1880",
+    "phylum": "Rhodophyta",
+    "order": "Ceramiales",
+    "family": "Rhodomelaceae",
+    "description": "Talo postrado postrado-erecto, caracterizado por poseer ramillas erectas dispuestas en crestas o peines unilaterales a lo largo de los ejes principales postrados.",
+    "habitat_note": "Epífita común sobre algas de mayor tamaño y sobre rocas metamórficas en La Caracola.",
+    "env_profile": {
+      "preferred_stations": [
+        2
+      ],
+      "preferred_months": [
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_laurencia_dendroidea": {
+    "is_leaf": true,
+    "species_name": "Laurencia dendroidea J.Agardh 1852",
+    "phylum": "Rhodophyta",
+    "order": "Ceramiales",
+    "family": "Rhodomelaceae",
+    "description": "Talo cilíndrico y carnoso de coloración rojizo-amarillenta, con ramificación dendroide alterna. Ramillas cortas verrugosas con una depresión apical y un mechón de pelos.",
+    "habitat_note": "Intermareal rocoso y charcas tranquilas en ambas playas.",
+    "env_profile": {
+      "preferred_stations": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_lophosiphonia_sp1": {
+    "is_leaf": true,
+    "species_name": "Lophosiphonia sp.1 Falkenberg, 1897",
+    "phylum": "Rhodophyta",
+    "order": "Ceramiales",
+    "family": "Rhodomelaceae",
+    "description": "Talo postrado y erecto de color marrón oscuro con filamentos polysifónicos y ápices marcadamente curvados, con pocas células pericentrales (4-6) y escasos tricoblastos.",
+    "habitat_note": "Sustrato rocoso en charcas intermareales de La Caracola.",
+    "env_profile": {
+      "preferred_stations": [
+        1,
+        2
+      ],
+      "preferred_months": [
+        "M3",
+        "M4"
+      ],
+      "temp_range": [
+        26.0,
+        28.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_lophosiphonia_sp2": {
+    "is_leaf": true,
+    "species_name": "Lophosiphonia sp.2 Falkenberg 1897",
+    "phylum": "Rhodophyta",
+    "order": "Ceramiales",
+    "family": "Rhodomelaceae",
+    "description": "Talo filamentoso postrado, diferenciado por ramificaciones erectas más largas y espaciadas, con 8 a 10 células pericentrales en secciones transversales.",
+    "habitat_note": "Zonas protegidas del intermareal de Valdez.",
+    "env_profile": {
+      "preferred_stations": [
+        3
+      ],
+      "preferred_months": [
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_palisada_papillosa": {
+    "is_leaf": true,
+    "species_name": "Palisada papillosa (C.Agardh) K.W.Nam 2007",
+    "phylum": "Rhodophyta",
+    "order": "Ceramiales",
+    "family": "Rhodomelaceae",
+    "description": "Talo comprimido o cilíndrico de coloración pardo-verdosa oscura, consistencia muy firme y cartilaginosa, cubierto densamente de pequeñas papilas o tubérculos cortos.",
+    "habitat_note": "Forma un cinturón denso en la zona intermareal expuesta de La Caracola y sobre rocas de Valdez.",
+    "env_profile": {
+      "preferred_stations": [
+        1,
+        2,
+        3
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_polysiphonia_havanensis": {
+    "is_leaf": true,
+    "species_name": "Polysiphonia havanensis Montagne 1837",
+    "phylum": "Rhodophyta",
+    "order": "Ceramiales",
+    "family": "Rhodomelaceae",
+    "description": "Talo filamentoso de color marrón-rojizo con ejes principales ramificados alternamente, con 4 células pericentrales ecorticadas en corte transversal.",
+    "habitat_note": "Zonas someras rocosas y charcas de mareas de Valdez y La Caracola.",
+    "env_profile": {
+      "preferred_stations": [
+        2,
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_jania_adhaerens": {
+    "is_leaf": true,
+    "species_name": "Jania adhaerens J.V.Lamouroux 1816",
+    "phylum": "Rhodophyta",
+    "order": "Corallinales",
+    "family": "Corallinaceae",
+    "description": "Talo rígido revestido de carbonato de calcio, con ramificación marcadamente dicotómica y articulada muy fina. De coloración rosado-blanquecina.",
+    "habitat_note": "Frecuente en el intermareal adherida a sustrato rocoso sumergido.",
+    "env_profile": {
+      "preferred_stations": [
+        2,
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_gelidium_floridanum": {
+    "is_leaf": true,
+    "species_name": "Gelidium floridanum W.R.Taylor 1943",
+    "phylum": "Rhodophyta",
+    "order": "Gelidiales",
+    "family": "Gelidiaceae",
+    "description": "Talo ramificado pinnadamente de color rojo rojo-purpúreo oscuro, consistencia elástica y cartilaginosa, de hasta 15 cm de alto, con ejes aplanados estrechos.",
+    "habitat_note": "Habita zonas de fuerte oleaje en La Caracola y Valdez en grietas de rocas metamórficas.",
+    "env_profile": {
+      "preferred_stations": [
+        1,
+        2,
+        3
+      ],
+      "preferred_months": [
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_gelidium_pusillum": {
+    "is_leaf": true,
+    "species_name": "Gelidium pusillum (Stackhouse) Le Jolis 1863",
+    "phylum": "Rhodophyta",
+    "order": "Gelidiales",
+    "family": "Gelidiaceae",
+    "description": "Talo diminuto (menos de 2 cm) de consistencia cartilaginosa dura que forma céspedes de ejes postrados y erectos cilíndrico-aplanados entrelazados.",
+    "habitat_note": "Zonas intermareales altas rocosas secas de La Caracola, muy tolerante a desecación.",
+    "env_profile": {
+      "preferred_stations": [
+        1,
+        2
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_hypnea_musciformis": {
+    "is_leaf": true,
+    "species_name": "Hypnea musciformis (Wulfen) J.V.Lamouroux 1813",
+    "phylum": "Rhodophyta",
+    "order": "Gigartinales",
+    "family": "Cystocloniaceae",
+    "description": "Talo cilíndrico ramificado de color rojo-pardo, con los ápices de las ramas principales modificados típicamente en forma de gancho o zarcillo engrosado.",
+    "habitat_note": "Especie muy común en Valdez y La Caracola, a menudo epífita o entrelazada con Sargassum.",
+    "env_profile": {
+      "preferred_stations": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_hypnea_valentiae": {
+    "is_leaf": true,
+    "species_name": "Hypnea valentiae (Turner) Montagne 1841",
+    "phylum": "Rhodophyta",
+    "order": "Gigartinales",
+    "family": "Cystocloniaceae",
+    "description": "Talo cilíndrico con ejes principales patentes provistos de abundantes ramillas espinosas simples y ramificadas (bifurcadas) largas de disposición irregular.",
+    "habitat_note": "Frecuente en bahías someras y tranquilas de Playa Valdez.",
+    "env_profile": {
+      "preferred_stations": [
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_hypnea_spinella": {
+    "is_leaf": true,
+    "species_name": "Hypnea spinella (C. Agardh) Kützing 1847",
+    "phylum": "Rhodophyta",
+    "order": "Gigartinales",
+    "family": "Cystocloniaceae",
+    "description": "Talo en forma de cojines o céspedes muy densos e intrincados de ejes delgados e interconectados con pequeñas espinas simples cortas.",
+    "habitat_note": "Adherido fuertemente a rocas metamórficas intermareales en La Caracola.",
+    "env_profile": {
+      "preferred_stations": [
+        1,
+        2
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_agardhiella_subulata": {
+    "is_leaf": true,
+    "species_name": "Agardhiella subulata (C.Agardh) Kraft & M.J.Wynne 1979",
+    "phylum": "Rhodophyta",
+    "order": "Gigartinales",
+    "family": "Solieriaceae",
+    "description": "Talo cilíndrico carnoso y firme, color rojo-pálido a rojizo, de ramificación alterna irregular. Estructura interna celular con filamentos de soporte medulares finos.",
+    "habitat_note": "Habita el submareal somero de Valdez, protegida del oleaje.",
+    "env_profile": {
+      "preferred_stations": [
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_gracilaria_bursa_pastoris": {
+    "is_leaf": true,
+    "species_name": "Gracilaria bursa-pastoris (SGmelin) PCsilva 1952",
+    "phylum": "Rhodophyta",
+    "order": "Gracilariales",
+    "family": "Gracilariaceae",
+    "description": "Talo cilíndrico de consistencia carnosa y quebradiza, ramificado de forma subdística o alterna, con ejes gruesos (2-3 mm) de color rojo pálido.",
+    "habitat_note": "Común en sedimentos de fondo y rocas de Playa Valdez.",
+    "env_profile": {
+      "preferred_stations": [
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_gracilaria_blodgettii": {
+    "is_leaf": true,
+    "species_name": "Gracilaria blodgettii Harvey 1853",
+    "phylum": "Rhodophyta",
+    "order": "Gracilariales",
+    "family": "Gracilariaceae",
+    "description": "Talo cilíndrico carnoso caracterizado por ramificaciones cilíndricas que se estrechan fuertemente en su punto de inserción (base de la rama) con el eje.",
+    "habitat_note": "Sustrato rocoso protegido de Valdez.",
+    "env_profile": {
+      "preferred_stations": [
+        3
+      ],
+      "preferred_months": [
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_gracilaria_caudata": {
+    "is_leaf": true,
+    "species_name": "Gracilaria caudata J.Agardh 1852",
+    "phylum": "Rhodophyta",
+    "order": "Gracilariales",
+    "family": "Gracilariaceae",
+    "description": "Talo cilíndrico alargado ramificado irregularmente, de consistencia cartilaginosa flexible, con ejes de color verde-amarillento o rojizo.",
+    "habitat_note": "Habita praderas someras y sustrato rocoso sumergido de Valdez y La Caracola.",
+    "env_profile": {
+      "preferred_stations": [
+        2,
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_gracilaria_domingensis": {
+    "is_leaf": true,
+    "species_name": "Gracilaria domingensis (Kützing) Sonder ex Dickie 1874",
+    "phylum": "Rhodophyta",
+    "order": "Gracilariales",
+    "family": "Gracilariaceae",
+    "description": "Talo plano fuertemente comprimido y aplanado, con ramificación pinnada a subdística conspicua. De color rojo-violáceo oscuro a verdoso.",
+    "habitat_note": "Taxón de persistencia ecológica absoluta, registrado en el 100% de los muestreos de La Caracola y Valdez.",
+    "env_profile": {
+      "preferred_stations": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_gracilaria_flabelliformis": {
+    "is_leaf": true,
+    "species_name": "Gracilaria flabelliformis (Sonder) Womersley 1996",
+    "phylum": "Rhodophyta",
+    "order": "Gracilariales",
+    "family": "Gracilariaceae",
+    "description": "Talo plano comprimido grueso con ramificación flabelada (en abanico) y consistencia cartilaginosa rígida de color rojo oscuro.",
+    "habitat_note": "Sustrato rocoso sumergido de Valdez y La Caracola.",
+    "env_profile": {
+      "preferred_stations": [
+        2,
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_gracilaria_mammillaris": {
+    "is_leaf": true,
+    "species_name": "Gracilaria mammillaris (Montagne) M.Howe 1918",
+    "phylum": "Rhodophyta",
+    "order": "Gracilariales",
+    "family": "Gracilariaceae",
+    "description": "Talo plano aplanado ramificado dicotómicamente en un solo plano, con márgenes enteros y consistencia coriácea dura, color rojo purpúreo.",
+    "habitat_note": "Intermareal rocoso y charcas someras en ambas playas.",
+    "env_profile": {
+      "preferred_stations": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "temp_range": [
+        26.0,
+        30.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_grateloupia_filicina": {
+    "is_leaf": true,
+    "species_name": "Grateloupia filicina (J.V.Lamouroux) C.Agardh 1822",
+    "phylum": "Rhodophyta",
+    "order": "Halymeniales",
+    "family": "Grateloupiaceae",
+    "description": "Talo aplanado de color rojo-púrpura oscuro, dividido pinnadamente de forma muy regular a lo largo de un eje central en forma de pluma.",
+    "habitat_note": "Zonas expuestas de oleaje moderado en La Caracola y Valdez.",
+    "env_profile": {
+      "preferred_stations": [
+        2,
+        3
+      ],
+      "preferred_months": [
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_grateloupia_turuturu": {
+    "is_leaf": true,
+    "species_name": "Grateloupia turuturu Y. Yamada 1941",
+    "phylum": "Rhodophyta",
+    "order": "Halymeniales",
+    "family": "Grateloupiaceae",
+    "description": "Talo laminar ancho, grande, de consistencia gelatinosa-carnosa y tacto suave, color rojo-rosado, de márgenes lisos u ondulados.",
+    "habitat_note": "Sobre rocas sumergidas o epífita en Valdez, exótica introducida.",
+    "env_profile": {
+      "preferred_stations": [
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_liagora_sp": {
+    "is_leaf": true,
+    "species_name": "Liagora sp. J.V. Lamouroux 1812",
+    "phylum": "Rhodophyta",
+    "order": "Nemaliales",
+    "family": "Liagoraceae",
+    "description": "Talo cilíndrico blando, harinoso, gelatinoso y levemente calcificado en la corteza, de color blanquecino-rosado, ramificado dicotómicamente.",
+    "habitat_note": "Recogido en el intermareal de Valdez sumergida en charcas.",
+    "env_profile": {
+      "preferred_stations": [
+        3
+      ],
+      "preferred_months": [
+        "M3",
+        "M4"
+      ],
+      "temp_range": [
+        26.0,
+        28.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_liagora_ceranoides": {
+    "is_leaf": true,
+    "species_name": "Liagora ceranoides J.V.Lamouroux 1816",
+    "phylum": "Rhodophyta",
+    "order": "Nemaliales",
+    "family": "Liagoraceae",
+    "description": "Talo cilíndrico calcificado blando con ramificaciones que tienen un aspecto fuertemente corimboso (aplanado en el ápice) y nudos pubescentes.",
+    "habitat_note": "Zonas tranquilas de Valdez adherida a rocas metamórficas medianas.",
+    "env_profile": {
+      "preferred_stations": [
+        3,
+        4
+      ],
+      "preferred_months": [
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "species_sebdenia_flabellata": {
+    "is_leaf": true,
+    "species_name": "Sebdenia flabellata (J.Agardh) P.G.Parkinson 1980",
+    "phylum": "Rhodophyta",
+    "order": "Sebdeniales",
+    "family": "Sebdeniaceae",
+    "description": "Talo laminar plano en forma de abanico, bifurcado o dividido de forma irregular, de consistencia algo firme y color rojo-rosado.",
+    "habitat_note": "Colectada en the submareal rocoso profundo de la Estación 4 de Valdez.",
+    "env_profile": {
+      "preferred_stations": [
+        4
+      ],
+      "preferred_months": [
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "temp_range": [
+        26.0,
+        29.0
+      ],
+      "salinity_range": [
+        35.0,
+        38.0
+      ]
+    }
+  },
+  "root": {
+    "question": "¿El espécimen colectado posee coloración verde (brillante a oscura) y un talo no calcificado?",
+    "yes_branch": "node_chlorophyta_start",
+    "no_branch": "node_non_chlorophyta",
+    "is_leaf": false,
+    "character_name": "color_verde_no_calc"
+  },
+  "node_non_chlorophyta": {
+    "question": "¿El ejemplar muestra coloración parda, pardo-olivácea o amarillenta (típica de algas pardas)?",
+    "yes_branch": "node_heterokonto_start",
+    "no_branch": "node_rhodophyta_start",
+    "is_leaf": false,
+    "character_name": "color_pardo"
+  },
+  "node_chlorophyta_start": {
+    "question": "¿El talo posee una estructura cenocítica (filamentos o tubos multinucleados sin tabiques transversales visibles)?",
+    "yes_branch": "node_cenocytic_green",
+    "no_branch": "node_cellular_green",
+    "is_leaf": false,
+    "character_name": "estructura_cenocitica"
+  },
+  "node_cenocytic_green": {
+    "question": "¿El talo está diferenciado en estolones rastreros, rizoides y filoides erectos (típico de Caulerpaceae)?",
+    "yes_branch": "node_caulerpa_start",
+    "no_branch": "species_bryopsis_ramulosa",
+    "is_leaf": false,
+    "character_name": "estolones_rizoides_filoides"
+  },
+  "node_caulerpa_start": {
+    "question": "¿Los filoides erectos poseen rámulos dispuestos en dos filas densas en forma de pluma de ave (pectinados)?",
+    "yes_branch": "species_caulerpa_sertularioides",
+    "no_branch": "node_caulerpa_flat_or_glob",
+    "is_leaf": false,
+    "character_name": "filoides_pectinados"
+  },
+  "node_caulerpa_flat_or_glob": {
+    "question": "¿Los filoides erectos son planos, lisos y enteros con forma de hojas pecioladas?",
+    "yes_branch": "species_caulerpa_prolifera",
+    "no_branch": "node_caulerpa_vesicular",
+    "is_leaf": false,
+    "character_name": "filoides_planos_enteros"
+  },
+  "node_caulerpa_vesicular": {
+    "question": "¿Los rámulos de los filoides tienen forma de pequeñas vesículas esféricas como racimos de uvas?",
+    "yes_branch": "node_caulerpa_grapes_size",
+    "no_branch": "node_caulerpa_cup_or_pinn",
+    "is_leaf": false,
+    "character_name": "ramulos_vesiculosos"
+  },
+  "node_caulerpa_grapes_size": {
+    "question": "¿Las vesículas esféricas son de tamaño diminuto (1-2 mm de diámetro) y densamente apiñadas en racimos cortos?",
+    "yes_branch": "species_caulerpa_microphysa",
+    "no_branch": "species_caulerpa_racemosa",
+    "is_leaf": false,
+    "character_name": "vesiculas_diminutas"
+  },
+  "node_caulerpa_cup_or_pinn": {
+    "question": "¿Los rámulos tienen forma de copas o turbinados (aplanados en el ápice)?",
+    "yes_branch": "species_caulerpa_chemnitzia",
+    "no_branch": "node_caulerpa_pinnate_teeth",
+    "is_leaf": false,
+    "character_name": "ramulos_turbinados"
+  },
+  "node_caulerpa_pinnate_teeth": {
+    "question": "¿Los filoides poseen pínnulas bilaterales con ápices redondeados u obtusos y márgenes fuertemente denticulados hacia la porción distal (sección superior)?",
+    "yes_branch": "species_caulerpa_scalpelliformis",
+    "no_branch": "species_caulerpa_mexicana",
+    "is_leaf": false,
+    "character_name": "pinnulas_apice_obtuso_denticuladas"
+  },
+  "node_cellular_green": {
+    "question": "¿El talo es laminar plano (distromático) o tubular hueco (típico de Ulvales)?",
+    "yes_branch": "node_ulvales_start",
+    "no_branch": "node_cladophorales_start",
+    "is_leaf": false,
+    "character_name": "talo_laminar_o_tubular_hueco"
+  },
+  "node_ulvales_start": {
+    "question": "¿El talo es tubular hueco y ramificado principalmente en la base?",
+    "yes_branch": "species_ulva_flexuosa",
+    "no_branch": "node_ulva_laminar",
+    "is_leaf": false,
+    "character_name": "talo_tubular"
+  },
+  "node_ulva_laminar": {
+    "question": "¿La lámina del talo es rígida, firme, de base engrosada y con dientes microscópicos en el margen?",
+    "yes_branch": "species_ulva_rigida",
+    "no_branch": "species_ulva_lactuca",
+    "is_leaf": false,
+    "character_name": "lamina_rigida_dientes_margen"
+  },
+  "node_cladophorales_start": {
+    "question": "¿Los filamentos son simples, gruesos, rígidos y no ramificados, formando mechones erectos?",
+    "yes_branch": "species_chaetomorpha_antennina",
+    "no_branch": "node_cladophorales_branched",
+    "is_leaf": false,
+    "character_name": "filamentos_simples_no_ramificados"
+  },
+  "node_cladophorales_branched": {
+    "question": "¿El talo está formado por ramas globosas translúcidas que nacen en verticilos en forma de sombrilla?",
+    "yes_branch": "species_ernodesmis_verticillata",
+    "no_branch": "node_cladophorales_mesh",
+    "is_leaf": false,
+    "character_name": "ramas_verticiladas_sombrilla"
+  },
+  "node_cladophorales_mesh": {
+    "question": "¿El talo forma una red o malla reticulada fina y tridimensional?",
+    "yes_branch": "species_phyllodictyon_anastomosans",
+    "no_branch": "species_cladophora_vagabunda",
+    "is_leaf": false,
+    "character_name": "malla_reticulada"
+  },
+  "node_heterokonto_start": {
+    "question": "¿El talo está altamente diferenciado en estipes, filoides en forma de hojas aserradas y vesículas de aire redondas (aerocistos)?",
+    "yes_branch": "node_sargassum_start",
+    "no_branch": "node_heterokonto_simple",
+    "is_leaf": false,
+    "character_name": "presencia_vesiculas_filoides_estipe"
+  },
+  "node_sargassum_start": {
+    "question": "¿El talo es pelágico (flotante, sin disco de fijación o sustrato físico)?",
+    "yes_branch": "node_sargassum_pelagic",
+    "no_branch": "node_sargassum_benthic",
+    "is_leaf": false,
+    "character_name": "habito_pelagico"
+  },
+  "node_sargassum_pelagic": {
+    "question": "¿Las vesículas de aire (aerocistos) poseen un pequeño filamento, espina o apéndice en su ápice?",
+    "yes_branch": "species_sargassum_natans",
+    "no_branch": "species_sargassum_fluitans",
+    "is_leaf": false,
+    "character_name": "aerocistos_apiculados"
+  },
+  "node_sargassum_benthic": {
+    "question": "¿Los filoides presentan abundantes proyecciones espinosas y dentadas en la superficie de su limbo (talo muy rugoso)?",
+    "yes_branch": "species_sargassum_hystrix",
+    "no_branch": "node_sargassum_benthic_non_rugose",
+    "is_leaf": false,
+    "character_name": "filoides_espinosos_limbo"
+  },
+  "node_sargassum_benthic_non_rugose": {
+    "question": "¿Los filoides son muy densos, cortos, ovoides y fuertemente aserrados y encrespados?",
+    "yes_branch": "species_sargassum_polyceratium",
+    "no_branch": "node_sargassum_cym_fil_vul",
+    "is_leaf": false,
+    "character_name": "filoides_densos_cortos_aserrados"
+  },
+  "node_sargassum_cym_fil_vul": {
+    "question": "¿Las vesículas de aire son pequeñas y se agrupan en racimos densos en las axilas de filoides aserrados anchos?",
+    "yes_branch": "species_sargassum_cymosum",
+    "no_branch": "node_sargassum_fil_vul",
+    "is_leaf": false,
+    "character_name": "vesiculas_pequenas_racimos_axilares"
+  },
+  "node_sargassum_fil_vul": {
+    "question": "¿Los filoides del ejemplar son muy delgados, estrechos y de forma linear-lanceolada?",
+    "yes_branch": "species_sargassum_filipendula",
+    "no_branch": "species_sargassum_vulgare",
+    "is_leaf": false,
+    "character_name": "filoides_lineares_delgados"
+  },
+  "node_heterokonto_simple": {
+    "question": "¿El talo es globoso, hueco y de consistencia membranosa frágil (como una pequeña bolsa cerebriforme)?",
+    "yes_branch": "species_colpomenia_sinuosa",
+    "no_branch": "node_heterokonto_laminar_or_filamentous",
+    "is_leaf": false,
+    "character_name": "talo_globoso_hueco"
+  },
+  "node_heterokonto_laminar_or_filamentous": {
+    "question": "¿El talo es plano y en forma de abanico, con finas bandas concéntricas calcificadas?",
+    "yes_branch": "species_padina_gymnospora",
+    "no_branch": "node_heterokonto_cords_or_dictyo",
+    "is_leaf": false,
+    "character_name": "talo_abanico_bandas_concentricas"
+  },
+  "node_heterokonto_cords_or_dictyo": {
+    "question": "¿El talo es de consistencia cartilaginosa firme, cilíndrico o subcilíndrico ramificado dicotómicamente?",
+    "yes_branch": "species_chnoospora_minima",
+    "no_branch": "node_heterokonto_flat_blades_or_filaments",
+    "is_leaf": false,
+    "character_name": "talo_cilindrico_cartilaginoso"
+  },
+  "node_heterokonto_flat_blades_or_filaments": {
+    "question": "¿El talo es plano, laminar o cintiforme, de ramificación dicotómica o irregular (Dictyotaceae)?",
+    "yes_branch": "node_dictyotaceae_start",
+    "no_branch": "node_heterokonto_filamentous",
+    "is_leaf": false,
+    "character_name": "talo_plano_laminar_cintiforme"
+  },
+  "node_dictyotaceae_start": {
+    "question": "¿Las frondas laminares poseen una costilla central (nervadura media longitudinal) bien definida?",
+    "yes_branch": "species_dictyopteris_delicatula",
+    "no_branch": "node_dictyotaceae_no_rib",
+    "is_leaf": false,
+    "character_name": "nervadura_media_costilla"
+  },
+  "node_dictyotaceae_no_rib": {
+    "question": "¿El talo es coriáceo, ramificado irregularmente de forma palmeada con márgenes ondulados o dentados?",
+    "yes_branch": "species_spatoglossum_schroederi",
+    "no_branch": "node_dictyotaceae_dicotomic",
+    "is_leaf": false,
+    "character_name": "ramificacion_palmeada_irregular"
+  },
+  "node_dictyotaceae_dicotomic": {
+    "question": "¿Las ramas muestran giros helicoidales (espiralados) y extremos bifurcados semejantes a astas de ciervo?",
+    "yes_branch": "species_canistrocarpus_cervicornis",
+    "no_branch": "node_dictyota_margin_teeth",
+    "is_leaf": false,
+    "character_name": "giros_helicoidales_ramas"
+  },
+  "node_dictyota_margin_teeth": {
+    "question": "¿El margen de la fronda presenta pequeños dientes o cilios espaciados conspicuos?",
+    "yes_branch": "node_dictyota_teeth_type",
+    "no_branch": "node_dictyota_smooth_margin",
+    "is_leaf": false,
+    "character_name": "margen_con_dientes"
+  },
+  "node_dictyota_teeth_type": {
+    "question": "¿Los dientes del margen son muy finos y espaciados en forma de pestañas (cilios)?",
+    "yes_branch": "species_dictyota_ciliolata",
+    "no_branch": "species_dictyota_crenulata",
+    "is_leaf": false,
+    "character_name": "dientes_tipo_pestaña"
+  },
+  "node_dictyota_smooth_margin": {
+    "question": "¿El talo presenta coloración azul iridiscente bajo el agua, con frondas anchas y márgenes lisos?",
+    "yes_branch": "species_dictyota_menstrualis",
+    "no_branch": "species_dictyota_pulchella",
+    "is_leaf": false,
+    "character_name": "iridiscencia_azul"
+  },
+  "node_heterokonto_filamentous": {
+    "question": "¿Los filamentos presentan una célula apical grande, negra e individual muy llamativa (Sphacelariales)?",
+    "yes_branch": "node_sphacelaria_species",
+    "no_branch": "node_ectocarpales_filamentous",
+    "is_leaf": false,
+    "character_name": "celula_apical_negra"
+  },
+  "node_sphacelaria_species": {
+    "question": "¿Los propágulos del talo son delgados, cilíndricos y de brazos alargados?",
+    "yes_branch": "species_sphacelaria_rigidula",
+    "no_branch": "species_sphacelaria_tribuloides",
+    "is_leaf": false,
+    "character_name": "propagulos_delgados_cilindricos"
+  },
+  "node_ectocarpales_filamentous": {
+    "question": "¿Los filamentos se ramifican marcadamente en ángulos rectos y poseen esporangios pluriloculares alargados?",
+    "yes_branch": "species_feldmannia_mitchelliae",
+    "no_branch": "species_asteronema_breviarticulatum",
+    "is_leaf": false,
+    "character_name": "ramificacion_angulo_recto"
+  },
+  "node_rhodophyta_start": {
+    "question": "¿El espécimen posee calcificación (ya sea rígida y articulada, o blanda, harinosa y viscosa) en su talo?",
+    "yes_branch": "node_rhodo_calcified",
+    "no_branch": "node_rhodo_texture",
+    "is_leaf": false,
+    "character_name": "talo_calcificado"
+  },
+  "node_rhodo_calcified": {
+    "question": "¿El talo calcificado es rígido, articulado y ramificado dicotómicamente?",
+    "yes_branch": "species_jania_adhaerens",
+    "no_branch": "node_liagora_species",
+    "is_leaf": false,
+    "character_name": "talo_articulado_rigido"
+  },
+  "node_liagora_species": {
+    "question": "¿Las ramificaciones tienen un aspecto fuertemente corimboso (aplanado en el ápice) y nudos pubescentes?",
+    "yes_branch": "species_liagora_ceranoides",
+    "no_branch": "species_liagora_sp",
+    "is_leaf": false,
+    "character_name": "aspecto_corimboso_nudos_pubescentes"
+  },
+  "node_rhodo_texture": {
+    "question": "¿El talo tiene una textura predominantemente carnosa/cartilaginosa con ejes gruesos (cilíndricos o aplanados)?",
+    "yes_branch": "node_rhodo_fleshy",
+    "no_branch": "node_rhodo_filamentous",
+    "is_leaf": false,
+    "character_name": "talo_carnoso_cartilaginoso"
+  },
+  "node_rhodo_filamentous": {
+    "question": "¿Es un alga de filamentos muy finos, color rosado-rojizo, con ramificación alterna y segmentos corticados?",
+    "yes_branch": "node_cottoniella_check",
+    "no_branch": "node_filamentous_rhodo",
+    "is_leaf": false,
+    "character_name": "filamentos_finos_ramificacion_alterna"
+  },
+  "node_cottoniella_check": {
+    "question": "A nivel microscópico, ¿presenta un único filamento monosifónico por segmento surgiendo de una célula pericentral adaxial?",
+    "yes_branch": "species_cottoniella_filamentosa",
+    "no_branch": "node_dasya_or_hetero",
+    "is_leaf": false,
+    "character_name": "filamento_monosifonico_unico_adaxial"
+  },
+  "node_rhodo_fleshy": {
+    "question": "¿El espécimen presenta ramas con ramificaciones cortas en forma de espina o espolón, a menudo curvadas en los ápices (típico de Hypnea)?",
+    "yes_branch": "node_hypnea_or_others",
+    "no_branch": "node_fleshy_cylindrical_rhodo",
+    "is_leaf": false,
+    "character_name": "ramas_espinas_apices_curvados"
+  },
+  "node_filamentous_rhodo": {
+    "question": "¿Los ápices de los filamentos terminan típicamente en forma de pinzas de cangrejo y poseen espinulas en los nudos?",
+    "yes_branch": "species_centroceras_gasparinii",
+    "no_branch": "node_spyridia_or_deless",
+    "is_leaf": false,
+    "character_name": "apices_pincetas_cangrejo"
+  },
+  "node_spyridia_or_deless": {
+    "question": "¿El eje principal del filamento está provisto de bandas corticales nodales alternando con zonas translúcidas (Spyridia)?",
+    "yes_branch": "node_spyridia_sp",
+    "no_branch": "node_polysiphonous_rhodo",
+    "is_leaf": false,
+    "character_name": "corticacion_nodal_eje"
+  },
+  "node_spyridia_sp": {
+    "question": "¿Las ramillas corticales cortas poseen pequeñas espinas en sus extremos?",
+    "yes_branch": "species_spyridia_hypnoides",
+    "no_branch": "species_spyridia_filamentosa",
+    "is_leaf": false,
+    "character_name": "ramillas_espinosas_apical"
+  },
+  "node_polysiphonous_rhodo": {
+    "question": "¿Las ramillas erectas están dispuestas de manera unilateral en el eje, formando una serie de pequeños peines?",
+    "yes_branch": "species_herposiphonia_secunda",
+    "no_branch": "node_bryocladia_or_loph",
+    "is_leaf": false,
+    "character_name": "ramillas_unilaterales_peine"
+  },
+  "node_bryocladia_or_loph": {
+    "question": "¿Los ejes erectos forman céspedes densos, tiesos y ásperos de color marrón-negruzco a negro (Bryocladia)?",
+    "yes_branch": "node_bryocladia_sp",
+    "no_branch": "node_lophosiphonia_or_poly",
+    "is_leaf": false,
+    "character_name": "cespedes_tiesos_negruzcos"
+  },
+  "node_bryocladia_sp": {
+    "question": "¿Las ramas erectas principales están cubiertas densamente por ramificaciones secundarias muy cortas?",
+    "yes_branch": "species_bryocladia_thyrsigera",
+    "no_branch": "species_bryocladia_atlantica",
+    "is_leaf": false,
+    "character_name": "ramas_erectas_muy_densas"
+  },
+  "node_lophosiphonia_or_poly": {
+    "question": "¿El talo postrado y erecto presenta ápices con curvatura helicoidal bien marcada, con escasos tricoblastos?",
+    "yes_branch": "node_lophosiphonia_sp",
+    "no_branch": "species_polysiphonia_havanensis",
+    "is_leaf": false,
+    "character_name": "apices_curvados_helicoide"
+  },
+  "node_lophosiphonia_sp": {
+    "question": "¿El talo filamentoso presenta de 4 a 6 células pericentrales en sección transversal?",
+    "yes_branch": "species_lophosiphonia_sp1",
+    "no_branch": "species_lophosiphonia_sp2",
+    "is_leaf": false,
+    "character_name": "pericentrales_4_a_6"
+  },
+  "node_dasya_or_hetero": {
+    "question": "¿El talo posee ramificaciones densas, apicalmente espiraladas y plumosas de color rojo oscuro?",
+    "yes_branch": "species_dasya_ocellata",
+    "no_branch": "node_heterosiphonia_check",
+    "is_leaf": false,
+    "character_name": "ramas_apicales_espiraladas_plumosas"
+  },
+  "node_heterosiphonia_check": {
+    "question": "¿El talo blando muestra ramificación dorsiventral alterna pinnada y células pericentrales (Heterosiphonia)?",
+    "yes_branch": "species_heterosiphonia_gibbesii",
+    "no_branch": "node_fleshy_cylindrical_rhodo",
+    "is_leaf": false,
+    "character_name": "ramificacion_dorsiventral_pinnada"
+  },
+  "node_fleshy_cylindrical_rhodo": {
+    "question": "¿El talo presenta ramificaciones laterales provistas de pequeñas espinas agudas distribuidas en todo el talo?",
+    "yes_branch": "node_acanthophora_or_bryo",
+    "no_branch": "node_laurencia_or_others",
+    "is_leaf": false,
+    "character_name": "presencia_espinas_agudas"
+  },
+  "node_acanthophora_or_bryo": {
+    "question": "¿El talo posee ejes marcadamente angulados (sección triangular/trística) con ramillas cortas rígidas en 3 filas (Bryothamnion)?",
+    "yes_branch": "species_bryothamnion_triquetrum",
+    "no_branch": "node_acanthophora_sp",
+    "is_leaf": false,
+    "character_name": "ejes_angulados_tristicos"
+  },
+  "node_acanthophora_sp": {
+    "question": "¿Las espinas agudas cubren densamente tanto los ejes principales como los ejes secundarios de forma desordenada?",
+    "yes_branch": "species_acanthophora_muscoides",
+    "no_branch": "species_acanthophora_spicifera",
+    "is_leaf": false,
+    "character_name": "espinas_en_ejes_principales"
+  },
+  "node_laurencia_or_others": {
+    "question": "¿Las ramas cortas (rámulos) son redondeadas, verrugosas, claviformes con un pequeño hoyuelo apical con pelos?",
+    "yes_branch": "node_laurencia_group",
+    "no_branch": "node_chondria_or_others",
+    "is_leaf": false,
+    "character_name": "ramulos_hoyuelo_apical"
+  },
+  "node_laurencia_group": {
+    "question": "¿El talo es de consistencia blanda, cilíndrico y ramificado alternamente de forma piramidal?",
+    "yes_branch": "species_laurencia_dendroidea",
+    "no_branch": "species_palisada_papillosa",
+    "is_leaf": false,
+    "character_name": "talo_blando_laurencia"
+  },
+  "node_chondria_or_others": {
+    "question": "¿Los rámulos tienen constricciones muy marcadas en la base y ápice redondeado, de aspecto hinchado?",
+    "yes_branch": "node_chondria_species",
+    "no_branch": "node_laminar_rhodo",
+    "is_leaf": false,
+    "character_name": "ramulos_constriccion_basal"
+  },
+  "node_chondria_species": {
+    "question": "¿El talo es de consistencia blanda gelatinosa y ramificación piramidal (en lugar de talo corto y firme con ramillas agrupadas en racimos)?",
+    "yes_branch": "species_chondria_capillaris",
+    "no_branch": "species_chondria_sedifolia",
+    "is_leaf": false,
+    "character_name": "consistencia_gelatinosa_ramificacion_piramidal"
+  },
+  "node_laminar_rhodo": {
+    "question": "¿El talo es marcadamente plano, en forma de lámina ancha, membranosa o carnosa?",
+    "yes_branch": "node_laminar_rhodo_details",
+    "no_branch": "node_gelidiales_or_others",
+    "is_leaf": false,
+    "character_name": "talo_plano_laminar"
+  },
+  "node_laminar_rhodo_details": {
+    "question": "¿La lámina del talo es de gran tamaño, consistencia gelatinosa-carnosa y tacto muy suave?",
+    "yes_branch": "species_grateloupia_turuturu",
+    "no_branch": "node_grateloupia_or_sebdenia",
+    "is_leaf": false,
+    "character_name": "lamina_flesh_gelatinosa"
+  },
+  "node_grateloupia_or_sebdenia": {
+    "question": "¿El talo está dividido de forma pinnada muy regular a lo largo del eje, semejando una pluma?",
+    "yes_branch": "species_grateloupia_filicina",
+    "no_branch": "species_sebdenia_flabellata",
+    "is_leaf": false,
+    "character_name": "lamina_dividida_pinnada"
+  },
+  "node_hypnea_or_others": {
+    "question": "¿Los extremos de las ramas principales terminan en ganchos (zarcillos) engrosados y enroscados?",
+    "yes_branch": "species_hypnea_musciformis",
+    "no_branch": "node_hypnea_cushion_or_others",
+    "is_leaf": false,
+    "character_name": "extremos_en_gancho"
+  },
+  "node_hypnea_cushion_or_others": {
+    "question": "¿El talo forma céspedes densos intrincados con espinulas cortas de consistencia rígida?",
+    "yes_branch": "node_hypnea_sp",
+    "no_branch": "node_gelidiales_or_others",
+    "is_leaf": false,
+    "character_name": "talo_intrincado_cojin"
+  },
+  "node_hypnea_sp": {
+    "question": "¿Las espínulas laterales son abundantes, largas, simples y bifurcadas de disposición irregular?",
+    "yes_branch": "species_hypnea_valentiae",
+    "no_branch": "species_hypnea_spinella",
+    "is_leaf": false,
+    "character_name": "espinas_largas_bifurcadas"
+  },
+  "node_gelidiales_or_others": {
+    "question": "¿El talo posee ramificaciones rígidas, consistencia elástica y cartilaginosa, con ramificación pinnada aplanada?",
+    "yes_branch": "node_gelidium_sp",
+    "no_branch": "node_solieriaceae_or_gracilaria",
+    "is_leaf": false,
+    "character_name": "talo_elastico_cartilaginoso"
+  },
+  "node_gelidium_sp": {
+    "question": "¿El talo es diminuto (menos de 2 cm) y forma alfombras adheridas fuertemente al sustrato rocoso alto?",
+    "yes_branch": "species_gelidium_pusillum",
+    "no_branch": "species_gelidium_floridanum",
+    "is_leaf": false,
+    "character_name": "talo_diminuto_intermareal_alto"
+  },
+  "node_solieriaceae_or_gracilaria": {
+    "question": "¿El talo cilíndrico y carnoso posee en su estructura celular interna filamentos de soporte medulares finos (Agardhiella)?",
+    "yes_branch": "species_agardhiella_subulata",
+    "no_branch": "node_gracilaria_start",
+    "is_leaf": false,
+    "character_name": "filamentos_soporte_medulares"
+  },
+  "node_gracilaria_start": {
+    "question": "¿El talo es notablemente aplanado o comprimido lateralmente?",
+    "yes_branch": "node_gracilaria_flat",
+    "no_branch": "node_gracilaria_cylindrical",
+    "is_leaf": false,
+    "character_name": "talo_plano_comprimido"
+  },
+  "node_gracilaria_flat": {
+    "question": "¿El talo plano posee ramificación pinnada a subdística regular muy conspicua?",
+    "yes_branch": "species_gracilaria_domingensis",
+    "no_branch": "node_gracilaria_flat_dichot",
+    "is_leaf": false,
+    "character_name": "ramificacion_pinnada_gracilaria"
+  },
+  "node_gracilaria_flat_dichot": {
+    "question": "¿El talo plano-comprimido es de consistencia coriácea dura y se ramifica dicotómicamente?",
+    "yes_branch": "species_gracilaria_mammillaris",
+    "no_branch": "species_gracilaria_flabelliformis",
+    "is_leaf": false,
+    "character_name": "talo_coriaceo_dicotomo"
+  },
+  "node_gracilaria_cylindrical": {
+    "question": "¿El talo cilíndrico es carnoso y quebradiza, ramificado alternamente, con ejes gruesos (2-3 mm)?",
+    "yes_branch": "species_gracilaria_bursa_pastoris",
+    "no_branch": "node_gracilaria_blod_caud",
+    "is_leaf": false,
+    "character_name": "talo_carnoso_quebradizo"
+  },
+  "node_gracilaria_blod_caud": {
+    "question": "¿Las ramificaciones cilíndricas se estrechan fuertemente en su base de inserción con el eje?",
+    "yes_branch": "species_gracilaria_blodgettii",
+    "no_branch": "species_gracilaria_caudata",
+    "is_leaf": false,
+    "character_name": "estrechamiento_base_rama"
+  },
+  "unknown": {
+    "is_leaf": true,
+    "species_name": "Desconocida",
+    "phylum": "N/A",
+    "habitat_note": "El espécimen no coincide con los registros actuales del catálogo."
+  }
 }
