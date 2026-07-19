@@ -1,4 +1,7 @@
-﻿import os
+import os
+import urllib.request
+import urllib.parse
+import json
 # pyrefly: ignore [missing-import]
 from fastapi import FastAPI, HTTPException, Depends, Header
 from fastapi.middleware.cors import CORSMiddleware
@@ -159,6 +162,118 @@ def clear_session(session_id: str):
     if session_id in sessions:
         del sessions[session_id]
     return {"status": "cleared", "session_id": session_id}
+
+
+# Cache en memoria para búsquedas de imágenes en Wikipedia
+image_cache: Dict[str, Optional[str]] = {}
+
+# Mapeos manuales para especies que no tienen página o imagen adecuada en Wikipedia
+MANUAL_SPECIES_IMAGES = {
+    "bryothamnion triquetrum": "/images/species/bryothamnion_triquetrum.jpg",
+    "alsidium triquetrum": "/images/species/bryothamnion_triquetrum.jpg",
+    "phyllodictyon anastomosans": "/images/species/phyllodictyon_anastomosans.jpg",
+    "feldmannia mitchelliae": "/images/species/feldmannia_mitchelliae.jpg",
+    "canistrocarpus cervicornis": "/images/species/canistrocarpus_cervicornis.jpg",
+    "dictyopteris delicatula": "/images/species/dictyopteris_delicatula.jpg",
+    "chnoospora minima": "/images/species/chnoospora_minima.jpg",
+    "sphacelaria rigidula": "/images/species/sphacelaria_rigidula.jpg",
+    "sphacelaria tribuloides": "/images/species/sphacelaria_tribuloides.jpg",
+    "spyridia filamentosa": "/images/species/spyridia_filamentosa.jpg",
+    "spyridia hypnoides": "/images/species/spyridia_hypnoides.jpg",
+    "centroceras gasparinii": "/images/species/centroceras_gasparinii.jpg",
+    "cottoniella filamentosa": "/images/species/cottoniella_filamentosa.jpg",
+    "dasya ocellata": "/images/species/dasya_ocellata.jpg",
+    "heterosiphonia gibbesii": "/images/species/heterosiphonia_gibbesii.jpg",
+    "bryocladia thyrsigera": "/images/species/bryocladia_thyrsigera.jpg",
+    "bryocladia atlantica": "/images/species/bryocladia_atlantica.jpg",
+    "chondria capillaris": "/images/species/chondria_capillaris.jpg",
+    "chondria sedifolia": "/images/species/chondria_sedifolia.jpg",
+    "herposiphonia secunda": "/images/species/herposiphonia_secunda.jpg",
+    "lophosiphonia sp.1": "/images/species/lophosiphonia_sp1.jpg",
+    "lophosiphonia sp.2": "/images/species/lophosiphonia_sp2.jpg",
+    "palisada papillosa": "/images/species/palisada_papillosa.jpg",
+    "agardhiella subulata": "/images/species/agardhiella_subulata.jpg",
+    "grateloupia filicina": "/images/species/grateloupia_filicina.jpg",
+    "liagora sp.": "/images/species/liagora_sp.jpg",
+    "liagora sp": "/images/species/liagora_sp.jpg",
+    "liagora ceranoides": "/images/species/liagora_ceranoides.jpg",
+    "sebdenia flabellata": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Grateloupia_turuturu_Jymm.jpg/330px-Grateloupia_turuturu_Jymm.jpg",
+}
+
+def get_wikipedia_image(query_name: str) -> Optional[str]:
+    if query_name in image_cache:
+        return image_cache[query_name]
+    
+    headers = {'User-Agent': 'SistemaExpertoMacroalgas/1.0 (biologia.margarita@example.com)'}
+    
+    # 1. Intentar en Wikipedia en español
+    try:
+        url = f"https://es.wikipedia.org/api/rest_v1/page/summary/{urllib.parse.quote(query_name)}"
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req, timeout=3) as response:
+            if response.status == 200:
+                data = json.loads(response.read().decode('utf-8'))
+                if "thumbnail" in data and "source" in data["thumbnail"]:
+                    img_url = data["thumbnail"]["source"]
+                    image_cache[query_name] = img_url
+                    return img_url
+    except Exception:
+        pass
+
+    # 2. Intentar en Wikipedia en inglés
+    try:
+        url = f"https://en.wikipedia.org/api/rest_v1/page/summary/{urllib.parse.quote(query_name)}"
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req, timeout=3) as response:
+            if response.status == 200:
+                data = json.loads(response.read().decode('utf-8'))
+                if "thumbnail" in data and "source" in data["thumbnail"]:
+                    img_url = data["thumbnail"]["source"]
+                    image_cache[query_name] = img_url
+                    return img_url
+    except Exception:
+        pass
+
+    # Guardar resultado negativo en caché para evitar llamadas repetidas fallidas
+    image_cache[query_name] = None
+    return None
+
+
+@app.get("/api/species-image")
+def get_species_image(name: str):
+    """
+    Busca una imagen de Wikipedia para una especie o su género.
+    Funciona como un proxy en el backend para evitar errores de red 404 en la consola del navegador.
+    """
+    if not name:
+        return {"image_url": None, "is_genus_fallback": False}
+    
+    words = name.strip().split(' ')
+    species_query = " ".join(words[:2])
+    genus_query = words[0] if words else ""
+
+    # 0. Intentar con mapeos manuales locales/remotos
+    query_key = species_query.lower()
+    if query_key in MANUAL_SPECIES_IMAGES:
+        return {"image_url": MANUAL_SPECIES_IMAGES[query_key], "is_genus_fallback": False}
+    
+    genus_key = genus_query.lower()
+    if genus_key in MANUAL_SPECIES_IMAGES:
+        return {"image_url": MANUAL_SPECIES_IMAGES[genus_key], "is_genus_fallback": True}
+
+    # 1. Intentar con el nombre de la especie
+    img_url = get_wikipedia_image(species_query)
+    if img_url:
+        return {"image_url": img_url, "is_genus_fallback": False}
+    
+    # 2. Intentar con el género
+    if genus_query and genus_query != species_query:
+        img_url = get_wikipedia_image(genus_query)
+        if img_url:
+            return {"image_url": img_url, "is_genus_fallback": True}
+
+    return {"image_url": None, "is_genus_fallback": False}
+
 
 
 # â”€â”€ Protected admin endpoints (require X-Admin-Password header) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€

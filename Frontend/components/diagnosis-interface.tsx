@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { AlgaeAnimation } from './algae-animation'
+import { AlgaeImage } from './algae-image'
 import {
   Compass,
   Settings,
@@ -998,6 +999,11 @@ export function DiagnosisInterface({ theme, onThemeToggle }: DiagnosisInterfaceP
                   <h2 className="text-3xl md:text-4xl font-light text-foreground mt-3 italic">
                     {state.result.species}
                   </h2>
+                </div>
+
+                {/* Foto de la especie */}
+                <div className="max-w-md mx-auto">
+                  <AlgaeImage speciesName={state.result.species} />
                 </div>
 
                 {state.candidates && state.candidates.length > 0 && (
